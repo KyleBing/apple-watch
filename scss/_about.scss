@@ -1,0 +1,162 @@
+
+// 关于
+.about{
+  font-family: 'Galvji';
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  padding: 15px 35px;
+  background-color: white;
+  a{
+    &:hover{
+      text-decoration: underline;
+    }
+    color: white;
+  }
+  @media (max-width: 768px){
+    align-items: stretch;
+    padding: 35px 25px 25px;
+    flex-flow: column nowrap;
+  }
+}
+
+.about-header{
+  display: flex;
+  justify-content: space-between;
+  .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    img{
+      height: 50px;
+    }
+  }
+  .content{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    .title{
+      font-size: $fz-title;
+    }
+  }
+
+  @media (max-width: 768px){
+    margin-bottom: 20px;
+    .icon{
+      display: none;
+    }
+    .content{
+      flex-flow: column nowrap;
+      margin-left: 0;
+      .thumbs-up{
+        padding: 15px 0;
+      }
+      .title{
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+.copyright-group{
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px){
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.author-info{
+  cursor: pointer;
+  font-family: "Galvji";
+  margin-left: 30px;
+  padding: 10px 15px;
+  justify-content: space-between;
+  line-height: 1.4;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  @include border-radius(5px);
+  p{
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  @media (max-width: 768px){
+    padding: 15px 20px;
+    @include border-radius(5px);
+    background-color: rgba(255,255,255,0.05);
+    border: none;
+    margin: 0 0 10px;
+  }
+
+  .link{
+    &:hover{
+      color: white !important;
+    }
+    &:active{
+      transform: translateY(2px);
+    }
+  }
+}
+
+.share-links{
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  .link-item{
+    width: 70px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    @include border-radius(10px);
+    img{
+      display: block;
+      height: 40px;
+    }
+    &[href]:hover{
+      background-color: transparentize(black, 0.8);
+    }
+  }
+  @media (max-width: 768px){
+    .link-item{
+      padding: 10px 0;
+    }
+    margin-bottom: 30px;
+  }
+}
+
+
+.thumbs-up{
+  width: 120px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap!important;
+  @include transform(translateY(2px));
+  cursor: pointer;
+  img{
+    height: 30px !important;
+  }
+  .multiply{
+    padding: 0 4px;
+  }
+  h3{
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px){
+  .search-bar{
+    display: none;
+  }
+}
