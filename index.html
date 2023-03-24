@@ -7,7 +7,7 @@
     <title>AppleWatch 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/iphone_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="scss/AppleWatch.css?v=20230215100040">
+    <link rel="stylesheet" href="scss/AppleWatch.css?">
     <link rel="apple-touch-icon" href="img/links/iphone_white@2x.png">
 
     <meta name="theme-color"
@@ -55,11 +55,201 @@
                 <div :class="['title', {'is-new': appleWatch.isNew}]">{{appleWatch.name}}</div>
                 <div class="date">
                     <span>{{appleWatch.dateRelease}}</span>
-                    <span v-if="appleWatch.dateUnsupported">~ {{appleWatch.dateUnsupported}}</span>
+                    <span v-if="appleWatch.dateUnsupported"> ~ {{appleWatch.dateUnsupported}}</span>
                 </div>
             </div>
-            <div class="sensor-info"></div>
-            <div class="screen-info"></div>
+            <div class="sensor-info">
+                <div class="sensor-info-item">
+                    <div class="label">防水</div>
+                    <div class="value">{{appleWatch.waterResistance}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">防尘</div>
+                    <div class="value">{{appleWatch.dustResistance}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">WiFi</div>
+                    <div class="value">{{appleWatch.wifi}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">蓝牙</div>
+                    <div class="value">{{appleWatch.bluetooth}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">加速度</div>
+                    <div class="value">{{appleWatch.sensorAccelerometer}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">心率检测版本</div>
+                    <div class="value">{{appleWatch.sensorHeart}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">ECG支持</div>
+                    <div class="value">{{appleWatch.sensorECG}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">血氧检测</div>
+                    <div class="value">{{appleWatch.sensorBloodOxygen}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">温度检测</div>
+                    <div class="value">{{appleWatch.sensorTemperature}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">卫星导航系统</div>
+                    <div class="value">{{appleWatch.sensorGPS.join(',')}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">陀螺仪</div>
+                    <div class="value">{{appleWatch.sensorGyroscope}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">光线感应器</div>
+                    <div class="value">{{appleWatch.sensorAmbient}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">指南针</div>
+                    <div class="value">{{appleWatch.sensorCompass}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">Siri</div>
+                    <div class="value">{{appleWatch.heySiri}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">充电时长</div>
+                    <div class="value">{{appleWatch.batteryChargeTime}}h</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">存储空间</div>
+                    <div class="value">{{appleWatch.storage}}h</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">内存</div>
+                    <div class="value">{{appleWatch.memory.type}}-{{appleWatch.memory.size}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">系统</div>
+                    <div class="value">{{appleWatch.OS.from}}-{{appleWatch.OS.to}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">iPhone配对条件</div>
+                    <div class="value">{{appleWatch.iphoneRequire}}</div>
+                </div>
+
+                <div class="second-info">
+                    <div class="sensor-info-item">
+                        <div class="label">屏幕类型</div>
+                        <div class="value">{{appleWatch.display.type}}</div>
+                    </div>
+                    <div class="sensor-info-item">
+                        <div class="label">3D Touch</div>
+                        <div class="value">{{appleWatch.display.touch3D}}</div>
+                    </div>
+                    <div class="sensor-info-item">
+                        <div class="label">亮度</div>
+                        <div class="value">{{appleWatch.display.brightness}} <span class="unit">nit</span></div>
+                    </div>
+                    <div class="sensor-info-item">
+                        <div class="label">像素密度</div>
+                        <div class="value">{{appleWatch.display.pixelDensity}} <span class="unit">ppi</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 小尺寸  -->
+            <div class="screen-info">
+                <h2>尺寸 - 小</h2>
+                <div v-if="appleWatch.sizeSmall.screenSize" class="sensor-info-item">
+                    <div class="label">型号</div>
+                    <div class="value">{{appleWatch.sizeSmall.model}} </span></div>
+                </div>
+                <div v-if="appleWatch.sizeSmall.screenSize" class="sensor-info-item">
+                    <div class="label">屏幕尺寸</div>
+                    <div class="value">{{appleWatch.sizeSmall.screenSize}} <span class="unit">mm</span></div>
+                </div>
+                <div v-if="appleWatch.sizeSmall.pixelWidth" class="sensor-info-item">
+                    <div class="label">像素宽度</div>
+                    <div class="value">{{appleWatch.sizeSmall.pixelWidth}} <span class="unit">px</span></div>
+                </div>
+                <div v-if="appleWatch.sizeSmall.pixelHeight" class="sensor-info-item">
+                    <div class="label">像素高度</div>
+                    <div class="value">{{appleWatch.sizeSmall.pixelHeight}} <span class="unit">px</span></div>
+                </div>
+                <div v-if="appleWatch.sizeSmall.battery" class="sensor-info-item">
+                    <div class="label">电池容量</div>
+                    <div class="value">{{appleWatch.sizeSmall.battery}} <span class="unit">mah</span></div>
+                </div>
+                <div v-if="appleWatch.sizeSmall.batteryVoltage" class="sensor-info-item">
+                    <div class="label">电池电压</div>
+                    <div class="value">{{appleWatch.sizeSmall.batteryVoltage}} <span class="unit">v</span></div>
+                </div>
+                <div v-if="appleWatch.sizeSmall.height" class="sensor-info-item">
+                    <div class="label">高</div>
+                    <div class="value">{{appleWatch.sizeSmall.height}} <span class="unit">mm</span></div>
+                </div>
+                <div v-if="appleWatch.sizeSmall.width" class="sensor-info-item">
+                    <div class="label">宽</div>
+                    <div class="value">{{appleWatch.sizeSmall.width}} <span class="unit">mm</span></div>
+                </div>
+                <div v-if="appleWatch.sizeSmall.depth" class="sensor-info-item">
+                    <div class="label">厚</div>
+                    <div class="value">{{appleWatch.sizeSmall.depth}} <span class="unit">mm</span></div>
+                </div>
+                <div class="second-info">
+                    <div class="sensor-info-item" v-for="(weight, index) in appleWatch.sizeSmall.weight">
+                        <div class="label">{{weight.type}}</div>
+                        <div class="value">{{weight.weight}} <span class="unit">g</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 大尺寸  -->
+            <div class="screen-info">
+                <h2>尺寸 - 大</h2>
+                <div v-if="appleWatch.sizeLarge.screenSize" class="sensor-info-item">
+                    <div class="label">型号</div>
+                    <div class="value">{{appleWatch.sizeLarge.model}} </span></div>
+                </div>
+                <div v-if="appleWatch.sizeLarge.screenSize" class="sensor-info-item">
+                    <div class="label">屏幕尺寸</div>
+                    <div class="value">{{appleWatch.sizeLarge.screenSize}} <span class="unit">mm</span></div>
+                </div>
+                <div v-if="appleWatch.sizeLarge.pixelWidth" class="sensor-info-item">
+                    <div class="label">像素宽度</div>
+                    <div class="value">{{appleWatch.sizeLarge.pixelWidth}} <span class="unit">px</span></div>
+                </div>
+                <div v-if="appleWatch.sizeLarge.pixelHeight" class="sensor-info-item">
+                    <div class="label">像素高度</div>
+                    <div class="value">{{appleWatch.sizeLarge.pixelHeight}} <span class="unit">px</span></div>
+                </div>
+                <div v-if="appleWatch.sizeLarge.battery" class="sensor-info-item">
+                    <div class="label">电池容量</div>
+                    <div class="value">{{appleWatch.sizeLarge.battery}} <span class="unit">mah</span></div>
+                </div>
+                <div v-if="appleWatch.sizeLarge.batteryVoltage" class="sensor-info-item">
+                    <div class="label">电池电压</div>
+                    <div class="value">{{appleWatch.sizeLarge.batteryVoltage}} <span class="unit">v</span></div>
+                </div>
+                <div v-if="appleWatch.sizeLarge.height" class="sensor-info-item">
+                    <div class="label">高</div>
+                    <div class="value">{{appleWatch.sizeLarge.height}} <span class="unit">mm</span></div>
+                </div>
+                <div v-if="appleWatch.sizeLarge.width" class="sensor-info-item">
+                    <div class="label">宽</div>
+                    <div class="value">{{appleWatch.sizeLarge.width}} <span class="unit">mm</span></div>
+                </div>
+                <div v-if="appleWatch.sizeLarge.depth" class="sensor-info-item">
+                    <div class="label">厚</div>
+                    <div class="value">{{appleWatch.sizeLarge.depth}} <span class="unit">mm</span></div>
+                </div>
+                <div class="second-info">
+                    <div class="sensor-info-item" v-for="(weight, index) in appleWatch.sizeLarge.weight">
+                        <div class="label">{{weight.type}}</div>
+                        <div class="value">{{weight.weight}} <span class="unit">g</span></div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -95,11 +285,12 @@
     <footer>
         <p>2020.10.20 ~ {{dateLastUpdate}}</p>
         <p><a class="link" target="_blank" href="https://github.com/KyleBing/iphone">https://github.com/KyleBing/iphone</a></p>
+        <p><a class="link" target="_blank" href="https://en.wikipedia.org/wiki/Apple_Watch">https://en.wikipedia.org/wiki/Apple_Watch</a></p>
     </footer>
 
 </div>
 
-<script src="js/AppleWatch.js?v=20230215100040"></script>
+<script src="js/AppleWatch.js?"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {

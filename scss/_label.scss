@@ -1,0 +1,25 @@
+.second-info{
+  margin-left: 30px;
+}
+
+
+.sensor-info{
+  padding: 10px;
+  @include border-radius(5px);
+  //border: 1px solid $color-border;
+}
+
+.sensor-info-item{
+  margin-bottom: 3px;
+  display: flex;
+  font-size: $fz-sm;
+  color: $text-main;
+  .label{
+    width: 80px;
+  }
+  .value{
+    .unit{
+      color: $green;
+    }
+  }
+}

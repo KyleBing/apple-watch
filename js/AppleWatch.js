@@ -17,8 +17,8 @@ const appleWatches = [
         waterResistanceDepth: '1', // m
         dustResistance: 'IPX7',
         model: [
-            {name: '38', model: 'A1553'},
-            {name: '42', model: 'A1554'},
+            {},
+            {},
         ],
         cellular: '', // 蜂窝网络
         wifi: '802.11 b/g/n 2.4 GHz',
@@ -39,10 +39,10 @@ const appleWatches = [
             touch3D: true, // 3d touch
             brightness: 450, // nit
             pixelDensity: 326, // ppi 像素密度
-
-
         },
         sizeSmall: {
+            name: '38',
+            model: 'A1553',
             screenSize: 38, // mm
             pixelWidth: 272,
             pixelHeight: 340,
@@ -51,14 +51,28 @@ const appleWatches = [
             height: 38.6, // mm
             width: 33.3, // mm
             depth: 10.5, // mm
-            weight: 25, // g
+            weight: [
+                {type: '铝', weight: 25, }, // g
+                {type: '钢', weight: 40, }, // g
+                {type: '金', weight: 54, } // g
+            ]
         },
         sizeLarge: {
+            name: '42',
+            model: 'A1554',
             screenSize: 42, // mm
             pixelWidth: 312,
             pixelHeight: 390,
             battery: 246, // mah
             batteryVoltage: 3.78, // v
+            height: 42, // mm
+            width: 35.9, // mm
+            depth: 10.5, // mm
+            weight: [
+                {type: '铝', weight: 30, },  // g
+                {type: '钢', weight: 50, }, // g
+                {type: '金', weight: 68, } // g
+            ]
         },
         batteryChargeTime: '', // 充电时长
         storage: 8, // GB
