@@ -666,7 +666,7 @@ tt {
   flex-flow: row wrap;
   padding: 10px;
 }
-.filter-list .apple-watch-tag-list .iphone-tag {
+.filter-list .apple-watch-tag-list .apple-watch-tag {
   border: 1px solid #dadada;
   font-family: "Galvji";
   background-color: white;
@@ -682,17 +682,17 @@ tt {
   border-radius: 3px;
   color: #333;
 }
-.filter-list .apple-watch-tag-list .iphone-tag:hover {
+.filter-list .apple-watch-tag-list .apple-watch-tag:hover {
   background-color: #eeeeee;
 }
-.filter-list .apple-watch-tag-list .iphone-tag.active {
+.filter-list .apple-watch-tag-list .apple-watch-tag.active {
   background-color: #6a7282;
   border-color: transparent;
   color: white;
 }
 
 @media (max-width: 768px) {
-  .filter-list .apple-watch-tag-list .iphone-tag {
+  .filter-list .apple-watch-tag-list .apple-watch-tag {
     font-size: 14px;
     padding: 5px 10px;
     -webkit-border-radius: 6px;
@@ -936,30 +936,30 @@ footer a:hover {
   rect {
     fill: transparent;
   }
-  rect#iphone-outside {
+  rect#apple-watch-outside {
     stroke: #999999;
     fill: #262626;
   }
-  rect#iphone-inside {
+  rect#apple-watch-inside {
     stroke: #999999;
     fill: #474747;
   }
-  rect#iphone-inch {
+  rect#apple-watch-inch {
     stroke: #999999;
     fill: #474747;
   }
-  rect#iphone-line {
+  rect#apple-watch-line {
     fill: #FF9500;
   }
   text, tspan {
     fill: #bfbfbf;
   }
-  .filter-list .apple-watch-tag-list .iphone-tag {
+  .filter-list .apple-watch-tag-list .apple-watch-tag {
     border-color: #4d4d4d;
     color: #a6a6a6;
     background-color: #262626;
   }
-  .filter-list .apple-watch-tag-list .iphone-tag:hover {
+  .filter-list .apple-watch-tag-list .apple-watch-tag:hover {
     background-color: #474747;
   }
   ::-webkit-scrollbar {

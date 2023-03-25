@@ -2,12 +2,12 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name='description' content="AppleWatch参数,iphone参数大全,AppleWatch详细参数汇总,AppleWatch参数对比,AppleWatch所有机型参数大全,AppleWatch大全,AppleWatch 12">
-    <meta name='keywords' content="AppleWatch参数,iphone参数大全,AppleWatch详细参数汇总,AppleWatch参数对比,AppleWatch所有机型参数大全,AppleWatch大全,AppleWatch 12">
+    <meta name='description' content="AppleWatch参数,AppleWatch参数大全,AppleWatch详细参数汇总,AppleWatch参数对比,AppleWatch所有机型参数大全,AppleWatch大全,AppleWatch 12">
+    <meta name='keywords' content="AppleWatch参数,AppleWatch参数大全,AppleWatch详细参数汇总,AppleWatch参数对比,AppleWatch所有机型参数大全,AppleWatch大全,AppleWatch 12">
     <title>AppleWatch 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/iphone_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="scss/AppleWatch.css?">
+    <link rel="stylesheet" href="scss/AppleWatch.css">
     <link rel="apple-touch-icon" href="img/links/iphone_white@2x.png">
 
     <meta name="theme-color"
@@ -37,8 +37,8 @@
     <!-- FILTER LIST-->
     <div class="filter-list">
         <div class="apple-watch-tag-list">
-            <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]"
-                 v-for="item in iphonesOrigin" :key="item.name_short"
+            <div :class="['apple-watch-tag', {active: selectedNames.includes(item.name)}]"
+                 v-for="item in appleWatchesOrigin" :key="item.name_short"
                  @click="filterTagToggle(item.name)"
             >{{item.name_short}}</div>
         </div>
@@ -133,7 +133,7 @@
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">iPhone配对条件</div>
-                    <div class="value">{{appleWatch.iphoneRequire}}</div>
+                    <div class="value">{{appleWatch.appleWatchRequire}}</div>
                 </div>
 
                 <div class="second-info">
@@ -184,22 +184,26 @@
                     <div class="label">电池电压</div>
                     <div class="value">{{appleWatch.sizeSmall.batteryVoltage}} <span class="unit">v</span></div>
                 </div>
-                <div v-if="appleWatch.sizeSmall.height" class="sensor-info-item">
-                    <div class="label">高</div>
-                    <div class="value">{{appleWatch.sizeSmall.height}} <span class="unit">mm</span></div>
-                </div>
-                <div v-if="appleWatch.sizeSmall.width" class="sensor-info-item">
-                    <div class="label">宽</div>
-                    <div class="value">{{appleWatch.sizeSmall.width}} <span class="unit">mm</span></div>
-                </div>
-                <div v-if="appleWatch.sizeSmall.depth" class="sensor-info-item">
-                    <div class="label">厚</div>
-                    <div class="value">{{appleWatch.sizeSmall.depth}} <span class="unit">mm</span></div>
-                </div>
+
                 <div class="second-info">
-                    <div class="sensor-info-item" v-for="(weight, index) in appleWatch.sizeSmall.weight">
-                        <div class="label">{{weight.type}}</div>
-                        <div class="value">{{weight.weight}} <span class="unit">g</span></div>
+                    <div class="type-list" v-for="(type, index) in appleWatch.sizeSmall.type">
+                        <h2>{{type.type}}</h2>
+                        <div v-if="type.height" class="sensor-info-item">
+                            <div class="label">高</div>
+                            <div class="value">{{type.height}} <span class="unit">mm</span></div>
+                        </div>
+                        <div v-if="type.width" class="sensor-info-item">
+                            <div class="label">宽</div>
+                            <div class="value">{{type.width}} <span class="unit">mm</span></div>
+                        </div>
+                        <div v-if="type.depth" class="sensor-info-item">
+                            <div class="label">厚</div>
+                            <div class="value">{{type.depth}} <span class="unit">mm</span></div>
+                        </div>
+                        <div v-if="type.weight" class="sensor-info-item">
+                            <div class="label">重</div>
+                            <div class="value">{{type.weight}} <span class="unit">g</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,22 +235,26 @@
                     <div class="label">电池电压</div>
                     <div class="value">{{appleWatch.sizeLarge.batteryVoltage}} <span class="unit">v</span></div>
                 </div>
-                <div v-if="appleWatch.sizeLarge.height" class="sensor-info-item">
-                    <div class="label">高</div>
-                    <div class="value">{{appleWatch.sizeLarge.height}} <span class="unit">mm</span></div>
-                </div>
-                <div v-if="appleWatch.sizeLarge.width" class="sensor-info-item">
-                    <div class="label">宽</div>
-                    <div class="value">{{appleWatch.sizeLarge.width}} <span class="unit">mm</span></div>
-                </div>
-                <div v-if="appleWatch.sizeLarge.depth" class="sensor-info-item">
-                    <div class="label">厚</div>
-                    <div class="value">{{appleWatch.sizeLarge.depth}} <span class="unit">mm</span></div>
-                </div>
+
                 <div class="second-info">
-                    <div class="sensor-info-item" v-for="(weight, index) in appleWatch.sizeLarge.weight">
-                        <div class="label">{{weight.type}}</div>
-                        <div class="value">{{weight.weight}} <span class="unit">g</span></div>
+                    <div class="type-list" v-for="(type, index) in appleWatch.sizeLarge.type">
+                        <h2>{{type.type}}</h2>
+                        <div v-if="type.height" class="sensor-info-item">
+                            <div class="label">高</div>
+                            <div class="value">{{type.height}} <span class="unit">mm</span></div>
+                        </div>
+                        <div v-if="type.width" class="sensor-info-item">
+                            <div class="label">宽</div>
+                            <div class="value">{{type.width}} <span class="unit">mm</span></div>
+                        </div>
+                        <div v-if="type.depth" class="sensor-info-item">
+                            <div class="label">厚</div>
+                            <div class="value">{{type.depth}} <span class="unit">mm</span></div>
+                        </div>
+                        <div v-if="type.weight" class="sensor-info-item">
+                            <div class="label">重</div>
+                            <div class="value">{{type.weight}} <span class="unit">g</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -290,7 +298,7 @@
 
 </div>
 
-<script src="js/AppleWatch.js?"></script>
+<script src="js/AppleWatch.js"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {

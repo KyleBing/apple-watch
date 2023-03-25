@@ -2,24 +2,29 @@
  Create Date: 20230310155016
  Update Date: 20230310155019
  *****************************/
-const lastOS = "最新"
+
+const latestOS = "最新"
 const lastUpdateDate = '2022.12.27'
+
+const SCREEN_TYPE = {
+    square: '',
+    rounded: ''
+}
+
 const appleWatches = [
     {
         name: "Apple Watch 1",
         name_short: "1",
         pic: "1",
-        isNew: true,
+        isNew: false,
         active: false,
         dateRelease: "2015-04-24",
         dateUnsupported: "2018-09-17",
         waterResistance: 'IPX7',
         waterResistanceDepth: '1', // m
-        dustResistance: 'IPX7',
-        model: [
-            {},
-            {},
-        ],
+        dustResistance: '',
+
+
         cellular: '', // 蜂窝网络
         wifi: '802.11 b/g/n 2.4 GHz',
         bluetooth: '4.0',
@@ -35,6 +40,7 @@ const appleWatches = [
         sensorCompass: false, // 指南针
         heySiri: false, // 是否支持 siri
         display: {
+            screenType: SCREEN_TYPE.square, // 屏幕样式
             type: 'OLED Retina', // 屏幕类型
             touch3D: true, // 3d touch
             brightness: 450, // nit
@@ -51,10 +57,28 @@ const appleWatches = [
             height: 38.6, // mm
             width: 33.3, // mm
             depth: 10.5, // mm
-            weight: [
-                {type: '铝', weight: 25, }, // g
-                {type: '钢', weight: 40, }, // g
-                {type: '金', weight: 54, } // g
+            type: [
+                {
+                    type: '铝',
+                    weight: 25,
+                    height: 42, // mm
+                    width: 35.9, // mm
+                    depth: 10.5, // mm
+                },
+                {
+                    type: '钢',
+                    weight: 40,
+                    height: 42, // mm
+                    width: 35.9, // mm
+                    depth: 10.5, // mm
+                },
+                {
+                    type: '金',
+                    weight: 54,
+                    height: 42, // mm
+                    width: 35.9, // mm
+                    depth: 10.5, // mm
+                }
             ]
         },
         sizeLarge: {
@@ -65,17 +89,39 @@ const appleWatches = [
             pixelHeight: 390,
             battery: 246, // mah
             batteryVoltage: 3.78, // v
-            height: 42, // mm
-            width: 35.9, // mm
-            depth: 10.5, // mm
-            weight: [
-                {type: '铝', weight: 30, },  // g
-                {type: '钢', weight: 50, }, // g
-                {type: '金', weight: 68, } // g
+
+            type: [
+                {
+                    type: '铝',
+                    weight: 30,
+                    height: 42, // mm
+                    width: 35.9, // mm
+                    depth: 10.5, // mm
+                },
+                {
+                    type: '钢',
+                    weight: 50,
+                    height: 42, // mm
+                    width: 35.9, // mm
+                    depth: 10.5, // mm
+                },
+                {
+                    type: '金',
+                    weight: 68,
+                    height: 42, // mm
+                    width: 35.9, // mm
+                    depth: 10.5, // mm
+                }
             ]
         },
         batteryChargeTime: '', // 充电时长
         storage: 8, // GB
+        cpu: {
+            name: 'Apple 1',
+            speed: '520MHz',
+            bit: 32,
+            coreCount: 1
+        },
         memory: {
             type: 'DRAM',
             size: '512MB', // MB
@@ -84,10 +130,220 @@ const appleWatches = [
             from: 'watchOS 1.0',
             to: 'watchOS 4.32'
         },
-        iphoneRequire: '>iPhone5 >iOS10'
-
+        appleWatchRequire: '>iPhone5 >iOS8.2'
     },
-].reverse()
+    {
+        name: "Apple Watch 1P",
+        name_short: "1P",
+        pic: "1P",
+        isNew: false,
+        active: false,
+        dateRelease: "2016-09-07",
+        dateUnsupported: "2020-12-14",
+        waterResistance: 'IPX7',
+        waterResistanceDepth: '1', // m
+        dustResistance: '',
+
+        cellular: '', // 蜂窝网络
+        wifi: '802.11 b/g/n 2.4 GHz',
+        bluetooth: '4.0',
+        ultraWideBand: '',
+        sensorHeart: '1', // 心率检测版本
+        sensorECG: false,
+        sensorBloodOxygen: false, // 血氧检测
+        sensorTemperature: false, // 温度检测器
+        sensorGPS: [], // 卫星导航系统
+        sensorAccelerometer: '16g', // 加速度
+        sensorGyroscope: 'yes', // 陀螺仪
+        sensorAmbient: 'yes', // 光线传感器
+        sensorCompass: false, // 指南针
+        heySiri: false, // 是否支持 siri
+        display: {
+            screenType: SCREEN_TYPE.square, // 屏幕样式
+            type: 'OLED Retina', // 屏幕类型
+            touch3D: true, // 3d touch
+            brightness: 450, // nit
+            pixelDensity: 326, // ppi 像素密度
+        },
+        sizeSmall: {
+            name: '38',
+            model: 'A1802',
+            screenSize: 38, // mm
+            pixelWidth: 272,
+            pixelHeight: 340,
+            battery: 205, // mah
+            batteryVoltage: 3.8, // v
+
+            type: [
+                {
+                    type: '铝',
+                    weight: 25, // g
+                    height: 38.6, // mm
+                    width: 33.3, // mm
+                    depth: 10.5, // mm
+                },
+            ]
+        },
+        sizeLarge: {
+            name: '42',
+            model: 'A1803',
+            screenSize: 42, // mm
+            pixelWidth: 312,
+            pixelHeight: 390,
+            battery: 246, // mah
+            batteryVoltage: 3.78, // v
+            weight: [
+                {
+                    type: '铝',
+                    weight: 30, // g
+                    height: 42.5, // mm
+                    width: 36.4, // mm
+                    depth: 10.5, // mm
+                },
+            ]
+        },
+        batteryChargeTime: '', // 充电时长
+        storage: 8, // GB
+        cpu: {
+            name: 'Apple S1P',
+            speed: '520MHz',
+            bit: 32,
+            coreCount: 2
+        },
+        memory: {
+            type: 'DRAM',
+            size: '512MB', // MB
+        },
+        OS: {
+            from: 'watchOS 3.0',
+            to: 'watchOS 6.3'
+        },
+        appleWatchRequire: '>iPhone5 >iOS10'
+    },
+    {
+        name: "Apple Watch 2",
+        name_short: "2",
+        pic: "2",
+        isNew: false,
+        active: false,
+        dateRelease: "2016-09-07",
+        dateUnsupported: "2020-12-14",
+        waterResistance: 'ISO 22810:2010',
+        waterResistanceDepth: '50', // m
+        dustResistance: '',
+
+
+        cellular: '', // 蜂窝网络
+        wifi: '802.11 b/g/n 2.4 GHz',
+        bluetooth: '4.0',
+        ultraWideBand: '',
+        sensorHeart: '1', // 心率检测版本
+        sensorECG: false,
+        sensorBloodOxygen: false, // 血氧检测
+        sensorTemperature: false, // 温度检测器
+        sensorGPS: [ // 卫星导航系统
+            'GPS', 'GLONASS'
+        ],
+        sensorAccelerometer: '16g', // 加速度
+        sensorGyroscope: 'yes', // 陀螺仪
+        sensorAmbient: 'yes', // 光线传感器
+        sensorCompass: false, // 指南针
+        heySiri: false, // 是否支持 siri
+        display: {
+            screenType: SCREEN_TYPE.square, // 屏幕样式
+            type: 'OLED Retina2', // 屏幕类型
+            touch3D: true, // 3d touch
+            brightness: 1000, // nit
+            pixelDensity: 326, // ppi 像素密度
+        },
+        sizeSmall: {
+            name: '38',
+            screenSize: 38, // mm
+            pixelWidth: 272,
+            pixelHeight: 340,
+            battery: 273, // mah
+            batteryVoltage: 3.77, // v
+            type: [
+                {
+                    type: '铝',
+                    model: 'A1757',
+                    weight: 28.2, // g
+                    height: 38.6, // mm
+                    width: 33.3, // mm
+                    depth: 11.4, // mm
+                },
+                {
+                    type: '钢',
+                    model: 'A1757',
+                    weight: 41.9, // g
+                    height: 38.6, // mm
+                    width: 33.3, // mm
+                    depth: 11.4, // mm
+                },
+                {
+                    type: 'ED',
+                    model: 'A1816',
+                    weight: 39.6, // g
+                    height: 39.2, // mm
+                    width: 34, // mm
+                    depth: 11.8, // mm
+                }
+            ],
+        },
+        sizeLarge: {
+            name: '42',
+            model: 'A1554',
+            screenSize: 42, // mm
+            pixelWidth: 312,
+            pixelHeight: 390,
+            battery: 334, // mah
+            batteryVoltage: 3.8, // v
+            type: [
+                {
+                    type: '铝',
+                    model: 'A1758',
+                    weight: 34.2, // g
+                    height: 42.5, // mm
+                    width: 36.4, // mm
+                    depth: 11.4, // mm
+                },
+                {
+                    type: '钢',
+                    model: 'A1758',
+                    weight: 52.4, // g
+                    height: 42.5, // mm
+                    width: 36.4, // mm
+                    depth: 11.4, // mm
+                },
+                {
+                    type: 'ED',
+                    model: 'A1817',
+                    weight: 45.6, // g
+                    height: 42.6, // mm
+                    width: 36.5, // mm
+                    depth: 11.8, // mm
+                }
+            ],
+        },
+        batteryChargeTime: '', // 充电时长
+        storage: 8, // GB
+        cpu: {
+            name: 'Apple S2',
+            speed: '520MHz',
+            bit: 32,
+            coreCount: 2
+        },
+        memory: {
+            type: 'DRAM',
+            size: '512MB', // MB
+        },
+        OS: {
+            from: 'watchOS 3.0',
+            to: 'watchOS 6.3'
+        },
+        appleWatchRequire: '>iPhone5 >iOS10'
+    },
+]
 
 let app = new Vue({
     el: "#app",
@@ -96,7 +352,7 @@ let app = new Vue({
         dateLastUpdate: lastUpdateDate,
         // thumb up
         pingPongInterval: null,
-        thumbsUpKey: 'iphone',
+        thumbsUpKey: 'apple-watch',
         heartActive: false,
         thumbsUpCount: 0,
         // full screen 相关
@@ -105,9 +361,9 @@ let app = new Vue({
         // 浏览器参数
         portraitMode: false,
         mobileMode: false,
-        latesOS: lastOS,
-        iphones: appleWatches,
-        iphonesOrigin: appleWatches,
+        latestOS: latestOS,
+        appleWatches: appleWatches,
+        appleWatchesOrigin: appleWatches,
 
         deviceMap: new Map(),
 
@@ -156,7 +412,7 @@ let app = new Vue({
             this.showShare = !this.showShare
         },
         generateDeviceMap() {
-            this.iphones.forEach(device => {
+            this.appleWatches.forEach(device => {
                 this.deviceMap.set(device.name, device)
             })
         },
@@ -179,12 +435,12 @@ let app = new Vue({
 
         },
         updateShowingDevices() {
-            this.iphones = this.selectedNames.map(name => this.deviceMap.get(name))
-            if (this.iphones.length === 0) {
-                this.iphones = [...this.iphonesOrigin]
+            this.appleWatches = this.selectedNames.map(name => this.deviceMap.get(name))
+            if (this.appleWatches.length === 0) {
+                this.appleWatches = [...this.appleWatchesOrigin]
             }
-            this.iphones.push(this.iphonesOrigin[0])
-            this.iphones.pop()
+            this.appleWatches.push(this.appleWatchesOrigin[0])
+            this.appleWatches.pop()
         },
 
         // 全屏显示
