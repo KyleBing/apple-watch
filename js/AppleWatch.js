@@ -130,7 +130,16 @@ const appleWatches = [
             from: 'watchOS 1.0',
             to: 'watchOS 4.32'
         },
-        appleWatchRequire: '>iPhone5 >iOS8.2'
+        appleWatchRequire: '>iPhone5 >iOS8.2',
+        model: [
+            {
+                name: '普通',
+                value: [
+                    {name: '38', value: 'A1553'},
+                    {name: '42', value: 'A1554'},
+                ],
+            },
+        ]
     },
     {
         name: "Apple Watch S1",
@@ -219,7 +228,16 @@ const appleWatches = [
             from: 'watchOS 3.0',
             to: 'watchOS 6.3'
         },
-        appleWatchRequire: '>iPhone5 >iOS10'
+        appleWatchRequire: '>iPhone5 >iOS10',
+        model: [
+            {
+                name: '普通',
+                value: [
+                    {name: '38', value: 'A1802'},
+                    {name: '42', value: 'A1803'},
+                ],
+            },
+        ]
     },
     {
         name: "Apple Watch S2",
@@ -343,7 +361,23 @@ const appleWatches = [
             from: 'watchOS 3.0',
             to: 'watchOS 6.3'
         },
-        appleWatchRequire: '>iPhone5 >iOS10'
+        appleWatchRequire: '>iPhone5 >iOS10',
+        model: [
+            {
+                name: '普通',
+                value: [
+                    {name: '38', value: 'A1757'},
+                    {name: '42', value: 'A1758'},
+                ],
+            },
+            {
+                name: 'ED',
+                value: [
+                    {name: '38', value: 'A1816'},
+                    {name: '42', value: 'A1817'},
+                ],
+            },
+        ]
     },
     {
         name: "Apple Watch S3",
@@ -481,6 +515,41 @@ const appleWatches = [
         appleWatchRequire: [
             {name: 'no-LTE', value: '>iPhone5s >iOS11'},
             {name: 'LTE', value: '>iPhone6 >iOS11'},
+        ],
+        model: [
+            {
+                name: 'GPS',
+                value: [
+                    {name: '38', value: 'A1858'},
+                    {name: '42', value: 'A1859'},
+                ]
+            },
+            {
+                name: 'GPS+Cellular',
+                value: [
+                    {
+                        name: '北美',
+                        value: [
+                            {name: '38', value: 'A1860'},
+                            {name: '42', value: 'A1861'},
+                        ]
+                    },
+                    {
+                        name: '欧亚非',
+                        value: [
+                            {name: '38', value: 'A1889'},
+                            {name: '42', value: 'A1891'},
+                        ]
+                    },
+                    {
+                        name: '中国',
+                        value: [
+                            {name: '38', value: 'A1890'},
+                            {name: '42', value: 'A1892'},
+                        ]
+                    }
+                ]
+            },
         ]
     },
     {
@@ -589,6 +658,34 @@ const appleWatches = [
         appleWatchRequire: [
             {name: 'no-LTE', value: '>iPhone5s >iOS12'},
             {name: 'LTE', value: '>iPhone6 >iOS12'},
+        ],
+        model: [
+            {
+                name: "GPS",
+                value: [
+                    {name: '40', value: 'A1977'},
+                    {name: '44', value: 'A1978'},
+                ],
+            },
+            {
+                name: "GPS+Cellular",
+                value: [
+                    {
+                        name: '北美',
+                        value: [
+                            {name: '40', value: 'A1975'},
+                            {name: '44', value: 'A1976'},
+                        ]
+                    },
+                    {
+                        name: '欧亚非中',
+                        value: [
+                            {name: '40', value: 'A2007'},
+                            {name: '44', value: 'A2008'},
+                        ]
+                    }
+                ]
+            }
         ]
     },
 ]
