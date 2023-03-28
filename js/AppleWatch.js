@@ -48,7 +48,6 @@ const appleWatches = [
         },
         sizeSmall: {
             name: '38/40/41',
-            model: 'A1553',
             screenSize: 38, // mm
             pixelWidth: 272,
             pixelHeight: 340,
@@ -83,7 +82,6 @@ const appleWatches = [
         },
         sizeLarge: {
             name: '42/44/45',
-            model: 'A1554',
             screenSize: 42, // mm
             pixelWidth: 312,
             pixelHeight: 390,
@@ -177,7 +175,6 @@ const appleWatches = [
         },
         sizeSmall: {
             name: '38/40/41',
-            model: 'A1802',
             screenSize: 38, // mm
             pixelWidth: 272,
             pixelHeight: 340,
@@ -196,7 +193,6 @@ const appleWatches = [
         },
         sizeLarge: {
             name: '42/44/45',
-            model: 'A1803',
             screenSize: 42, // mm
             pixelWidth: 312,
             pixelHeight: 390,
@@ -286,7 +282,6 @@ const appleWatches = [
             type: [
                 {
                     type: '铝',
-                    model: 'A1757',
                     weight: 28.2, // g
                     height: 38.6, // mm
                     width: 33.3, // mm
@@ -294,7 +289,6 @@ const appleWatches = [
                 },
                 {
                     type: '钢',
-                    model: 'A1757',
                     weight: 41.9, // g
                     height: 38.6, // mm
                     width: 33.3, // mm
@@ -302,7 +296,6 @@ const appleWatches = [
                 },
                 {
                     type: 'ED',
-                    model: 'A1816',
                     weight: 39.6, // g
                     height: 39.2, // mm
                     width: 34, // mm
@@ -312,7 +305,6 @@ const appleWatches = [
         },
         sizeLarge: {
             name: '42/44/45',
-            model: 'A1554',
             screenSize: 42, // mm
             pixelWidth: 312,
             pixelHeight: 390,
@@ -321,7 +313,6 @@ const appleWatches = [
             type: [
                 {
                     type: '铝',
-                    model: 'A1758',
                     weight: 34.2, // g
                     height: 42.5, // mm
                     width: 36.4, // mm
@@ -329,7 +320,6 @@ const appleWatches = [
                 },
                 {
                     type: '钢',
-                    model: 'A1758',
                     weight: 52.4, // g
                     height: 42.5, // mm
                     width: 36.4, // mm
@@ -337,7 +327,6 @@ const appleWatches = [
                 },
                 {
                     type: 'ED',
-                    model: 'A1817',
                     weight: 45.6, // g
                     height: 42.6, // mm
                     width: 36.5, // mm
@@ -454,7 +443,6 @@ const appleWatches = [
         },
         sizeLarge: {
             name: '42/44/45',
-            model: 'A1554',
             screenSize: 42, // mm
             pixelWidth: 312,
             pixelHeight: 390,
