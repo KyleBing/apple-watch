@@ -33,7 +33,7 @@ const appleWatches = [
         sensorBloodOxygen: false, // 血氧检测
         sensorTemperature: false, // 温度检测器
         sensorGPS: [], // 卫星导航系统
-        sensorAccelerometer: '16g', // 加速度
+        sensorAccelerometer: 16, // 加速度
         sensorGyroscope: true, // 陀螺仪
         sensorAmbient: true, // 光线传感器
         sensorAltimeter: true, // 海拔传感器
@@ -47,7 +47,7 @@ const appleWatches = [
             pixelDensity: 326, // ppi 像素密度
         },
         sizeSmall: {
-            name: '38',
+            name: '38/40/41',
             model: 'A1553',
             screenSize: 38, // mm
             pixelWidth: 272,
@@ -82,7 +82,7 @@ const appleWatches = [
             ]
         },
         sizeLarge: {
-            name: '42',
+            name: '42/44/45',
             model: 'A1554',
             screenSize: 42, // mm
             pixelWidth: 312,
@@ -133,9 +133,9 @@ const appleWatches = [
         appleWatchRequire: '>iPhone5 >iOS8.2'
     },
     {
-        name: "Apple Watch 1P",
-        name_short: "1P",
-        pic: "1P",
+        name: "Apple Watch S1",
+        name_short: "S1",
+        pic: "S1",
         isNew: false,
         active: false,
         dateRelease: "2016-09-07",
@@ -153,7 +153,7 @@ const appleWatches = [
         sensorBloodOxygen: false, // 血氧检测
         sensorTemperature: false, // 温度检测器
         sensorGPS: [], // 卫星导航系统
-        sensorAccelerometer: '16g', // 加速度
+        sensorAccelerometer: 16, // 加速度
         sensorGyroscope: true, // 陀螺仪
         sensorAmbient: true, // 光线传感器
         sensorAltimeter: true, // 海拔传感器
@@ -167,7 +167,7 @@ const appleWatches = [
             pixelDensity: 326, // ppi 像素密度
         },
         sizeSmall: {
-            name: '38',
+            name: '38/40/41',
             model: 'A1802',
             screenSize: 38, // mm
             pixelWidth: 272,
@@ -186,7 +186,7 @@ const appleWatches = [
             ]
         },
         sizeLarge: {
-            name: '42',
+            name: '42/44/45',
             model: 'A1803',
             screenSize: 42, // mm
             pixelWidth: 312,
@@ -222,9 +222,9 @@ const appleWatches = [
         appleWatchRequire: '>iPhone5 >iOS10'
     },
     {
-        name: "Apple Watch 2",
-        name_short: "2",
-        pic: "2",
+        name: "Apple Watch S2",
+        name_short: "S2",
+        pic: "S2",
         isNew: false,
         active: false,
         dateRelease: "2016-09-07",
@@ -245,7 +245,7 @@ const appleWatches = [
         sensorGPS: [ // 卫星导航系统
             'GPS', 'GLONASS'
         ],
-        sensorAccelerometer: '16g', // 加速度
+        sensorAccelerometer: 16, // 加速度
         sensorGyroscope: true, // 陀螺仪
         sensorAmbient: true, // 光线传感器
         sensorAltimeter: true, // 海拔传感器
@@ -259,7 +259,7 @@ const appleWatches = [
             pixelDensity: 326, // ppi 像素密度
         },
         sizeSmall: {
-            name: '38',
+            name: '38/40/41',
             screenSize: 38, // mm
             pixelWidth: 272,
             pixelHeight: 340,
@@ -293,7 +293,7 @@ const appleWatches = [
             ],
         },
         sizeLarge: {
-            name: '42',
+            name: '42/44/45',
             model: 'A1554',
             screenSize: 42, // mm
             pixelWidth: 312,
@@ -346,9 +346,9 @@ const appleWatches = [
         appleWatchRequire: '>iPhone5 >iOS10'
     },
     {
-        name: "Apple Watch 3",
-        name_short: "3",
-        pic: "3",
+        name: "Apple Watch S3",
+        name_short: "S3",
+        pic: "S3",
         isNew: false,
         active: false,
         dateRelease: "2017-09-22",
@@ -368,7 +368,7 @@ const appleWatches = [
         sensorGPS: [ // 卫星导航系统
             'GPS', 'GLONASS', 'Galileo', 'QZSS'
         ],
-        sensorAccelerometer: '16g', // 加速度
+        sensorAccelerometer: 16, // 加速度
         sensorGyroscope: true, // 陀螺仪
         sensorAmbient: true, // 光线传感器
         sensorAltimeter: true, // 海拔传感器
@@ -382,7 +382,7 @@ const appleWatches = [
             pixelDensity: 326, // ppi 像素密度
         },
         sizeSmall: {
-            name: '38',
+            name: '38/40/41',
             screenSize: 38, // mm
             pixelWidth: 272,
             pixelHeight: 340,
@@ -397,24 +397,21 @@ const appleWatches = [
             type: [
                 {
                     type: '铝',
-                    model: 'A1757',
-                    weight: 28.2, // g
+                    weight: 26.7, // g
                     height: 38.6, // mm
                     width: 33.3, // mm
                     depth: 11.4, // mm
                 },
                 {
                     type: '钢',
-                    model: 'A1757',
-                    weight: 41.9, // g
+                    weight: 42.2, // g
                     height: 38.6, // mm
                     width: 33.3, // mm
                     depth: 11.4, // mm
                 },
                 {
                     type: 'ED',
-                    model: 'A1816',
-                    weight: 39.6, // g
+                    weight: 40.1, // g
                     height: 39.2, // mm
                     width: 34, // mm
                     depth: 11.8, // mm
@@ -422,7 +419,7 @@ const appleWatches = [
             ],
         },
         sizeLarge: {
-            name: '42',
+            name: '42/44/45',
             model: 'A1554',
             screenSize: 42, // mm
             pixelWidth: 312,
@@ -438,24 +435,21 @@ const appleWatches = [
             type: [
                 {
                     type: '铝',
-                    model: 'A1758',
-                    weight: 34.2, // g
+                    weight: 32.3, // g
                     height: 42.5, // mm
                     width: 36.4, // mm
                     depth: 11.4, // mm
                 },
                 {
                     type: '钢',
-                    model: 'A1758',
-                    weight: 52.4, // g
+                    weight: 52.8, // g
                     height: 42.5, // mm
                     width: 36.4, // mm
                     depth: 11.4, // mm
                 },
                 {
                     type: 'ED',
-                    model: 'A1817',
-                    weight: 45.6, // g
+                    weight: 46.4, // g
                     height: 42.6, // mm
                     width: 36.5, // mm
                     depth: 11.8, // mm
@@ -471,7 +465,7 @@ const appleWatches = [
             {name: 'LTE', size: 16},
         ],
         cpu: {
-            name: 'Apple S2',
+            name: 'Apple S3',
             speed: '',
             bit: 32,
             coreCount: 2
@@ -487,6 +481,114 @@ const appleWatches = [
         appleWatchRequire: [
             {name: 'no-LTE', value: '>iPhone5s >iOS11'},
             {name: 'LTE', value: '>iPhone6 >iOS11'},
+        ]
+    },
+    {
+        name: "Apple Watch S4",
+        name_short: "S4",
+        pic: "S4",
+        isNew: false,
+        active: false,
+        dateRelease: "2018-09-12",
+        dateUnsupported: "",
+        waterResistance: 'ISO 22810:2010',
+        waterResistanceDepth: '50', // m
+        dustResistance: '',
+
+        cellular: 'eSIM(可选)', // 蜂窝网络
+        wifi: '802.11 b/g/n 2.4 GHz',
+        bluetooth: '5',
+        ultraWideBand: '',
+        sensorHeart: '2', // 心率检测版本
+        sensorECG: true,
+        sensorBloodOxygen: false, // 血氧检测
+        sensorTemperature: false, // 温度检测器
+        sensorGPS: [ // 卫星导航系统
+            'GPS', 'GLONASS', 'Galileo', 'QZSS'
+        ],
+        sensorAccelerometer: 32, // 加速度 g
+        sensorGyroscope: '增强版本', // 陀螺仪
+        sensorAmbient: true, // 光线传感器
+        sensorAltimeter: true, // 海拔传感器
+        sensorCompass: false, // 指南针
+        heySiri: true, // 是否支持 siri
+        display: {
+            screenType: SCREEN_TYPE.rounded, // 屏幕样式
+            type: 'LTPO OLED Retina', // 屏幕类型
+            touch3D: true, // 3d touch
+            brightness: 1000, // nit
+            pixelDensity: 326, // ppi 像素密度
+        },
+        sizeSmall: {
+            name: '38/40/41',
+            screenSize: 38, // mm
+            pixelWidth: 324,
+            pixelHeight: 394,
+            battery: 224.9, // mah
+            batteryVoltage: 3.81, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 30.1, // g
+                    height: 40, // mm
+                    width: 34, // mm
+                    depth: 10.7, // mm
+                },
+                {
+                    type: '钢',
+                    weight: 39.8, // g
+                    height: 40, // mm
+                    width: 34, // mm
+                    depth: 10.7, // mm
+                },
+            ],
+        },
+        sizeLarge: {
+            name: '42/44/45',
+            screenSize: 42, // mm
+            pixelWidth: 368,
+            pixelHeight: 448,
+            battery: 291.8, // mah
+            batteryVoltage: 3.81, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 36.7, // g
+                    height: 44, // mm
+                    width: 38, // mm
+                    depth: 10.7, // mm
+                },
+                {
+                    type: '钢',
+                    weight: 47.9, // g
+                    height: 44, // mm
+                    width: 38, // mm
+                    depth: 10.7, // mm
+                },
+            ],
+        },
+        batteryChargeTime: [ // 充电时长
+            {name: '80%', value: '1.5'}, // h
+            {name: '100%', value: '2'}, // h
+        ],
+        storage: 16,
+        cpu: {
+            name: 'Apple S4',
+            speed: '',
+            bit: 64,
+            coreCount: 2
+        },
+        memory: {
+            type: 'DRAM',
+            size: 1024, // MB
+        },
+        OS: {
+            from: 'watchOS 5.0',
+            to: 'watchOS 9.3.1'
+        },
+        appleWatchRequire: [
+            {name: 'no-LTE', value: '>iPhone5s >iOS12'},
+            {name: 'LTE', value: '>iPhone6 >iOS12'},
         ]
     },
 ]
