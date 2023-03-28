@@ -24,7 +24,6 @@ const appleWatches = [
         waterResistanceDepth: '1', // m
         dustResistance: '',
 
-
         cellular: '', // 蜂窝网络
         wifi: '802.11 b/g/n 2.4 GHz',
         bluetooth: '4.0',
@@ -35,8 +34,9 @@ const appleWatches = [
         sensorTemperature: false, // 温度检测器
         sensorGPS: [], // 卫星导航系统
         sensorAccelerometer: '16g', // 加速度
-        sensorGyroscope: 'yes', // 陀螺仪
-        sensorAmbient: 'yes', // 光线传感器
+        sensorGyroscope: true, // 陀螺仪
+        sensorAmbient: true, // 光线传感器
+        sensorAltimeter: true, // 海拔传感器
         sensorCompass: false, // 指南针
         heySiri: false, // 是否支持 siri
         display: {
@@ -124,7 +124,7 @@ const appleWatches = [
         },
         memory: {
             type: 'DRAM',
-            size: '512MB', // MB
+            size: '512', // MB
         },
         OS: {
             from: 'watchOS 1.0',
@@ -154,8 +154,9 @@ const appleWatches = [
         sensorTemperature: false, // 温度检测器
         sensorGPS: [], // 卫星导航系统
         sensorAccelerometer: '16g', // 加速度
-        sensorGyroscope: 'yes', // 陀螺仪
-        sensorAmbient: 'yes', // 光线传感器
+        sensorGyroscope: true, // 陀螺仪
+        sensorAmbient: true, // 光线传感器
+        sensorAltimeter: true, // 海拔传感器
         sensorCompass: false, // 指南针
         heySiri: false, // 是否支持 siri
         display: {
@@ -245,8 +246,9 @@ const appleWatches = [
             'GPS', 'GLONASS'
         ],
         sensorAccelerometer: '16g', // 加速度
-        sensorGyroscope: 'yes', // 陀螺仪
-        sensorAmbient: 'yes', // 光线传感器
+        sensorGyroscope: true, // 陀螺仪
+        sensorAmbient: true, // 光线传感器
+        sensorAltimeter: true, // 海拔传感器
         sensorCompass: false, // 指南针
         heySiri: false, // 是否支持 siri
         display: {
@@ -335,13 +337,157 @@ const appleWatches = [
         },
         memory: {
             type: 'DRAM',
-            size: '512MB', // MB
+            size: '512', // MB
         },
         OS: {
             from: 'watchOS 3.0',
             to: 'watchOS 6.3'
         },
         appleWatchRequire: '>iPhone5 >iOS10'
+    },
+    {
+        name: "Apple Watch 3",
+        name_short: "3",
+        pic: "3",
+        isNew: false,
+        active: false,
+        dateRelease: "2017-09-22",
+        dateUnsupported: "2022-09-12",
+        waterResistance: 'ISO 22810:2010',
+        waterResistanceDepth: '50', // m
+        dustResistance: '',
+
+        cellular: 'eSIM(可选)', // 蜂窝网络
+        wifi: '802.11 b/g/n 2.4 GHz',
+        bluetooth: '4.2',
+        ultraWideBand: '',
+        sensorHeart: '1', // 心率检测版本
+        sensorECG: false,
+        sensorBloodOxygen: false, // 血氧检测
+        sensorTemperature: false, // 温度检测器
+        sensorGPS: [ // 卫星导航系统
+            'GPS', 'GLONASS', 'Galileo', 'QZSS'
+        ],
+        sensorAccelerometer: '16g', // 加速度
+        sensorGyroscope: true, // 陀螺仪
+        sensorAmbient: true, // 光线传感器
+        sensorAltimeter: true, // 海拔传感器
+        sensorCompass: false, // 指南针
+        heySiri: true, // 是否支持 siri
+        display: {
+            screenType: SCREEN_TYPE.square, // 屏幕样式
+            type: 'OLED Retina2', // 屏幕类型
+            touch3D: true, // 3d touch
+            brightness: 1000, // nit
+            pixelDensity: 326, // ppi 像素密度
+        },
+        sizeSmall: {
+            name: '38',
+            screenSize: 38, // mm
+            pixelWidth: 272,
+            pixelHeight: 340,
+            battery: [ // mah
+                {name: 'no-LTE', value: 262},
+                {name: 'LTE', value: 279},
+            ],
+            batteryVoltage: [  // v
+                {name: 'no-LTE', value: 3.81},
+                {name: 'LTE', value: 3.82},
+            ],
+            type: [
+                {
+                    type: '铝',
+                    model: 'A1757',
+                    weight: 28.2, // g
+                    height: 38.6, // mm
+                    width: 33.3, // mm
+                    depth: 11.4, // mm
+                },
+                {
+                    type: '钢',
+                    model: 'A1757',
+                    weight: 41.9, // g
+                    height: 38.6, // mm
+                    width: 33.3, // mm
+                    depth: 11.4, // mm
+                },
+                {
+                    type: 'ED',
+                    model: 'A1816',
+                    weight: 39.6, // g
+                    height: 39.2, // mm
+                    width: 34, // mm
+                    depth: 11.8, // mm
+                }
+            ],
+        },
+        sizeLarge: {
+            name: '42',
+            model: 'A1554',
+            screenSize: 42, // mm
+            pixelWidth: 312,
+            pixelHeight: 390,
+            battery: [ // mah
+                {name: 'no-LTE', value: 342},
+                {name: 'LTE', value: 352},
+            ],
+            batteryVoltage: [  // v
+                {name: 'no-LTE', value: 3.82},
+                {name: 'LTE', value: 3.82},
+            ],
+            type: [
+                {
+                    type: '铝',
+                    model: 'A1758',
+                    weight: 34.2, // g
+                    height: 42.5, // mm
+                    width: 36.4, // mm
+                    depth: 11.4, // mm
+                },
+                {
+                    type: '钢',
+                    model: 'A1758',
+                    weight: 52.4, // g
+                    height: 42.5, // mm
+                    width: 36.4, // mm
+                    depth: 11.4, // mm
+                },
+                {
+                    type: 'ED',
+                    model: 'A1817',
+                    weight: 45.6, // g
+                    height: 42.6, // mm
+                    width: 36.5, // mm
+                    depth: 11.8, // mm
+                }
+            ],
+        },
+        batteryChargeTime: [ // 充电时长
+            {name: '80%', value: '1.5'}, // h
+            {name: '100%', value: '2'}, // h
+        ],
+        storage: [ // GB
+            {name: 'no-LTE', size: 8},
+            {name: 'LTE', size: 16},
+        ],
+        cpu: {
+            name: 'Apple S2',
+            speed: '',
+            bit: 32,
+            coreCount: 2
+        },
+        memory: {
+            type: 'DRAM',
+            size: '768', // MB
+        },
+        OS: {
+            from: 'watchOS 4.0',
+            to: 'watchOS 8.7.1'
+        },
+        appleWatchRequire: [
+            {name: 'no-LTE', value: '>iPhone5s >iOS11'},
+            {name: 'LTE', value: '>iPhone6 >iOS11'},
+        ]
     },
 ]
 
