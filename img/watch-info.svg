@@ -1,32 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 243.75 139">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 139">
   <title>watch-info</title>
   <g id="图层_2" data-name="图层 2">
     <g id="图层_1-2" data-name="图层 1">
       <g id="watch-info">
-        <rect class="cls-1" x="117.75" width="88" height="104" rx="18"/>
-        <rect class="cls-2" x="106.25" y="10.5" width="89" height="105" rx="18.5"/>
+        <rect class="cls-1" x="119" width="88" height="104" rx="18"/>
+        <rect class="cls-2" x="107.5" y="10.5" width="89" height="105" rx="18.5"/>
         <path class="cls-3"
-              d="M176.75,11a18,18,0,0,1,18,18V97a18,18,0,0,1-18,18h-52a18,18,0,0,1-18-18V29a18,18,0,0,1,18-18h52m0-1h-52a19,19,0,0,0-19,19V97a19,19,0,0,0,19,19h52a19,19,0,0,0,19-19V29a19,19,0,0,0-19-19Z"/>
-        <line class="cls-4" x1="91.75" y1="12.75" x2="91.75" y2="114.25"/>
-        <rect class="cls-5" x="90.13" y="12.5" width="3.25" height="0.5"/>
-        <rect class="cls-5" x="90.13" y="114" width="3.25" height="0.5"/>
-        <line class="cls-4" x1="107.5" y1="130" x2="194" y2="130"/>
-        <rect class="cls-5" x="107.25" y="128.38" width="0.5" height="3.25"/>
-        <rect class="cls-5" x="193.75" y="128.38" width="0.5" height="3.25"/>
-        <line class="cls-4" x1="200.43" y1="121.32" x2="216.07" y2="105.68"/>
-        <rect class="cls-5" x="200.18" y="119.7" width="0.5" height="3.25"
-              transform="translate(-27.09 177.25) rotate(-45)"/>
-        <rect class="cls-5" x="215.82" y="104.05" width="0.5" height="3.25"
-              transform="translate(-11.44 183.74) rotate(-45)"/>
-        <rect class="cls-6" x="74.75" y="55" width="30" height="19"/>
-        <rect class="cls-6" x="135.75" y="120" width="30" height="19"/>
-        <rect class="cls-6" x="213.75" y="111" width="30" height="19"/>
-        <text id="height" class="cls-7" transform="translate(83.08 68.51)">38</text>
-        <text id="width" class="cls-7" transform="translate(142.61 133.96)">40</text>
-        <text id="thickness" class="cls-7" transform="translate(215.43 122.96)">7.4</text>
-        <text class="cls-8" transform="matrix(1, -0.01, 0.01, 1, 4.71, 71.24)">铝</text>
-        <text class="cls-7" transform="translate(0 89.42)">35.6</text>
-        <text class="cls-9" transform="translate(28.63 89.42)">g</text>
+              d="M178,11a18,18,0,0,1,18,18V97a18,18,0,0,1-18,18H126a18,18,0,0,1-18-18V29a18,18,0,0,1,18-18h52m0-1H126a19,19,0,0,0-19,19V97a19,19,0,0,0,19,19h52a19,19,0,0,0,19-19V29a19,19,0,0,0-19-19Z"/>
+        <line class="cls-4" x1="93" y1="12.75" x2="93" y2="114.25"/>
+        <rect class="cls-5" x="91.38" y="12.5" width="3.25" height="0.5"/>
+        <rect class="cls-5" x="91.38" y="114" width="3.25" height="0.5"/>
+        <line class="cls-4" x1="108.75" y1="130" x2="195.25" y2="130"/>
+        <rect class="cls-5" x="108.5" y="128.38" width="0.5" height="3.25"/>
+        <rect class="cls-5" x="195" y="128.38" width="0.5" height="3.25"/>
+        <line class="cls-4" x1="201.68" y1="121.32" x2="217.33" y2="105.68"/>
+        <rect class="cls-5" x="201.43" y="119.7" width="0.5" height="3.25"
+              transform="translate(-26.72 178.14) rotate(-45)"/>
+        <rect class="cls-5" x="217.08" y="104.05" width="0.5" height="3.25"
+              transform="translate(-11.07 184.63) rotate(-45)"/>
+        <rect class="cls-6" x="76" y="55" width="30" height="19"/>
+        <rect class="cls-6" x="137" y="120" width="30" height="19"/>
+        <rect class="cls-6" x="215" y="111" width="30" height="19"/>
+        <text id="height" class="cls-7" transform="translate(82.71 68.51)">38</text>
+        <text id="width" class="cls-7" transform="translate(143.86 133.96)">40</text>
+        <text id="thickness" class="cls-7" transform="translate(220.49 122.96)">7.4</text>
+        <text class="cls-8" transform="matrix(1, -0.01, 0.01, 1, 5.96, 71.24)">铝</text>
+        <text class="cls-7" transform="translate(0 91.42)">35.6</text>
+        <text class="cls-9" transform="translate(28.89 91.42)">g</text>
       </g>
     </g>
   </g>

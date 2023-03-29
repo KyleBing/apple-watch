@@ -21,7 +21,7 @@ const appleWatches = [
         dateRelease: "2015-04-24",
         dateUnsupported: "2018-09-17",
         waterResistance: 'IPX7',
-        waterResistanceDepth: '1', // m
+        waterResistancethickness: '1', // m
         dustResistance: '',
 
         cellular: '', // 蜂窝网络
@@ -57,23 +57,23 @@ const appleWatches = [
                 {
                     type: '铝',
                     weight: 25,
-                    height: 42, // mm
-                    width: 35.9, // mm
-                    depth: 10.5, // mm
+                    height: 38.6, // mm
+                    width: 33.3, // mm
+                    thickness: 10.5, // mm
                 },
                 {
                     type: '钢',
                     weight: 40,
-                    height: 42, // mm
-                    width: 35.9, // mm
-                    depth: 10.5, // mm
+                    height: 38.6, // mm
+                    width: 33.3, // mm
+                    thickness: 10.5, // mm
                 },
                 {
                     type: '金',
                     weight: 54,
-                    height: 42, // mm
-                    width: 35.9, // mm
-                    depth: 10.5, // mm
+                    height: 38.6, // mm
+                    width: 33.3, // mm
+                    thickness: 10.5, // mm
                 }
             ]
         },
@@ -91,21 +91,21 @@ const appleWatches = [
                     weight: 30,
                     height: 42, // mm
                     width: 35.9, // mm
-                    depth: 10.5, // mm
+                    thickness: 10.5, // mm
                 },
                 {
                     type: '钢',
                     weight: 50,
                     height: 42, // mm
                     width: 35.9, // mm
-                    depth: 10.5, // mm
+                    thickness: 10.5, // mm
                 },
                 {
                     type: '金',
                     weight: 68,
                     height: 42, // mm
                     width: 35.9, // mm
-                    depth: 10.5, // mm
+                    thickness: 10.5, // mm
                 }
             ]
         },
@@ -145,7 +145,7 @@ const appleWatches = [
         dateRelease: "2016-09-07",
         dateUnsupported: "2020-12-14",
         waterResistance: 'IPX7',
-        waterResistanceDepth: '1', // m
+        waterResistancethickness: '1', // m
         dustResistance: '',
 
         cellular: '', // 蜂窝网络
@@ -184,7 +184,7 @@ const appleWatches = [
                     weight: 25, // g
                     height: 38.6, // mm
                     width: 33.3, // mm
-                    depth: 10.5, // mm
+                    thickness: 10.5, // mm
                 },
             ]
         },
@@ -201,7 +201,7 @@ const appleWatches = [
                     weight: 30, // g
                     height: 42.5, // mm
                     width: 36.4, // mm
-                    depth: 10.5, // mm
+                    thickness: 10.5, // mm
                 },
             ]
         },
@@ -241,7 +241,7 @@ const appleWatches = [
         dateRelease: "2016-09-07",
         dateUnsupported: "2020-12-14",
         waterResistance: 'ISO 22810:2010',
-        waterResistanceDepth: '50', // m
+        waterResistancethickness: '50', // m
         dustResistance: '',
 
 
@@ -282,21 +282,21 @@ const appleWatches = [
                     weight: 28.2, // g
                     height: 38.6, // mm
                     width: 33.3, // mm
-                    depth: 11.4, // mm
+                    thickness: 11.4, // mm
                 },
                 {
                     type: '钢',
                     weight: 41.9, // g
                     height: 38.6, // mm
                     width: 33.3, // mm
-                    depth: 11.4, // mm
+                    thickness: 11.4, // mm
                 },
                 {
                     type: 'ED',
                     weight: 39.6, // g
                     height: 39.2, // mm
                     width: 34, // mm
-                    depth: 11.8, // mm
+                    thickness: 11.8, // mm
                 }
             ],
         },
@@ -313,21 +313,21 @@ const appleWatches = [
                     weight: 34.2, // g
                     height: 42.5, // mm
                     width: 36.4, // mm
-                    depth: 11.4, // mm
+                    thickness: 11.4, // mm
                 },
                 {
                     type: '钢',
                     weight: 52.4, // g
                     height: 42.5, // mm
                     width: 36.4, // mm
-                    depth: 11.4, // mm
+                    thickness: 11.4, // mm
                 },
                 {
                     type: 'ED',
                     weight: 45.6, // g
                     height: 42.6, // mm
                     width: 36.5, // mm
-                    depth: 11.8, // mm
+                    thickness: 11.8, // mm
                 }
             ],
         },
@@ -374,7 +374,7 @@ const appleWatches = [
         dateRelease: "2017-09-22",
         dateUnsupported: "2022-09-12",
         waterResistance: 'ISO 22810:2010',
-        waterResistanceDepth: '50', // m
+        waterResistancethickness: '50', // m
         dustResistance: '',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -420,21 +420,21 @@ const appleWatches = [
                     weight: 26.7, // g
                     height: 38.6, // mm
                     width: 33.3, // mm
-                    depth: 11.4, // mm
+                    thickness: 11.4, // mm
                 },
                 {
                     type: '钢',
                     weight: 42.2, // g
                     height: 38.6, // mm
                     width: 33.3, // mm
-                    depth: 11.4, // mm
+                    thickness: 11.4, // mm
                 },
                 {
                     type: 'ED',
                     weight: 40.1, // g
                     height: 39.2, // mm
                     width: 34, // mm
-                    depth: 11.8, // mm
+                    thickness: 11.8, // mm
                 }
             ],
         },
@@ -457,21 +457,21 @@ const appleWatches = [
                     weight: 32.3, // g
                     height: 42.5, // mm
                     width: 36.4, // mm
-                    depth: 11.4, // mm
+                    thickness: 11.4, // mm
                 },
                 {
                     type: '钢',
                     weight: 52.8, // g
                     height: 42.5, // mm
                     width: 36.4, // mm
-                    depth: 11.4, // mm
+                    thickness: 11.4, // mm
                 },
                 {
                     type: 'ED',
                     weight: 46.4, // g
                     height: 42.6, // mm
                     width: 36.5, // mm
-                    depth: 11.8, // mm
+                    thickness: 11.8, // mm
                 }
             ],
         },
@@ -546,7 +546,7 @@ const appleWatches = [
         dateRelease: "2018-09-12",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistanceDepth: '50', // m
+        waterResistancethickness: '50', // m
         dustResistance: '',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -586,14 +586,14 @@ const appleWatches = [
                     weight: 30.1, // g
                     height: 40, // mm
                     width: 34, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
                 {
                     type: '钢',
                     weight: 39.8, // g
                     height: 40, // mm
                     width: 34, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
             ],
         },
@@ -610,14 +610,14 @@ const appleWatches = [
                     weight: 36.7, // g
                     height: 44, // mm
                     width: 38, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
                 {
                     type: '钢',
                     weight: 47.9, // g
                     height: 44, // mm
                     width: 38, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
             ],
         },
@@ -682,7 +682,7 @@ const appleWatches = [
         dateRelease: "2019-09-25",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistanceDepth: '50', // m
+        waterResistancethickness: '50', // m
         dustResistance: '',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -722,21 +722,21 @@ const appleWatches = [
                     weight: 30.8, // g
                     height: 40, // mm
                     width: 34, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
                 {
                     type: '钢',
                     weight: 40.6, // g
                     height: 40, // mm
                     width: 34, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
                 {
                     type: 'ED',
                     weight: 39.7, // g
                     height: 40, // mm
                     width: 34, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
             ],
         },
@@ -753,21 +753,21 @@ const appleWatches = [
                     weight: 36.5, // g
                     height: 44, // mm
                     width: 38, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
                 {
                     type: '钢',
                     weight: 47.8, // g
                     height: 44, // mm
                     width: 38, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
                 {
                     type: 'ED',
                     weight: 46.7, // g
                     height: 44, // mm
                     width: 38, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
             ],
         },
@@ -831,7 +831,7 @@ const appleWatches = [
         dateRelease: "2020-09-15",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistanceDepth: '50', // m
+        waterResistancethickness: '50', // m
         dustResistance: '',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -871,7 +871,7 @@ const appleWatches = [
                     weight: 30.49, // g
                     height: 40, // mm
                     width: 34, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
             ],
         },
@@ -888,7 +888,7 @@ const appleWatches = [
                     weight: 36.2, // g
                     height: 44, // mm
                     width: 38, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
             ],
         },
@@ -952,7 +952,7 @@ const appleWatches = [
         dateRelease: "2021-10-08",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistanceDepth: '50', // m
+        waterResistancethickness: '50', // m
         dustResistance: '',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -992,21 +992,21 @@ const appleWatches = [
                     weight: 30.5, // g
                     height: 40, // mm
                     width: 34, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
                 {
                     type: '钢',
                     weight: 39.7, // g
                     height: 40, // mm
                     width: 34, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
                 {
                     type: 'ED',
                     weight: 34.6, // g
                     height: 40, // mm
                     width: 34, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
             ],
         },
@@ -1023,21 +1023,21 @@ const appleWatches = [
                     weight: 36.5, // g
                     height: 44, // mm
                     width: 38, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
                 {
                     type: '钢',
                     weight: 47.1, // g
                     height: 44, // mm
                     width: 38, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
                 {
                     type: 'ED',
                     weight: 41.3, // g
                     height: 44, // mm
                     width: 38, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
             ],
         },
@@ -1101,7 +1101,7 @@ const appleWatches = [
         dateRelease: "2022-09-07",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistanceDepth: '50', // m
+        waterResistancethickness: '50', // m
         dustResistance: 'IP6X',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -1141,21 +1141,21 @@ const appleWatches = [
                     weight: 32.0, // g
                     height: 41, // mm
                     width: 35, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
                 {
                     type: '钢',
                     weight: 42.3, // g
                     height: 41, // mm
                     width: 35, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
                 {
                     type: 'ED',
                     weight: 37, // g
                     height: 41, // mm
                     width: 35, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
             ],
         },
@@ -1172,21 +1172,21 @@ const appleWatches = [
                     weight: 38.8, // g
                     height: 45, // mm
                     width: 38, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
                 {
                     type: '钢',
                     weight: 51.5, // g
                     height: 45, // mm
                     width: 38, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
                 {
                     type: 'ED',
                     weight: 45.1, // g
                     height: 45, // mm
                     width: 38, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
             ],
         },
@@ -1250,7 +1250,7 @@ const appleWatches = [
         dateRelease: "2022-09-16",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistanceDepth: '50', // m
+        waterResistancethickness: '50', // m
         dustResistance: '',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -1290,7 +1290,7 @@ const appleWatches = [
                     weight: 27.9, // g
                     height: 40, // mm
                     width: 34, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
 
             ],
@@ -1308,7 +1308,7 @@ const appleWatches = [
                     weight: 33, // g
                     height: 44, // mm
                     width: 38, // mm
-                    depth: 10.7, // mm
+                    thickness: 10.7, // mm
                 },
             ],
         },
@@ -1379,7 +1379,7 @@ const appleWatches = [
         dateRelease: "2022-09-16",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistanceDepth: '50', // m
+        waterResistancethickness: '50', // m
         dustResistance: 'IP6X',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -1419,14 +1419,14 @@ const appleWatches = [
                     weight: 32.0, // g
                     height: 41, // mm
                     width: 35, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
                 {
                     type: '钢',
                     weight: 42.3, // g
                     height: 41, // mm
                     width: 35, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
             ],
         },
@@ -1443,14 +1443,14 @@ const appleWatches = [
                     weight: 38.8, // g
                     height: 45, // mm
                     width: 38, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
                 {
                     type: '钢',
                     weight: 51.5, // g
                     height: 45, // mm
                     width: 38, // mm
-                    depth: 10.74, // mm
+                    thickness: 10.74, // mm
                 },
             ],
         },
@@ -1521,7 +1521,7 @@ const appleWatches = [
         dateRelease: "2022-09-23",
         dateUnsupported: "",
         waterResistance: 'ISO 22810',
-        waterResistanceDepth: '100', // m
+        waterResistancethickness: '100', // m
         dustResistance: 'IP6X',
 
         cellular: 'eSIM', // 蜂窝网络
@@ -1561,7 +1561,7 @@ const appleWatches = [
                     weight: 61.3, // g
                     height: 49, // mm
                     width: 44, // mm
-                    depth: 14.4, // mm
+                    thickness: 14.4, // mm
                 },
             ],
         },

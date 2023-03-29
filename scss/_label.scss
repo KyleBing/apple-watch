@@ -1,18 +1,9 @@
-.second-info{
-  margin-left: 30px;
-}
 
-
-.sensor-info{
-  padding: 10px;
-  @include border-radius(5px);
-  //border: 1px solid $color-border;
-}
 
 .sensor-info-item{
   margin-bottom: 3px;
   display: flex;
-  font-size: $fz-sm;
+  font-size: $fz-main;
   color: $text-main;
   .label{
     width: 100px;
@@ -21,5 +12,23 @@
     .unit{
       color: $green;
     }
+  }
+}
+
+
+.section-header{
+  padding: 5px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-bottom: 1px solid $color-border;
+  .section-title{
+    font-weight: bold;
+    font-size: $fz-title;
+  }
+  .section-subtitle{
+    margin-left: 10px;
+    color: $text-subtitle;
+    font-size: $fz-main;
   }
 }

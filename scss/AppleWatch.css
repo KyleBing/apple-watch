@@ -796,10 +796,11 @@ tt {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  margin-bottom: 20px;
 }
 .svg-screen svg {
-  margin-right: 35px;
-  width: 105px;
+  margin-right: 45px;
+  width: 115px;
 }
 .svg-screen .cls-1 {
   fill: #fff;
@@ -835,10 +836,9 @@ tt {
 }
 .svg-screen .cls-11 {
   font-size: 12px;
-  font-family: Verdana;
+  font-family: Galvji;
 }
 .svg-screen .cls-12, .svg-screen .cls-13 {
-  white-space: normal;
   font-size: 10px;
   font-family: MicrosoftYaHeiUI, Microsoft YaHei UI;
 }
@@ -848,17 +848,18 @@ tt {
 .svg-screen .cls-14 {
   letter-spacing: -0.11em;
 }
-.svg-screen .cls-15 {
-  letter-spacing: -0.03em;
-}
 
 .svg-size {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  margin-bottom: 10px;
+}
+.svg-size:last-child {
+  margin-bottom: 0;
 }
 .svg-size svg {
-  width: 200px;
+  width: 220px;
 }
 .svg-size .cls-1 {
   fill: #e6e6e6;
@@ -883,7 +884,7 @@ tt {
 }
 .svg-size .cls-7, .svg-size .cls-9 {
   font-size: 12px;
-  font-family: Verdana;
+  font-family: Galvji;
 }
 .svg-size .cls-8 {
   font-size: 24px;
@@ -956,24 +957,13 @@ footer a:hover {
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
-  font-size: 12px;
-}
-
-.second-info {
-  margin-left: 30px;
-}
-
-.sensor-info {
-  padding: 10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  font-size: 14px;
 }
 
 .sensor-info-item {
   margin-bottom: 3px;
   display: flex;
-  font-size: 12px;
+  font-size: 14px;
   color: #333;
 }
 .sensor-info-item .label {
@@ -981,6 +971,23 @@ footer a:hover {
 }
 .sensor-info-item .value .unit {
   color: #00b56b;
+}
+
+.section-header {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-bottom: 1px solid #dadada;
+}
+.section-header .section-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+.section-header .section-subtitle {
+  margin-left: 10px;
+  color: #666;
+  font-size: 14px;
 }
 
 @media (prefers-color-scheme: dark) {
