@@ -46,7 +46,7 @@
 
     <!--CONTENT-->
     <div class="apple-watch-list">
-        <div class="apple-watch" v-for="(appleWatch, index) in [appleWatches[0]]" :key="index">
+        <div class="apple-watch" v-for="(appleWatch, index) in appleWatches" :key="index">
 
             <div class="main-info">
                 <div class="main-pic">
@@ -55,17 +55,18 @@
                 <div :class="['title', {'is-new': appleWatch.isNew}]">{{appleWatch.name}}</div>
                 <div class="date">
                     <span>{{appleWatch.dateRelease}}</span>
-                    <span v-if="appleWatch.dateUnsupported"> ~ {{appleWatch.dateUnsupported}}</span>
+                    <span v-if="appleWatch.dateUnsupported" class="pl-1 pr-1"> ~ </span>
+                    <span v-if="appleWatch.dateUnsupported">{{appleWatch.dateUnsupported}}</span>
                 </div>
             </div>
             <div class="sensor-info">
                 <div class="sensor-info-item">
                     <div class="label">防水</div>
-                    <div class="value">{{appleWatch.waterResistance}}</div>
+                    <div class="value">{{appleWatch.waterResistance}}（水下{{appleWatch.waterResistancethickness}}m）</div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">防尘</div>
-                    <div class="value">{{appleWatch.dustResistance || '--'}}</div>
+                    <div class="value">{{appleWatch.dustResistance || '-'}}</div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">WiFi</div>
@@ -76,52 +77,59 @@
                     <div class="value">{{appleWatch.bluetooth}}</div>
                 </div>
                 <div class="sensor-info-item">
-                    <div class="label">加速度</div>
-                    <div class="value">{{appleWatch.sensorAccelerometer}}</div>
-                </div>
-                <div class="sensor-info-item">
-                    <div class="label">心率检测版本</div>
-                    <div class="value">{{appleWatch.sensorHeart}}</div>
-                </div>
-                <div class="sensor-info-item">
-                    <div class="label">ECG支持</div>
-                    <div class="value">{{appleWatch.sensorECG}}</div>
-                </div>
-                <div class="sensor-info-item">
-                    <div class="label">血氧检测</div>
-                    <div class="value">{{appleWatch.sensorBloodOxygen}}</div>
-                </div>
-                <div class="sensor-info-item">
-                    <div class="label">温度检测</div>
-                    <div class="value">{{appleWatch.sensorTemperature}}</div>
-                </div>
-                <div class="sensor-info-item">
                     <div class="label">卫星导航系统</div>
                     <div class="value">{{appleWatch.sensorGPS.join(',')}}</div>
                 </div>
                 <div class="sensor-info-item">
+                    <div class="label">加速度</div>
+                    <div v-if="typeof(appleWatch.sensorAccelerometer) === 'string'" class="value">{{appleWatch.sensorAccelerometer}}</div>
+                    <div v-else class="value">{{appleWatch.sensorAccelerometer}}g</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">心率检测版本</div>
+                    <div class="value">{{appleWatch.sensorHeart}} 代</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">ECG支持</div>
+                    <div class="value">{{appleWatch.sensorECG?'✓':'-'}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">血氧检测</div>
+                    <div class="value">{{appleWatch.sensorBloodOxygen?'✓':'-'}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">温度检测</div>
+                    <div class="value">{{appleWatch.sensorTemperature?'✓':'-'}}</div>
+                </div>
+                <div class="sensor-info-item">
                     <div class="label">陀螺仪</div>
-                    <div class="value">{{appleWatch.sensorGyroscope}}</div>
+                    <div class="value">{{appleWatch.sensorGyroscope?'✓':'-'}}</div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">光线感应器</div>
-                    <div class="value">{{appleWatch.sensorAmbient}}</div>
+                    <div class="value">{{appleWatch.sensorAmbient?'✓':'-'}}</div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">指南针</div>
-                    <div class="value">{{appleWatch.sensorCompass}}</div>
+                    <div class="value">{{appleWatch.sensorCompass?'✓':'-'}}</div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">Siri</div>
-                    <div class="value">{{appleWatch.heySiri}}</div>
+                    <div class="value">{{appleWatch.heySiri?'✓':'-'}}</div>
                 </div>
-                <div class="sensor-info-item">
+                <div class="sensor-info-item" v-if="appleWatch.batteryChargeTime">
                     <div class="label">充电时长</div>
-                    <div class="value">{{appleWatch.batteryChargeTime}}h</div>
+                    <div class="value">
+                        <div class="value-item-second"
+                             v-for="item in appleWatch.batteryChargeTime" :key="item.name">
+                            <div class="label-second">{{item.name}}</div>
+                            <div class="value-second">{{item.value}}</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">存储空间</div>
-                    <div class="value">{{appleWatch.storage}}h</div>
+                    <div class="value">{{appleWatch.storage}}GB</div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">内存</div>
@@ -129,20 +137,26 @@
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">系统</div>
-                    <div class="value">{{appleWatch.OS.from}}-{{appleWatch.OS.to}}</div>
+                    <div class="value">{{appleWatch.OS.from}} ~ {{appleWatch.OS.to}}</div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">配对条件</div>
-                    <div class="value">{{appleWatch.appleWatchRequire}}</div>
+                    <div class="value">
+                        <div class="value-item-second"
+                             v-for="item in appleWatch.appleWatchRequire" :key="item.name">
+                            <div v-if="item.name" class="label-second">{{item.name}} ： </div>
+                            <div class="value-second">{{item.value}}</div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
             <!-- 小尺寸  -->
-            <div class="screen-info">
+            <div class="screen-info" v-if="appleWatch.sizeSmall">
                 <div class="section-header">
                     <div class="section-title">小尺寸</div>
-                    <div class="section-subtitle">{{appleWatch.sizeSmall.name}}</div>
+                    <div class="section-subtitle">{{appleWatch.sizeSmall.screenSize}}</div>
                 </div>
                 <div v-if="appleWatch.sizeSmall.battery" class="sensor-info-item">
                     <div class="label">电池容量</div>
@@ -242,10 +256,10 @@
             </div>
 
             <!-- 大尺寸  -->
-            <div class="screen-info">
+            <div class="screen-info" v-if="appleWatch.sizeLarge">
                 <div class="section-header">
                     <div class="section-title">大尺寸</div>
-                    <div class="section-subtitle">{{appleWatch.sizeLarge.name}}</div>
+                    <div class="section-subtitle">{{appleWatch.sizeLarge.screenSize}}</div>
                 </div>
 
                 <div v-if="appleWatch.sizeLarge.battery" class="sensor-info-item">

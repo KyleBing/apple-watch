@@ -125,7 +125,9 @@ const appleWatches = [
             from: 'watchOS 1.0',
             to: 'watchOS 4.32'
         },
-        appleWatchRequire: '>iPhone5 >iOS8.2',
+        appleWatchRequire: [
+            {name: '',value: '>iPhone5 >iOS8.2'}
+        ],
         model: [
             {
                 name: '普通',
@@ -221,7 +223,9 @@ const appleWatches = [
             from: 'watchOS 3.0',
             to: 'watchOS 6.3'
         },
-        appleWatchRequire: '>iPhone5 >iOS10',
+        appleWatchRequire: [
+            {name: '', value: '>iPhone5 >iOS10'}
+        ],
         model: [
             {
                 name: '普通',
@@ -347,7 +351,9 @@ const appleWatches = [
             from: 'watchOS 3.0',
             to: 'watchOS 6.3'
         },
-        appleWatchRequire: '>iPhone5 >iOS10',
+        appleWatchRequire: [
+            {name: '', value: '>iPhone5 >iOS10'}
+        ],
         model: [
             {
                 name: '普通',
@@ -1632,7 +1638,7 @@ let app = new Vue({
         portraitMode: false,
         mobileMode: false,
         latestOS: latestOS,
-        appleWatches: appleWatches,
+        appleWatches: appleWatches.reverse(),
         appleWatchesOrigin: appleWatches,
 
         deviceMap: new Map(),

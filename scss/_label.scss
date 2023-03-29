@@ -1,4 +1,19 @@
 
+.section-header{
+  padding: 5px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-bottom: 1px solid $color-border;
+  font-size: $fz-main + 5;
+  .section-title{
+    font-weight: bold;
+  }
+  .section-subtitle{
+    margin-left: 10px;
+    color: $text-subtitle;
+  }
+}
 
 .sensor-info-item{
   margin-bottom: 3px;
@@ -9,6 +24,7 @@
     width: 100px;
   }
   .value{
+    font-family: Galvji;
     .unit{
       color: $green;
     }
@@ -16,19 +32,13 @@
 }
 
 
-.section-header{
-  padding: 5px 10px;
+.value-item-second{
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  border-bottom: 1px solid $color-border;
-  .section-title{
-    font-weight: bold;
-    font-size: $fz-title;
+  font-size: $fz-sm;
+  .label-second{
+
   }
-  .section-subtitle{
-    margin-left: 10px;
-    color: $text-subtitle;
-    font-size: $fz-main;
+  .value-second{
+
   }
 }

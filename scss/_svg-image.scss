@@ -1,14 +1,76 @@
+$color-stroke: #333;
+
 .svg-screen {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   margin-bottom: 20px;
-  svg{
+
+  svg {
     margin-right: 45px;
     width: 115px;
   }
-  .cls-1{fill:#fff;}.cls-2{fill:#666;}.cls-3,.cls-9{fill:none;}.cls-4{fill:#e6e6e6;}.cls-5{fill:#ccc;}.cls-6{fill:#b3b3b3;}.cls-7{fill:#999;}.cls-8{fill:#f2f2f2;}.cls-9{stroke:#29abe2;stroke-miterlimit:10;stroke-width:0.5px;}.cls-10{fill:#29abe2;}.cls-11{font-size:12px;font-family:Galvji;}.cls-12,.cls-13{font-size:10px;font-family:MicrosoftYaHeiUI,
-Microsoft YaHei UI;}.cls-13{fill:#39b54a;}.cls-14{letter-spacing:-0.11em;}
+
+  .cls-1 {
+    fill: #fff;
+  }
+
+  .cls-2 {
+    fill: #666;
+  }
+
+  .cls-3, .cls-9 {
+    fill: none;
+  }
+
+  .cls-4 {
+    fill: #e6e6e6;
+  }
+
+  .cls-5 {
+    fill: #ccc;
+  }
+
+  .cls-6 {
+    fill: #b3b3b3;
+  }
+
+  .cls-7 {
+    fill: #999;
+  }
+
+  .cls-8 {
+    fill: #f2f2f2;
+  }
+
+  .cls-9 {
+    stroke: $color-stroke;
+    stroke-miterlimit: 10;
+    stroke-width: 0.5px;
+  }
+
+  .cls-10 {
+    fill: #000000;
+  }
+
+  .cls-11 {
+    font-size: 12px;
+    font-family: Galvji;
+  }
+
+  .cls-12, .cls-13 {
+    font-size: 10px;
+    font-family: MicrosoftYaHeiUI,
+    Microsoft YaHei UI;
+  }
+
+  .cls-13 {
+    fill: #39b54a;
+  }
+
+  .cls-14 {
+    letter-spacing: -0.11em;
+  }
 }
 
 .svg-size {
@@ -16,13 +78,55 @@ Microsoft YaHei UI;}.cls-13{fill:#39b54a;}.cls-14{letter-spacing:-0.11em;}
   justify-content: flex-end;
   width: 100%;
   margin-bottom: 10px;
-  &:last-child{
+
+  &:last-child {
     margin-bottom: 0;
   }
-  svg{
+
+  svg {
     width: 220px;
   }
-  .cls-1{fill:#e6e6e6;}.cls-2{fill:#f2f2f2;}.cls-3{fill:#666;}.cls-4{fill:none;stroke:#29abe2;stroke-miterlimit:10;stroke-width:0.5px;}.cls-5{fill:#29abe2;}.cls-6{fill:#fff;}.cls-7,.cls-9{font-size:12px;font-family:Galvji;}.cls-8{font-size:24px;font-family:MicrosoftYaHeiUI,
-Microsoft YaHei UI;}.cls-9{fill:#39b54a;}
+
+  .cls-1 {
+    fill: #e6e6e6;
+  }
+
+  .cls-2 {
+    fill: #f2f2f2;
+  }
+
+  .cls-3 {
+    fill: #666;
+  }
+
+  .cls-4 {
+    fill: none;
+    stroke: $color-stroke;
+    stroke-miterlimit: 10;
+    stroke-width: 0.5px;
+  }
+
+  .cls-5 {
+    fill: #000000;
+  }
+
+  .cls-6 {
+    fill: #fff;
+  }
+
+  .cls-7, .cls-9 {
+    font-size: 12px;
+    font-family: Galvji;
+  }
+
+  .cls-8 {
+    font-size: 24px;
+    font-family: MicrosoftYaHeiUI,
+    Microsoft YaHei UI;
+  }
+
+  .cls-9 {
+    fill: #39b54a;
+  }
 
 }
