@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123 129">
+  <title>screen-info</title>
+  <g id="图层_2" data-name="图层 2">
+    <g id="图层_1-2" data-name="图层 1">
+      <g id="screen-info">
+        <rect class="cls-1" x="33.5" y="0.5" width="89" height="105" rx="16.5"/>
+        <path class="cls-2"
+              d="M106,1a16,16,0,0,1,16,16V89a16,16,0,0,1-16,16H50A16,16,0,0,1,34,89V17A16,16,0,0,1,50,1h56m0-1H50A17,17,0,0,0,33,17V89a17,17,0,0,0,17,17h56a17,17,0,0,0,17-17V17A17,17,0,0,0,106,0Z"/>
+        <path class="cls-3"
+              d="M112,31H102V21H92V11H82V1H50A16,16,0,0,0,34,17V89a16,16,0,0,0,16,16h56a16,16,0,0,0,16-16V41H112Z"/>
+        <rect class="cls-4" x="82" y="1" width="10" height="10"/>
+        <rect class="cls-5" x="92" y="1" width="10" height="10"/>
+        <path class="cls-6" d="M112,11V2.17A16,16,0,0,0,106,1h-4V11Z"/>
+        <path class="cls-7" d="M120.83,11A16.07,16.07,0,0,0,112,2.17V11Z"/>
+        <rect class="cls-4" x="92" y="11" width="10" height="10"/>
+        <rect class="cls-5" x="102" y="11" width="10" height="10"/>
+        <path class="cls-6" d="M112,11V21h10V17a16,16,0,0,0-1.17-6Z"/>
+        <rect class="cls-4" x="102" y="21" width="10" height="10"/>
+        <rect class="cls-5" x="112" y="21" width="10" height="10"/>
+        <rect class="cls-4" x="112" y="31" width="10" height="10"/>
+        <rect class="cls-8" x="82" y="11" width="10" height="10"/>
+        <rect class="cls-8" x="92" y="21" width="10" height="10"/>
+        <rect class="cls-8" x="102" y="31" width="10" height="10"/>
+        <rect class="cls-8" x="112" y="41" width="10" height="10"/>
+        <rect class="cls-8" x="72" y="1" width="10" height="10"/>
+        <line class="cls-9" x1="17" y1="2.75" x2="17" y2="104.25"/>
+        <rect class="cls-10" x="15.38" y="2.5" width="3.25" height="0.5"/>
+        <rect class="cls-10" x="15.38" y="104" width="3.25" height="0.5"/>
+        <line class="cls-9" x1="34.75" y1="120" x2="122.25" y2="120"/>
+        <rect class="cls-10" x="34.5" y="118.37" width="0.5" height="3.25"/>
+        <rect class="cls-10" x="122" y="118.37" width="0.5" height="3.25"/>
+        <rect class="cls-1" y="45" width="30" height="19"/>
+        <rect class="cls-1" x="62" y="110" width="30" height="19"/>
+        <text id="height" class="cls-11" transform="translate(4.52 58.51)">368</text>
+        <text id="width" class="cls-11" transform="translate(66.04 123.96)">430</text>
+        <text class="cls-12" transform="translate(45.55 53.04)">1000</text>
+        <text class="cls-13" transform="translate(73.55 53.04)">nit</text>
+        <text class="cls-12" transform="translate(45.55 67.04)">363</text>
+        <text class="cls-13" transform="translate(66.55 67.04)">ppi</text>
+        <text class="cls-12" transform="translate(45.82 94.01)">3D
+          <tspan class="cls-14" x="16.44" y="0">T</tspan>
+          <tspan x="21.06" y="0">ouch</tspan>
+        </text>
+        <text class="cls-12" transform="translate(45.58 21.02)">OLED
+          <tspan class="cls-15" x="29.36" y="0">R</tspan>
+          <tspan x="35.58" y="0">etina2</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

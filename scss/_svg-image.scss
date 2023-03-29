@@ -1,0 +1,124 @@
+.svg-screen {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  svg{
+    margin-right: 35px;
+    width: 105px;
+  }
+  .cls-1 {
+    fill: #fff;
+  }
+
+  .cls-2 {
+    fill: #666;
+  }
+
+  .cls-3, .cls-9 {
+    fill: none;
+  }
+
+  .cls-4 {
+    fill: #e6e6e6;
+  }
+
+  .cls-5 {
+    fill: #ccc;
+  }
+
+  .cls-6 {
+    fill: #b3b3b3;
+  }
+
+  .cls-7 {
+    fill: #999;
+  }
+
+  .cls-8 {
+    fill: #f2f2f2;
+  }
+
+  .cls-9 {
+    stroke: #29abe2;
+    stroke-miterlimit: 10;
+    stroke-width: 0.5px;
+  }
+
+  .cls-10 {
+    fill: #29abe2;
+  }
+
+  .cls-11 {
+    font-size: 12px;
+    font-family: Verdana;
+  }
+
+  .cls-12, .cls-13 {
+    white-space: normal;
+    font-size: 10px;
+    font-family: MicrosoftYaHeiUI,
+    Microsoft YaHei UI;
+  }
+
+  .cls-13 {
+    fill: #39b54a;
+  }
+
+  .cls-14 {
+    letter-spacing: -0.11em;
+  }
+
+  .cls-15 {
+    letter-spacing: -0.03em;
+  }
+}
+
+.svg-size {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  svg{
+    width: 200px;
+  }
+  .cls-1 {
+    fill: #e6e6e6;
+  }
+
+  .cls-2 {
+    fill: #f2f2f2;
+  }
+
+  .cls-3 {
+    fill: #666;
+  }
+
+  .cls-4 {
+    fill: none;
+    stroke: #29abe2;
+    stroke-miterlimit: 10;
+    stroke-width: 0.5px;
+  }
+
+  .cls-5 {
+    fill: #29abe2;
+  }
+
+  .cls-6 {
+    fill: #fff;
+  }
+
+  .cls-7, .cls-9 {
+    font-size: 12px;
+    font-family: Verdana;
+  }
+
+  .cls-8 {
+    font-size: 24px;
+    font-family: MicrosoftYaHeiUI,
+    Microsoft YaHei UI;
+  }
+
+  .cls-9 {
+    fill: #39b54a;
+  }
+}

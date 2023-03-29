@@ -39,7 +39,7 @@ const appleWatches = [
         sensorAltimeter: true, // 海拔传感器
         sensorCompass: false, // 指南针
         heySiri: false, // 是否支持 siri
-        display: {
+        screen: {
             screenType: SCREEN_TYPE.square, // 屏幕样式
             type: 'OLED Retina', // 屏幕类型
             touch3D: true, // 3d touch
@@ -53,9 +53,6 @@ const appleWatches = [
             pixelHeight: 340,
             battery: 205, // mah
             batteryVoltage: 3.8, // v
-            height: 38.6, // mm
-            width: 33.3, // mm
-            depth: 10.5, // mm
             type: [
                 {
                     type: '铝',
@@ -166,7 +163,7 @@ const appleWatches = [
         sensorAltimeter: true, // 海拔传感器
         sensorCompass: false, // 指南针
         heySiri: false, // 是否支持 siri
-        display: {
+        screen: {
             screenType: SCREEN_TYPE.square, // 屏幕样式
             type: 'OLED Retina', // 屏幕类型
             touch3D: true, // 3d touch
@@ -265,7 +262,7 @@ const appleWatches = [
         sensorAltimeter: true, // 海拔传感器
         sensorCompass: false, // 指南针
         heySiri: false, // 是否支持 siri
-        display: {
+        screen: {
             screenType: SCREEN_TYPE.square, // 屏幕样式
             type: 'OLED Retina2', // 屏幕类型
             touch3D: true, // 3d touch
@@ -397,7 +394,7 @@ const appleWatches = [
         sensorAltimeter: true, // 海拔传感器
         sensorCompass: false, // 指南针
         heySiri: true, // 是否支持 siri
-        display: {
+        screen: {
             screenType: SCREEN_TYPE.square, // 屏幕样式
             type: 'OLED Retina2', // 屏幕类型
             touch3D: true, // 3d touch
@@ -569,7 +566,7 @@ const appleWatches = [
         sensorAltimeter: true, // 海拔传感器
         sensorCompass: false, // 指南针
         heySiri: true, // 是否支持 siri
-        display: {
+        screen: {
             screenType: SCREEN_TYPE.rounded, // 屏幕样式
             type: 'LTPO OLED Retina', // 屏幕类型
             touch3D: true, // 3d touch
@@ -705,7 +702,7 @@ const appleWatches = [
         sensorAltimeter: true, // 海拔传感器
         sensorCompass: true, // 指南针
         heySiri: true, // 是否支持 siri
-        display: {
+        screen: {
             screenType: SCREEN_TYPE.rounded, // 屏幕样式
             type: 'LTPO OLED Retina 长亮屏幕', // 屏幕类型
             touch3D: true, // 3d touch
@@ -854,7 +851,7 @@ const appleWatches = [
         sensorAltimeter: '常开', // 海拔传感器
         sensorCompass: true, // 指南针
         heySiri: true, // 是否支持 siri
-        display: {
+        screen: {
             screenType: SCREEN_TYPE.rounded, // 屏幕样式
             type: 'LTPO OLED Retina', // 屏幕类型
             touch3D: false, // 3d touch
@@ -975,7 +972,7 @@ const appleWatches = [
         sensorAltimeter: '常开', // 海拔传感器
         sensorCompass: true, // 指南针
         heySiri: true, // 是否支持 siri
-        display: {
+        screen: {
             screenType: SCREEN_TYPE.rounded, // 屏幕样式
             type: 'LTPO OLED Retina 常亮', // 屏幕类型
             touch3D: false, // 3d touch
@@ -1124,7 +1121,7 @@ const appleWatches = [
         sensorAltimeter: '常开', // 海拔传感器
         sensorCompass: true, // 指南针
         heySiri: true, // 是否支持 siri
-        display: {
+        screen: {
             screenType: SCREEN_TYPE.rounded, // 屏幕样式
             type: 'LTPO OLED Retina 常亮', // 屏幕类型
             touch3D: false, // 3d touch
@@ -1273,7 +1270,7 @@ const appleWatches = [
         sensorAltimeter: '常开', // 海拔传感器
         sensorCompass: true, // 指南针
         heySiri: true, // 是否支持 siri
-        display: {
+        screen: {
             screenType: SCREEN_TYPE.rounded, // 屏幕样式
             type: 'LTPO OLED Retina', // 屏幕类型
             touch3D: false, // 3d touch
@@ -1402,7 +1399,7 @@ const appleWatches = [
         sensorAltimeter: '常开', // 海拔传感器
         sensorCompass: true, // 指南针
         heySiri: true, // 是否支持 siri
-        display: {
+        screen: {
             screenType: SCREEN_TYPE.rounded, // 屏幕样式
             type: 'LTPO OLED Retina 常亮', // 屏幕类型
             touch3D: false, // 3d touch
@@ -1544,7 +1541,7 @@ const appleWatches = [
         sensorAltimeter: '常开', // 海拔传感器
         sensorCompass: true, // 指南针
         heySiri: true, // 是否支持 siri
-        display: {
+        screen: {
             screenType: SCREEN_TYPE.rounded, // 屏幕样式
             type: 'LTPO OLED Retina 常亮', // 屏幕类型
             touch3D: false, // 3d touch

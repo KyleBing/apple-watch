@@ -792,6 +792,107 @@ tt {
     margin-top: 0;
   }
 }
+.svg-screen {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.svg-screen svg {
+  margin-right: 35px;
+  width: 105px;
+}
+.svg-screen .cls-1 {
+  fill: #fff;
+}
+.svg-screen .cls-2 {
+  fill: #666;
+}
+.svg-screen .cls-3, .svg-screen .cls-9 {
+  fill: none;
+}
+.svg-screen .cls-4 {
+  fill: #e6e6e6;
+}
+.svg-screen .cls-5 {
+  fill: #ccc;
+}
+.svg-screen .cls-6 {
+  fill: #b3b3b3;
+}
+.svg-screen .cls-7 {
+  fill: #999;
+}
+.svg-screen .cls-8 {
+  fill: #f2f2f2;
+}
+.svg-screen .cls-9 {
+  stroke: #29abe2;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+}
+.svg-screen .cls-10 {
+  fill: #29abe2;
+}
+.svg-screen .cls-11 {
+  font-size: 12px;
+  font-family: Verdana;
+}
+.svg-screen .cls-12, .svg-screen .cls-13 {
+  white-space: normal;
+  font-size: 10px;
+  font-family: MicrosoftYaHeiUI, Microsoft YaHei UI;
+}
+.svg-screen .cls-13 {
+  fill: #39b54a;
+}
+.svg-screen .cls-14 {
+  letter-spacing: -0.11em;
+}
+.svg-screen .cls-15 {
+  letter-spacing: -0.03em;
+}
+
+.svg-size {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.svg-size svg {
+  width: 200px;
+}
+.svg-size .cls-1 {
+  fill: #e6e6e6;
+}
+.svg-size .cls-2 {
+  fill: #f2f2f2;
+}
+.svg-size .cls-3 {
+  fill: #666;
+}
+.svg-size .cls-4 {
+  fill: none;
+  stroke: #29abe2;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+}
+.svg-size .cls-5 {
+  fill: #29abe2;
+}
+.svg-size .cls-6 {
+  fill: #fff;
+}
+.svg-size .cls-7, .svg-size .cls-9 {
+  font-size: 12px;
+  font-family: Verdana;
+}
+.svg-size .cls-8 {
+  font-size: 24px;
+  font-family: MicrosoftYaHeiUI, Microsoft YaHei UI;
+}
+.svg-size .cls-9 {
+  fill: #39b54a;
+}
+
 body {
   background-color: #eeeeee;
   font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
@@ -876,7 +977,7 @@ footer a:hover {
   color: #333;
 }
 .sensor-info-item .label {
-  width: 80px;
+  width: 100px;
 }
 .sensor-info-item .value .unit {
   color: #00b56b;

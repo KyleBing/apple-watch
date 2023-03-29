@@ -65,7 +65,7 @@
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">防尘</div>
-                    <div class="value">{{appleWatch.dustResistance}}</div>
+                    <div class="value">{{appleWatch.dustResistance || '--'}}</div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">WiFi</div>
@@ -136,42 +136,11 @@
                     <div class="value">{{appleWatch.appleWatchRequire}}</div>
                 </div>
 
-                <div class="second-info">
-                    <div class="sensor-info-item">
-                        <div class="label">屏幕类型</div>
-                        <div class="value">{{appleWatch.display.type}}</div>
-                    </div>
-                    <div class="sensor-info-item">
-                        <div class="label">3D Touch</div>
-                        <div class="value">{{appleWatch.display.touch3D}}</div>
-                    </div>
-                    <div class="sensor-info-item">
-                        <div class="label">亮度</div>
-                        <div class="value">{{appleWatch.display.brightness}} <span class="unit">nit</span></div>
-                    </div>
-                    <div class="sensor-info-item">
-                        <div class="label">像素密度</div>
-                        <div class="value">{{appleWatch.display.pixelDensity}} <span class="unit">ppi</span></div>
-                    </div>
-                </div>
-
             </div>
 
             <!-- 小尺寸  -->
             <div class="screen-info">
                 <h2>尺寸 - 小 {{appleWatch.sizeSmall.name}}</h2>
-                <div v-if="appleWatch.sizeSmall.screenSize" class="sensor-info-item">
-                    <div class="label">屏幕尺寸</div>
-                    <div class="value">{{appleWatch.sizeSmall.screenSize}} <span class="unit">mm</span></div>
-                </div>
-                <div v-if="appleWatch.sizeSmall.pixelWidth" class="sensor-info-item">
-                    <div class="label">像素宽度</div>
-                    <div class="value">{{appleWatch.sizeSmall.pixelWidth}} <span class="unit">px</span></div>
-                </div>
-                <div v-if="appleWatch.sizeSmall.pixelHeight" class="sensor-info-item">
-                    <div class="label">像素高度</div>
-                    <div class="value">{{appleWatch.sizeSmall.pixelHeight}} <span class="unit">px</span></div>
-                </div>
                 <div v-if="appleWatch.sizeSmall.battery" class="sensor-info-item">
                     <div class="label">电池容量</div>
                     <div class="value">{{appleWatch.sizeSmall.battery}} <span class="unit">mah</span></div>
@@ -181,48 +150,98 @@
                     <div class="value">{{appleWatch.sizeSmall.batteryVoltage}} <span class="unit">v</span></div>
                 </div>
 
-                <div class="second-info">
-                    <div class="type-list" v-for="(type, index) in appleWatch.sizeSmall.type">
-                        <h2>{{type.type}}</h2>
-                        <div v-if="type.height" class="sensor-info-item">
-                            <div class="label">高</div>
-                            <div class="value">{{type.height}} <span class="unit">mm</span></div>
-                        </div>
-                        <div v-if="type.width" class="sensor-info-item">
-                            <div class="label">宽</div>
-                            <div class="value">{{type.width}} <span class="unit">mm</span></div>
-                        </div>
-                        <div v-if="type.depth" class="sensor-info-item">
-                            <div class="label">厚</div>
-                            <div class="value">{{type.depth}} <span class="unit">mm</span></div>
-                        </div>
-                        <div v-if="type.weight" class="sensor-info-item">
-                            <div class="label">重</div>
-                            <div class="value">{{type.weight}} <span class="unit">g</span></div>
-                        </div>
-                    </div>
+                <div class="svg-screen">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123 129">
+                        <title>screen-info</title>
+                        <g id="图层_2" data-name="图层 2">
+                            <g id="图层_1-2" data-name="图层 1">
+                                <g id="screen-info">
+                                    <rect class="cls-1" x="33.5" y="0.5" width="89" height="105" rx="16.5"/>
+                                    <path class="cls-2"
+                                          d="M106,1a16,16,0,0,1,16,16V89a16,16,0,0,1-16,16H50A16,16,0,0,1,34,89V17A16,16,0,0,1,50,1h56m0-1H50A17,17,0,0,0,33,17V89a17,17,0,0,0,17,17h56a17,17,0,0,0,17-17V17A17,17,0,0,0,106,0Z"/>
+                                    <path class="cls-3"
+                                          d="M112,31H102V21H92V11H82V1H50A16,16,0,0,0,34,17V89a16,16,0,0,0,16,16h56a16,16,0,0,0,16-16V41H112Z"/>
+                                    <rect class="cls-4" x="82" y="1" width="10" height="10"/>
+                                    <rect class="cls-5" x="92" y="1" width="10" height="10"/>
+                                    <path class="cls-6" d="M112,11V2.17A16,16,0,0,0,106,1h-4V11Z"/>
+                                    <path class="cls-7" d="M120.83,11A16.07,16.07,0,0,0,112,2.17V11Z"/>
+                                    <rect class="cls-4" x="92" y="11" width="10" height="10"/>
+                                    <rect class="cls-5" x="102" y="11" width="10" height="10"/>
+                                    <path class="cls-6" d="M112,11V21h10V17a16,16,0,0,0-1.17-6Z"/>
+                                    <rect class="cls-4" x="102" y="21" width="10" height="10"/>
+                                    <rect class="cls-5" x="112" y="21" width="10" height="10"/>
+                                    <rect class="cls-4" x="112" y="31" width="10" height="10"/>
+                                    <rect class="cls-8" x="82" y="11" width="10" height="10"/>
+                                    <rect class="cls-8" x="92" y="21" width="10" height="10"/>
+                                    <rect class="cls-8" x="102" y="31" width="10" height="10"/>
+                                    <rect class="cls-8" x="112" y="41" width="10" height="10"/>
+                                    <rect class="cls-8" x="72" y="1" width="10" height="10"/>
+                                    <line class="cls-9" x1="17" y1="2.75" x2="17" y2="104.25"/>
+                                    <rect class="cls-10" x="15.38" y="2.5" width="3.25" height="0.5"/>
+                                    <rect class="cls-10" x="15.38" y="104" width="3.25" height="0.5"/>
+                                    <line class="cls-9" x1="34.75" y1="120" x2="122.25" y2="120"/>
+                                    <rect class="cls-10" x="34.5" y="118.37" width="0.5" height="3.25"/>
+                                    <rect class="cls-10" x="122" y="118.37" width="0.5" height="3.25"/>
+                                    <rect class="cls-1" y="45" width="30" height="19"/>
+                                    <rect class="cls-1" x="62" y="110" width="30" height="19"/>
+                                    <text id="height" class="cls-11" transform="translate(4.52 58.51)">{{ appleWatch.sizeSmall.pixelHeight}}</text>
+                                    <text id="width" class="cls-11" transform="translate(66.04 123.96)">{{appleWatch.sizeSmall.pixelWidth}}</text>
+                                    <text class="cls-12" transform="translate(45.55 53.04)">{{appleWatch.screen.brightness}}</text>
+                                    <text class="cls-13" transform="translate(73.55 53.04)">nit</text>
+                                    <text class="cls-12" transform="translate(45.55 67.04)">{{appleWatch.screen.pixelDensity}}</text>
+                                    <text class="cls-13" transform="translate(66.55 67.04)">ppi</text>
+                                    <text class="cls-12" transform="translate(45.82 94.01)" v-if="appleWatch.screen.touch3D">3D
+                                        <tspan class="cls-14" x="16.44" y="0">T</tspan>
+                                        <tspan x="21.06" y="0">ouch</tspan>
+                                    </text>
+                                    <text class="cls-12" transform="translate(45.58 21.02)">{{appleWatch.screen.type}}</text>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
                 </div>
+
+                <div v-for="item in appleWatch.sizeSmall.type" class="svg-size">
+                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 243.75 139">
+                        <title>watch-info</title>
+                        <g id="图层_2" data-name="图层 2">
+                            <g id="图层_1-2" data-name="图层 1">
+                                <g id="watch-info">
+                                    <rect class="cls-1" x="117.75" width="88" height="104" rx="18"/>
+                                    <rect class="cls-2" x="106.25" y="10.5" width="89" height="105" rx="18.5"/>
+                                    <path class="cls-3"
+                                          d="M176.75,11a18,18,0,0,1,18,18V97a18,18,0,0,1-18,18h-52a18,18,0,0,1-18-18V29a18,18,0,0,1,18-18h52m0-1h-52a19,19,0,0,0-19,19V97a19,19,0,0,0,19,19h52a19,19,0,0,0,19-19V29a19,19,0,0,0-19-19Z"/>
+                                    <line class="cls-4" x1="91.75" y1="12.75" x2="91.75" y2="114.25"/>
+                                    <rect class="cls-5" x="90.13" y="12.5" width="3.25" height="0.5"/>
+                                    <rect class="cls-5" x="90.13" y="114" width="3.25" height="0.5"/>
+                                    <line class="cls-4" x1="107.5" y1="130" x2="194" y2="130"/>
+                                    <rect class="cls-5" x="107.25" y="128.38" width="0.5" height="3.25"/>
+                                    <rect class="cls-5" x="193.75" y="128.38" width="0.5" height="3.25"/>
+                                    <line class="cls-4" x1="200.43" y1="121.32" x2="216.07" y2="105.68"/>
+                                    <rect class="cls-5" x="200.18" y="119.7" width="0.5" height="3.25"
+                                          transform="translate(-27.09 177.25) rotate(-45)"/>
+                                    <rect class="cls-5" x="215.82" y="104.05" width="0.5" height="3.25"
+                                          transform="translate(-11.44 183.74) rotate(-45)"/>
+                                    <rect class="cls-6" x="74.75" y="55" width="30" height="19"/>
+                                    <rect class="cls-6" x="135.75" y="120" width="30" height="19"/>
+                                    <rect class="cls-6" x="213.75" y="111" width="30" height="19"/>
+                                    <text id="height" class="cls-7" transform="translate(83.08 68.51)">{{item.height}}</text>
+                                    <text id="width" class="cls-7" transform="translate(142.61 133.96)">{{item.width}}</text>
+                                    <text id="thickness" class="cls-7" transform="translate(215.43 122.96)">{{item.depth}}</text>
+                                    <text class="cls-8" transform="matrix(1, -0.01, 0.01, 1, 4.71, 71.24)">{{item.type}}</text>
+                                    <text class="cls-7" transform="translate(0 89.42)">{{item.weight.toFixed(1)}}</text>
+                                    <text class="cls-9" transform="translate(28.63 89.42)">g</text>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
             </div>
 
             <!-- 大尺寸  -->
             <div class="screen-info">
-                <h2>尺寸 - 大 {{appleWatch.sizeLarge.name}}</h2>
-                <div v-if="appleWatch.sizeLarge.screenSize" class="sensor-info-item">
-                    <div class="label">型号</div>
-                    <div class="value">{{appleWatch.sizeLarge.model}} </span></div>
-                </div>
-                <div v-if="appleWatch.sizeLarge.screenSize" class="sensor-info-item">
-                    <div class="label">屏幕尺寸</div>
-                    <div class="value">{{appleWatch.sizeLarge.screenSize}} <span class="unit">mm</span></div>
-                </div>
-                <div v-if="appleWatch.sizeLarge.pixelWidth" class="sensor-info-item">
-                    <div class="label">像素宽度</div>
-                    <div class="value">{{appleWatch.sizeLarge.pixelWidth}} <span class="unit">px</span></div>
-                </div>
-                <div v-if="appleWatch.sizeLarge.pixelHeight" class="sensor-info-item">
-                    <div class="label">像素高度</div>
-                    <div class="value">{{appleWatch.sizeLarge.pixelHeight}} <span class="unit">px</span></div>
-                </div>
+                <h2>尺寸 - 小 {{appleWatch.sizeLarge.name}}</h2>
                 <div v-if="appleWatch.sizeLarge.battery" class="sensor-info-item">
                     <div class="label">电池容量</div>
                     <div class="value">{{appleWatch.sizeLarge.battery}} <span class="unit">mah</span></div>
@@ -232,27 +251,93 @@
                     <div class="value">{{appleWatch.sizeLarge.batteryVoltage}} <span class="unit">v</span></div>
                 </div>
 
-                <div class="second-info">
-                    <div class="type-list" v-for="(type, index) in appleWatch.sizeLarge.type">
-                        <h2>{{type.type}}</h2>
-                        <div v-if="type.height" class="sensor-info-item">
-                            <div class="label">高</div>
-                            <div class="value">{{type.height}} <span class="unit">mm</span></div>
-                        </div>
-                        <div v-if="type.width" class="sensor-info-item">
-                            <div class="label">宽</div>
-                            <div class="value">{{type.width}} <span class="unit">mm</span></div>
-                        </div>
-                        <div v-if="type.depth" class="sensor-info-item">
-                            <div class="label">厚</div>
-                            <div class="value">{{type.depth}} <span class="unit">mm</span></div>
-                        </div>
-                        <div v-if="type.weight" class="sensor-info-item">
-                            <div class="label">重</div>
-                            <div class="value">{{type.weight}} <span class="unit">g</span></div>
-                        </div>
-                    </div>
+                <div class="svg-screen">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123 129">
+                        <title>screen-info</title>
+                        <g id="图层_2" data-name="图层 2">
+                            <g id="图层_1-2" data-name="图层 1">
+                                <g id="screen-info">
+                                    <rect class="cls-1" x="33.5" y="0.5" width="89" height="105" rx="16.5"/>
+                                    <path class="cls-2"
+                                          d="M106,1a16,16,0,0,1,16,16V89a16,16,0,0,1-16,16H50A16,16,0,0,1,34,89V17A16,16,0,0,1,50,1h56m0-1H50A17,17,0,0,0,33,17V89a17,17,0,0,0,17,17h56a17,17,0,0,0,17-17V17A17,17,0,0,0,106,0Z"/>
+                                    <path class="cls-3"
+                                          d="M112,31H102V21H92V11H82V1H50A16,16,0,0,0,34,17V89a16,16,0,0,0,16,16h56a16,16,0,0,0,16-16V41H112Z"/>
+                                    <rect class="cls-4" x="82" y="1" width="10" height="10"/>
+                                    <rect class="cls-5" x="92" y="1" width="10" height="10"/>
+                                    <path class="cls-6" d="M112,11V2.17A16,16,0,0,0,106,1h-4V11Z"/>
+                                    <path class="cls-7" d="M120.83,11A16.07,16.07,0,0,0,112,2.17V11Z"/>
+                                    <rect class="cls-4" x="92" y="11" width="10" height="10"/>
+                                    <rect class="cls-5" x="102" y="11" width="10" height="10"/>
+                                    <path class="cls-6" d="M112,11V21h10V17a16,16,0,0,0-1.17-6Z"/>
+                                    <rect class="cls-4" x="102" y="21" width="10" height="10"/>
+                                    <rect class="cls-5" x="112" y="21" width="10" height="10"/>
+                                    <rect class="cls-4" x="112" y="31" width="10" height="10"/>
+                                    <rect class="cls-8" x="82" y="11" width="10" height="10"/>
+                                    <rect class="cls-8" x="92" y="21" width="10" height="10"/>
+                                    <rect class="cls-8" x="102" y="31" width="10" height="10"/>
+                                    <rect class="cls-8" x="112" y="41" width="10" height="10"/>
+                                    <rect class="cls-8" x="72" y="1" width="10" height="10"/>
+                                    <line class="cls-9" x1="17" y1="2.75" x2="17" y2="104.25"/>
+                                    <rect class="cls-10" x="15.38" y="2.5" width="3.25" height="0.5"/>
+                                    <rect class="cls-10" x="15.38" y="104" width="3.25" height="0.5"/>
+                                    <line class="cls-9" x1="34.75" y1="120" x2="122.25" y2="120"/>
+                                    <rect class="cls-10" x="34.5" y="118.37" width="0.5" height="3.25"/>
+                                    <rect class="cls-10" x="122" y="118.37" width="0.5" height="3.25"/>
+                                    <rect class="cls-1" y="45" width="30" height="19"/>
+                                    <rect class="cls-1" x="62" y="110" width="30" height="19"/>
+                                    <text id="height" class="cls-11" transform="translate(4.52 58.51)">{{ appleWatch.sizeLarge.pixelHeight}}</text>
+                                    <text id="width" class="cls-11" transform="translate(66.04 123.96)">{{appleWatch.sizeLarge.pixelWidth}}</text>
+                                    <text class="cls-12" transform="translate(45.55 53.04)">{{appleWatch.screen.brightness}}</text>
+                                    <text class="cls-13" transform="translate(73.55 53.04)">nit</text>
+                                    <text class="cls-12" transform="translate(45.55 67.04)">{{appleWatch.screen.pixelDensity}}</text>
+                                    <text class="cls-13" transform="translate(66.55 67.04)">ppi</text>
+                                    <text class="cls-12" transform="translate(45.82 94.01)" v-if="appleWatch.screen.touch3D">3D
+                                        <tspan class="cls-14" x="16.44" y="0">T</tspan>
+                                        <tspan x="21.06" y="0">ouch</tspan>
+                                    </text>
+                                    <text class="cls-12" transform="translate(45.58 21.02)">{{appleWatch.screen.type}}</text>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
                 </div>
+
+                <div v-for="item in appleWatch.sizeLarge.type" class="svg-size">
+                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 243.75 139">
+                        <title>watch-info</title>
+                        <g id="图层_2" data-name="图层 2">
+                            <g id="图层_1-2" data-name="图层 1">
+                                <g id="watch-info">
+                                    <rect class="cls-1" x="117.75" width="88" height="104" rx="18"/>
+                                    <rect class="cls-2" x="106.25" y="10.5" width="89" height="105" rx="18.5"/>
+                                    <path class="cls-3"
+                                          d="M176.75,11a18,18,0,0,1,18,18V97a18,18,0,0,1-18,18h-52a18,18,0,0,1-18-18V29a18,18,0,0,1,18-18h52m0-1h-52a19,19,0,0,0-19,19V97a19,19,0,0,0,19,19h52a19,19,0,0,0,19-19V29a19,19,0,0,0-19-19Z"/>
+                                    <line class="cls-4" x1="91.75" y1="12.75" x2="91.75" y2="114.25"/>
+                                    <rect class="cls-5" x="90.13" y="12.5" width="3.25" height="0.5"/>
+                                    <rect class="cls-5" x="90.13" y="114" width="3.25" height="0.5"/>
+                                    <line class="cls-4" x1="107.5" y1="130" x2="194" y2="130"/>
+                                    <rect class="cls-5" x="107.25" y="128.38" width="0.5" height="3.25"/>
+                                    <rect class="cls-5" x="193.75" y="128.38" width="0.5" height="3.25"/>
+                                    <line class="cls-4" x1="200.43" y1="121.32" x2="216.07" y2="105.68"/>
+                                    <rect class="cls-5" x="200.18" y="119.7" width="0.5" height="3.25"
+                                          transform="translate(-27.09 177.25) rotate(-45)"/>
+                                    <rect class="cls-5" x="215.82" y="104.05" width="0.5" height="3.25"
+                                          transform="translate(-11.44 183.74) rotate(-45)"/>
+                                    <rect class="cls-6" x="74.75" y="55" width="30" height="19"/>
+                                    <rect class="cls-6" x="135.75" y="120" width="30" height="19"/>
+                                    <rect class="cls-6" x="213.75" y="111" width="30" height="19"/>
+                                    <text id="height" class="cls-7" transform="translate(83.08 68.51)">{{item.height}}</text>
+                                    <text id="width" class="cls-7" transform="translate(142.61 133.96)">{{item.width}}</text>
+                                    <text id="thickness" class="cls-7" transform="translate(215.43 122.96)">{{item.depth}}</text>
+                                    <text class="cls-8" transform="matrix(1, -0.01, 0.01, 1, 4.71, 71.24)">{{item.type}}</text>
+                                    <text class="cls-7" transform="translate(0 89.42)">{{item.weight.toFixed(1)}}</text>
+                                    <text class="cls-9" transform="translate(28.63 89.42)">g</text>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
             </div>
 
         </div>
