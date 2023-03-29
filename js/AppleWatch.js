@@ -676,6 +676,276 @@ const appleWatches = [
             }
         ]
     },
+    {
+        name: "Apple Watch S5",
+        name_short: "S5",
+        pic: "S5",
+        isNew: false,
+        active: false,
+        dateRelease: "2019-09-25",
+        dateUnsupported: "",
+        waterResistance: 'ISO 22810:2010',
+        waterResistanceDepth: '50', // m
+        dustResistance: '',
+
+        cellular: 'eSIM(可选)', // 蜂窝网络
+        wifi: '802.11 b/g/n 2.4 GHz',
+        bluetooth: '5',
+        ultraWideBand: '',
+        sensorHeart: '2', // 心率检测版本
+        sensorECG: true,
+        sensorBloodOxygen: false, // 血氧检测
+        sensorTemperature: false, // 温度检测器
+        sensorGPS: [ // 卫星导航系统
+            'GPS', 'GLONASS', 'Galileo', 'QZSS'
+        ],
+        sensorAccelerometer: 32, // 加速度 g
+        sensorGyroscope: '增强版本', // 陀螺仪
+        sensorAmbient: true, // 光线传感器
+        sensorAltimeter: true, // 海拔传感器
+        sensorCompass: true, // 指南针
+        heySiri: true, // 是否支持 siri
+        display: {
+            screenType: SCREEN_TYPE.rounded, // 屏幕样式
+            type: 'LTPO OLED Retina 长亮屏幕', // 屏幕类型
+            touch3D: true, // 3d touch
+            brightness: 1000, // nit
+            pixelDensity: 326, // ppi 像素密度
+        },
+        sizeSmall: {
+            name: '38/40/41',
+            screenSize: 38, // mm
+            pixelWidth: 324,
+            pixelHeight: 394,
+            battery: 245, // mah
+            batteryVoltage: 3.85, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 30.8, // g
+                    height: 40, // mm
+                    width: 34, // mm
+                    depth: 10.74, // mm
+                },
+                {
+                    type: '钢',
+                    weight: 40.6, // g
+                    height: 40, // mm
+                    width: 34, // mm
+                    depth: 10.74, // mm
+                },
+                {
+                    type: 'ED',
+                    weight: 39.7, // g
+                    height: 40, // mm
+                    width: 34, // mm
+                    depth: 10.74, // mm
+                },
+            ],
+        },
+        sizeLarge: {
+            name: '42/44/45',
+            screenSize: 42, // mm
+            pixelWidth: 368,
+            pixelHeight: 448,
+            battery: 296, // mah
+            batteryVoltage: 3.814, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 36.5, // g
+                    height: 44, // mm
+                    width: 38, // mm
+                    depth: 10.74, // mm
+                },
+                {
+                    type: '钢',
+                    weight: 47.8, // g
+                    height: 44, // mm
+                    width: 38, // mm
+                    depth: 10.74, // mm
+                },
+                {
+                    type: 'ED',
+                    weight: 46.7, // g
+                    height: 44, // mm
+                    width: 38, // mm
+                    depth: 10.74, // mm
+                },
+            ],
+        },
+        batteryChargeTime: [ // 充电时长
+            {name: '80%', value: '1.5'}, // h
+            {name: '100%', value: '2.5'}, // h
+        ],
+        storage: 32,
+        cpu: {
+            name: 'Apple S5',
+            speed: '',
+            bit: 64,
+            coreCount: 2
+        },
+        memory: {
+            type: 'DRAM',
+            size: 1024, // MB
+        },
+        OS: {
+            from: 'watchOS 6.0',
+            to: 'watchOS 9.3.1'
+        },
+        appleWatchRequire: [
+            {name: '', value: '>iPhone6s >iOS13'},
+        ],
+        model: [
+            {
+                name: "GPS",
+                value: [
+                    {name: '40', value: 'A2092'},
+                    {name: '44', value: 'A2093'},
+                ],
+            },
+            {
+                name: "GPS+Cellular",
+                value: [
+                    {
+                        name: '北美',
+                        value: [
+                            {name: '40', value: 'A2094'},
+                            {name: '44', value: 'A2095'},
+                        ]
+                    },
+                    {
+                        name: '欧亚非中',
+                        value: [
+                            {name: '40', value: 'A2156'},
+                            {name: '44', value: 'A2157'},
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        name: "Apple Watch SE1",
+        name_short: "SE1",
+        pic: "SE1",
+        isNew: false,
+        active: false,
+        dateRelease: "2020-09-15",
+        dateUnsupported: "",
+        waterResistance: 'ISO 22810:2010',
+        waterResistanceDepth: '50', // m
+        dustResistance: '',
+
+        cellular: 'eSIM(可选)', // 蜂窝网络
+        wifi: '802.11 b/g/n 2.4 GHz',
+        bluetooth: '5',
+        ultraWideBand: '',
+        sensorHeart: '2', // 心率检测版本
+        sensorECG: false,
+        sensorBloodOxygen: false, // 血氧检测
+        sensorTemperature: false, // 温度检测器
+        sensorGPS: [ // 卫星导航系统
+            'GPS', 'GLONASS', 'Galileo', 'QZSS'
+        ],
+        sensorAccelerometer: 32, // 加速度 g
+        sensorGyroscope: '增强版本', // 陀螺仪
+        sensorAmbient: true, // 光线传感器
+        sensorAltimeter: '常开', // 海拔传感器
+        sensorCompass: true, // 指南针
+        heySiri: true, // 是否支持 siri
+        display: {
+            screenType: SCREEN_TYPE.rounded, // 屏幕样式
+            type: 'LTPO OLED Retina', // 屏幕类型
+            touch3D: true, // 3d touch
+            brightness: 1000, // nit
+            pixelDensity: 326, // ppi 像素密度
+        },
+        sizeSmall: {
+            name: '38/40/41',
+            screenSize: 38, // mm
+            pixelWidth: 324,
+            pixelHeight: 394,
+            battery: 245, // mah
+            batteryVoltage: 3.85, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 30.49, // g
+                    height: 40, // mm
+                    width: 34, // mm
+                    depth: 10.7, // mm
+                },
+            ],
+        },
+        sizeLarge: {
+            name: '42/44/45',
+            screenSize: 42, // mm
+            pixelWidth: 368,
+            pixelHeight: 448,
+            battery: 296, // mah
+            batteryVoltage: 3.814, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 36.2, // g
+                    height: 44, // mm
+                    width: 38, // mm
+                    depth: 10.7, // mm
+                },
+            ],
+        },
+        batteryChargeTime: [ // 充电时长
+            {name: '80%', value: '1.5'}, // h
+            {name: '100%', value: '2.5'}, // h
+        ],
+        storage: 32,
+        cpu: {
+            name: 'Apple S5',
+            speed: '',
+            bit: 64,
+            coreCount: 2
+        },
+        memory: {
+            type: 'DRAM',
+            size: 1024, // MB
+        },
+        OS: {
+            from: 'watchOS 7.0',
+            to: 'watchOS 9.3.1'
+        },
+        appleWatchRequire: [
+            {name: '', value: '>iPhone6s >iOS14'},
+        ],
+        model: [
+            {
+                name: "GPS",
+                value: [
+                    {name: '40', value: 'A2351'},
+                    {name: '44', value: 'A2352'},
+                ],
+            },
+            {
+                name: "GPS+Cellular",
+                value: [
+                    {
+                        name: '北美',
+                        value: [
+                            {name: '40', value: 'A2353'},
+                            {name: '44', value: 'A2354'},
+                        ]
+                    },
+                    {
+                        name: '欧亚非中',
+                        value: [
+                            {name: '40', value: 'A2355'},
+                            {name: '44', value: 'A2356'},
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
 ]
 
 let app = new Vue({
