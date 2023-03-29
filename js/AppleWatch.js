@@ -122,7 +122,7 @@ const appleWatches = [
         },
         memory: {
             type: 'DRAM',
-            size: '512', // MB
+            size: '512MB', // MB
         },
         OS: {
             from: 'watchOS 1.0',
@@ -344,7 +344,7 @@ const appleWatches = [
         },
         memory: {
             type: 'DRAM',
-            size: '512', // MB
+            size: '512MB', // MB
         },
         OS: {
             from: 'watchOS 3.0',
@@ -494,7 +494,7 @@ const appleWatches = [
         },
         memory: {
             type: 'DRAM',
-            size: '768', // MB
+            size: '768MB', // MB
         },
         OS: {
             from: 'watchOS 4.0',
@@ -637,7 +637,7 @@ const appleWatches = [
         },
         memory: {
             type: 'DRAM',
-            size: 1024, // MB
+            size: '1GB', // MB
         },
         OS: {
             from: 'watchOS 5.0',
@@ -666,7 +666,7 @@ const appleWatches = [
                         ]
                     },
                     {
-                        name: '欧亚非中',
+                        name: '欧亚太中',
                         value: [
                             {name: '40', value: 'A2007'},
                             {name: '44', value: 'A2008'},
@@ -787,7 +787,7 @@ const appleWatches = [
         },
         memory: {
             type: 'DRAM',
-            size: 1024, // MB
+            size: '1GB', // MB
         },
         OS: {
             from: 'watchOS 6.0',
@@ -815,7 +815,7 @@ const appleWatches = [
                         ]
                     },
                     {
-                        name: '欧亚非中',
+                        name: '欧亚太中',
                         value: [
                             {name: '40', value: 'A2156'},
                             {name: '44', value: 'A2157'},
@@ -908,7 +908,7 @@ const appleWatches = [
         },
         memory: {
             type: 'DRAM',
-            size: 1024, // MB
+            size: '1GB', // MB
         },
         OS: {
             from: 'watchOS 7.0',
@@ -936,10 +936,159 @@ const appleWatches = [
                         ]
                     },
                     {
-                        name: '欧亚非中',
+                        name: '欧亚太中',
                         value: [
                             {name: '40', value: 'A2355'},
                             {name: '44', value: 'A2356'},
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        name: "Apple Watch S6",
+        name_short: "S6",
+        pic: "S6",
+        isNew: false,
+        active: false,
+        dateRelease: "2020-09-15",
+        dateUnsupported: "",
+        waterResistance: 'ISO 22810:2010',
+        waterResistanceDepth: '50', // m
+        dustResistance: '',
+
+        cellular: 'eSIM(可选)', // 蜂窝网络
+        wifi: '802.11 b/g/n 2.4 & 5GHz',
+        bluetooth: '5',
+        ultraWideBand: 'U1芯片',
+        sensorHeart: '3', // 心率检测版本
+        sensorECG: true,
+        sensorBloodOxygen: true, // 血氧检测
+        sensorTemperature: false, // 温度检测器
+        sensorGPS: [ // 卫星导航系统
+            'GPS', 'GLONASS', 'Galileo', 'QZSS'
+        ],
+        sensorAccelerometer: 32, // 加速度 g
+        sensorGyroscope: '增强版本', // 陀螺仪
+        sensorAmbient: true, // 光线传感器
+        sensorAltimeter: '常开', // 海拔传感器
+        sensorCompass: true, // 指南针
+        heySiri: true, // 是否支持 siri
+        display: {
+            screenType: SCREEN_TYPE.rounded, // 屏幕样式
+            type: 'LTPO OLED Retina 常亮', // 屏幕类型
+            touch3D: true, // 3d touch
+            brightness: 1000, // nit
+            pixelDensity: 326, // ppi 像素密度
+        },
+        sizeSmall: {
+            name: '38/40/41',
+            screenSize: 38, // mm
+            pixelWidth: 324,
+            pixelHeight: 394,
+            battery: 265.9, // mah
+            batteryVoltage: 3.85, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 30.5, // g
+                    height: 40, // mm
+                    width: 34, // mm
+                    depth: 10.7, // mm
+                },
+                {
+                    type: '钢',
+                    weight: 39.7, // g
+                    height: 40, // mm
+                    width: 34, // mm
+                    depth: 10.7, // mm
+                },
+                {
+                    type: 'ED',
+                    weight: 34.6, // g
+                    height: 40, // mm
+                    width: 34, // mm
+                    depth: 10.7, // mm
+                },
+            ],
+        },
+        sizeLarge: {
+            name: '42/44/45',
+            screenSize: 42, // mm
+            pixelWidth: 368,
+            pixelHeight: 448,
+            battery: 303.8, // mah
+            batteryVoltage: 3.85, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 36.5, // g
+                    height: 44, // mm
+                    width: 38, // mm
+                    depth: 10.7, // mm
+                },
+                {
+                    type: '钢',
+                    weight: 47.1, // g
+                    height: 44, // mm
+                    width: 38, // mm
+                    depth: 10.7, // mm
+                },
+                {
+                    type: 'ED',
+                    weight: 41.3, // g
+                    height: 44, // mm
+                    width: 38, // mm
+                    depth: 10.7, // mm
+                },
+            ],
+        },
+        batteryChargeTime: [ // 充电时长
+            {name: '80%', value: '1'}, // h
+            {name: '100%', value: '1.5'}, // h
+        ],
+        storage: 32,
+        cpu: {
+            name: 'Apple S6',
+            speed: '',
+            bit: 64,
+            coreCount: 2
+        },
+        memory: {
+            type: 'DRAM',
+            size: '1.5GB',
+        },
+        OS: {
+            from: 'watchOS 7.0',
+            to: 'watchOS 9.3.1'
+        },
+        appleWatchRequire: [
+            {name: '', value: '>iPhone6s >iOS14'},
+        ],
+        model: [
+            {
+                name: "GPS",
+                value: [
+                    {name: '40', value: 'A2291'},
+                    {name: '44', value: 'A2292'},
+                ],
+            },
+            {
+                name: "GPS+Cellular",
+                value: [
+                    {
+                        name: '北美',
+                        value: [
+                            {name: '40', value: 'A2293'},
+                            {name: '44', value: 'A2294'},
+                        ]
+                    },
+                    {
+                        name: '欧亚太中',
+                        value: [
+                            {name: '40', value: 'A2375'},
+                            {name: '44', value: 'A2376'},
                         ]
                     }
                 ]
