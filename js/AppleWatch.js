@@ -857,7 +857,7 @@ const appleWatches = [
         display: {
             screenType: SCREEN_TYPE.rounded, // 屏幕样式
             type: 'LTPO OLED Retina', // 屏幕类型
-            touch3D: true, // 3d touch
+            touch3D: false, // 3d touch
             brightness: 1000, // nit
             pixelDensity: 326, // ppi 像素密度
         },
@@ -978,7 +978,7 @@ const appleWatches = [
         display: {
             screenType: SCREEN_TYPE.rounded, // 屏幕样式
             type: 'LTPO OLED Retina 常亮', // 屏幕类型
-            touch3D: true, // 3d touch
+            touch3D: false, // 3d touch
             brightness: 1000, // nit
             pixelDensity: 326, // ppi 像素密度
         },
@@ -1127,7 +1127,7 @@ const appleWatches = [
         display: {
             screenType: SCREEN_TYPE.rounded, // 屏幕样式
             type: 'LTPO OLED Retina 常亮', // 屏幕类型
-            touch3D: true, // 3d touch
+            touch3D: false, // 3d touch
             brightness: 1000, // nit
             pixelDensity: 326, // ppi 像素密度
         },
@@ -1238,6 +1238,378 @@ const appleWatches = [
                         value: [
                             {name: '41', value: 'A2476'},
                             {name: '45', value: 'A2478'},
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        name: "Apple Watch SE2",
+        name_short: "SE2",
+        pic: "SE2",
+        isNew: false,
+        active: false,
+        dateRelease: "2022-09-16",
+        dateUnsupported: "",
+        waterResistance: 'ISO 22810:2010',
+        waterResistanceDepth: '50', // m
+        dustResistance: '',
+
+        cellular: 'eSIM(可选)', // 蜂窝网络
+        wifi: '802.11 b/g/n 2.4GHz',
+        bluetooth: '5.3',
+        ultraWideBand: '',
+        sensorHeart: '2', // 心率检测版本
+        sensorECG: false,
+        sensorBloodOxygen: false, // 血氧检测
+        sensorTemperature: false, // 温度检测器
+        sensorGPS: [ // 卫星导航系统
+            'GPS', 'GLONASS', 'Galileo', 'QZSS'
+        ],
+        sensorAccelerometer: 'High-g', // 加速度 g
+        sensorGyroscope: '高灵敏度', // 陀螺仪
+        sensorAmbient: true, // 光线传感器
+        sensorAltimeter: '常开', // 海拔传感器
+        sensorCompass: true, // 指南针
+        heySiri: true, // 是否支持 siri
+        display: {
+            screenType: SCREEN_TYPE.rounded, // 屏幕样式
+            type: 'LTPO OLED Retina', // 屏幕类型
+            touch3D: false, // 3d touch
+            brightness: 1000, // nit
+            pixelDensity: 326, // ppi 像素密度
+        },
+        sizeSmall: {
+            name: '38/40/41',
+            screenSize: 40, // mm
+            pixelWidth: 324,
+            pixelHeight: 394,
+            battery: 284.2, // mah
+            batteryVoltage: 3.85, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 27.9, // g
+                    height: 40, // mm
+                    width: 34, // mm
+                    depth: 10.7, // mm
+                },
+
+            ],
+        },
+        sizeLarge: {
+            name: '42/44/45',
+            screenSize: 44, // mm
+            pixelWidth: 368,
+            pixelHeight: 448,
+            battery: 308.8, // mah
+            batteryVoltage: 3.85, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 33, // g
+                    height: 44, // mm
+                    width: 38, // mm
+                    depth: 10.7, // mm
+                },
+            ],
+        },
+        batteryChargeTime: [ // 充电时长
+            {name: '80%', value: '1.5h'}, // h
+            {name: '100%', value: '2.5h'}, // h
+        ],
+        storage: 32,
+        cpu: {
+            name: 'Apple S8',
+            speed: '',
+            bit: 64,
+            coreCount: 2
+        },
+        memory: {
+            type: 'DRAM',
+            size: '1.5GB',
+        },
+        OS: {
+            from: 'watchOS 8.0',
+            to: 'watchOS 9.3.1'
+        },
+        appleWatchRequire: [
+            {name: '', value: '>iPhone8 >iOS16'},
+        ],
+        model: [
+            {
+                name: "GPS",
+                value: [
+                    {name: '40', value: 'A2722'},
+                    {name: '44', value: 'A2723'},
+                ],
+            },
+            {
+                name: "GPS+Cellular",
+                value: [
+                    {
+                        name: '北美',
+                        value: [
+                            {name: '40', value: 'A2726'},
+                            {name: '44', value: 'A2727'},
+                        ]
+                    },
+                    {
+                        name: '欧亚太',
+                        value: [
+                            {name: '40', value: 'A2725'},
+                            {name: '44', value: 'A2724'},
+                        ]
+                    },
+                    {
+                        name: '中国',
+                        value: [
+                            {name: '40', value: 'A2855'},
+                            {name: '44', value: 'A2856'},
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        name: "Apple Watch S8",
+        name_short: "S8",
+        pic: "S8",
+        isNew: false,
+        active: false,
+        dateRelease: "2022-09-16",
+        dateUnsupported: "",
+        waterResistance: 'ISO 22810:2010',
+        waterResistanceDepth: '50', // m
+        dustResistance: 'IP6X',
+
+        cellular: 'eSIM(可选)', // 蜂窝网络
+        wifi: '802.11 b/g/n 2.4 & 5GHz',
+        bluetooth: '5.3',
+        ultraWideBand: 'U1芯片',
+        sensorHeart: '3', // 心率检测版本
+        sensorECG: true,
+        sensorBloodOxygen: true, // 血氧检测
+        sensorTemperature: true, // 温度检测器
+        sensorGPS: [ // 卫星导航系统
+            'GPS', 'GLONASS', 'Galileo', 'QZSS', 'BeiDou'
+        ],
+        sensorAccelerometer: 'High-g', // 加速度 g
+        sensorGyroscope: '高灵敏度', // 陀螺仪
+        sensorAmbient: true, // 光线传感器
+        sensorAltimeter: '常开', // 海拔传感器
+        sensorCompass: true, // 指南针
+        heySiri: true, // 是否支持 siri
+        display: {
+            screenType: SCREEN_TYPE.rounded, // 屏幕样式
+            type: 'LTPO OLED Retina 常亮', // 屏幕类型
+            touch3D: false, // 3d touch
+            brightness: 1000, // nit
+            pixelDensity: 326, // ppi 像素密度
+        },
+        sizeSmall: {
+            name: '38/40/41',
+            screenSize: 41, // mm
+            pixelWidth: 352,
+            pixelHeight: 430,
+            battery: 284.2, // mah
+            batteryVoltage: 3.85, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 32.0, // g
+                    height: 41, // mm
+                    width: 35, // mm
+                    depth: 10.74, // mm
+                },
+                {
+                    type: '钢',
+                    weight: 42.3, // g
+                    height: 41, // mm
+                    width: 35, // mm
+                    depth: 10.74, // mm
+                },
+            ],
+        },
+        sizeLarge: {
+            name: '42/44/45',
+            screenSize: 45, // mm
+            pixelWidth: 396,
+            pixelHeight: 484,
+            battery: 308.8, // mah
+            batteryVoltage: 3.85, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 38.8, // g
+                    height: 45, // mm
+                    width: 38, // mm
+                    depth: 10.74, // mm
+                },
+                {
+                    type: '钢',
+                    weight: 51.5, // g
+                    height: 45, // mm
+                    width: 38, // mm
+                    depth: 10.74, // mm
+                },
+            ],
+        },
+        batteryChargeTime: [ // 充电时长
+            {name: '80%', value: '45min'}, // h
+            {name: '100%', value: '75min'}, // h
+        ],
+        storage: 32,
+        cpu: {
+            name: 'Apple S8',
+            speed: '',
+            bit: 64,
+            coreCount: 2
+        },
+        memory: {
+            type: 'DRAM',
+            size: '1.5GB',
+        },
+        OS: {
+            from: 'watchOS 9.0',
+            to: 'watchOS 9.3.1'
+        },
+        appleWatchRequire: [
+            {name: '', value: '>iPhone8 >iOS16'},
+        ],
+        model: [
+            {
+                name: "GPS",
+                value: [
+                    {name: '41', value: 'A2770'},
+                    {name: '45', value: 'A2771'},
+                ],
+            },
+            {
+                name: "GPS+Cellular",
+                value: [
+                    {
+                        name: '北美',
+                        value: [
+                            {name: '41', value: 'A2772'},
+                            {name: '45', value: 'A2774'},
+                        ]
+                    },
+                    {
+                        name: '欧亚太',
+                        value: [
+                            {name: '41', value: 'A2773'},
+                            {name: '45', value: 'A2775'},
+                        ]
+                    },
+                    {
+                        name: '中国',
+                        value: [
+                            {name: '41', value: 'A2857'},
+                            {name: '45', value: 'A2858'},
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        name: "Apple Watch Ultra",
+        name_short: "Ultra",
+        pic: "Ultra",
+        isNew: false,
+        active: false,
+        dateRelease: "2022-09-23",
+        dateUnsupported: "",
+        waterResistance: 'ISO 22810',
+        waterResistanceDepth: '100', // m
+        dustResistance: 'IP6X',
+
+        cellular: 'eSIM', // 蜂窝网络
+        wifi: '802.11 b/g/n 2.4 & 5GHz',
+        bluetooth: '5.3',
+        ultraWideBand: 'U1芯片',
+        sensorHeart: '3', // 心率检测版本
+        sensorECG: true,
+        sensorBloodOxygen: true, // 血氧检测
+        sensorTemperature: true, // 温度检测器
+        sensorGPS: [ // 卫星导航系统
+            'GPS', 'GLONASS', 'Galileo', 'QZSS', 'BeiDou'
+        ],
+        sensorAccelerometer: 'High-g', // 加速度 g
+        sensorGyroscope: '高灵敏度', // 陀螺仪
+        sensorAmbient: true, // 光线传感器
+        sensorAltimeter: '常开', // 海拔传感器
+        sensorCompass: true, // 指南针
+        heySiri: true, // 是否支持 siri
+        display: {
+            screenType: SCREEN_TYPE.rounded, // 屏幕样式
+            type: 'LTPO OLED Retina 常亮', // 屏幕类型
+            touch3D: false, // 3d touch
+            brightness: 2000, // nit
+            pixelDensity: 338, // ppi 像素密度
+        },
+        sizeLarge: {
+            name: '49',
+            screenSize: 49, // mm
+            pixelWidth: 410,
+            pixelHeight: 502,
+            battery: 542, // mah
+            batteryVoltage: 3.86, // v
+            type: [
+                {
+                    type: 'Ultra',
+                    weight: 61.3, // g
+                    height: 49, // mm
+                    width: 44, // mm
+                    depth: 14.4, // mm
+                },
+            ],
+        },
+        batteryChargeTime: [ // 充电时长
+            {name: '80%', value: '1h'}, // h
+            {name: '100%', value: '1.5h'}, // h
+        ],
+        storage: 32,
+        cpu: {
+            name: 'Apple S8',
+            speed: '',
+            bit: 64,
+            coreCount: 2
+        },
+        memory: {
+            type: 'DRAM',
+            size: '1.5GB',
+        },
+        OS: {
+            from: 'watchOS 9.0',
+            to: 'watchOS 9.3.1'
+        },
+        appleWatchRequire: [
+            {name: '', value: '>iPhone8 >iOS16'},
+        ],
+        model: [
+            {
+                name: "GPS+Cellular",
+                value: [
+                    {
+                        name: '北美',
+                        value: [
+                            {name: '49', value: 'A2622'},
+                        ]
+                    },
+                    {
+                        name: '欧亚太',
+                        value: [
+                            {name: '49', value: 'A2648'},
+                        ]
+                    },
+                    {
+                        name: '中国',
+                        value: [
+                            {name: '49', value: 'A2859'},
                         ]
                     }
                 ]

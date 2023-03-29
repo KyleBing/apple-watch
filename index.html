@@ -159,7 +159,7 @@
 
             <!-- 小尺寸  -->
             <div class="screen-info">
-                <h2>尺寸 - 小</h2>
+                <h2>尺寸 - 小 {{appleWatch.sizeSmall.name}}</h2>
                 <div v-if="appleWatch.sizeSmall.screenSize" class="sensor-info-item">
                     <div class="label">屏幕尺寸</div>
                     <div class="value">{{appleWatch.sizeSmall.screenSize}} <span class="unit">mm</span></div>
@@ -206,7 +206,7 @@
 
             <!-- 大尺寸  -->
             <div class="screen-info">
-                <h2>尺寸 - 大</h2>
+                <h2>尺寸 - 大 {{appleWatch.sizeLarge.name}}</h2>
                 <div v-if="appleWatch.sizeLarge.screenSize" class="sensor-info-item">
                     <div class="label">型号</div>
                     <div class="value">{{appleWatch.sizeLarge.model}} </span></div>
