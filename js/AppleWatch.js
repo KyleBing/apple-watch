@@ -82,7 +82,7 @@ const appleWatches = [
         },
         sizeLarge: {
             name: '42/44/45',
-            screenSize: 42, // mm
+            screenSize: 44, // mm
             pixelWidth: 312,
             pixelHeight: 390,
             battery: 246, // mah
@@ -193,7 +193,7 @@ const appleWatches = [
         },
         sizeLarge: {
             name: '42/44/45',
-            screenSize: 42, // mm
+            screenSize: 44, // mm
             pixelWidth: 312,
             pixelHeight: 390,
             battery: 246, // mah
@@ -305,7 +305,7 @@ const appleWatches = [
         },
         sizeLarge: {
             name: '42/44/45',
-            screenSize: 42, // mm
+            screenSize: 44, // mm
             pixelWidth: 312,
             pixelHeight: 390,
             battery: 334, // mah
@@ -443,7 +443,7 @@ const appleWatches = [
         },
         sizeLarge: {
             name: '42/44/45',
-            screenSize: 42, // mm
+            screenSize: 44, // mm
             pixelWidth: 312,
             pixelHeight: 390,
             battery: [ // mah
@@ -479,8 +479,8 @@ const appleWatches = [
             ],
         },
         batteryChargeTime: [ // 充电时长
-            {name: '80%', value: '1.5'}, // h
-            {name: '100%', value: '2'}, // h
+            {name: '80%', value: '1.5h'}, // h
+            {name: '100%', value: '2h'}, // h
         ],
         storage: [ // GB
             {name: 'no-LTE', size: 8},
@@ -578,7 +578,7 @@ const appleWatches = [
         },
         sizeSmall: {
             name: '38/40/41',
-            screenSize: 38, // mm
+            screenSize: 40, // mm
             pixelWidth: 324,
             pixelHeight: 394,
             battery: 224.9, // mah
@@ -602,7 +602,7 @@ const appleWatches = [
         },
         sizeLarge: {
             name: '42/44/45',
-            screenSize: 42, // mm
+            screenSize: 44, // mm
             pixelWidth: 368,
             pixelHeight: 448,
             battery: 291.8, // mah
@@ -625,8 +625,8 @@ const appleWatches = [
             ],
         },
         batteryChargeTime: [ // 充电时长
-            {name: '80%', value: '1.5'}, // h
-            {name: '100%', value: '2'}, // h
+            {name: '80%', value: '1.5h'}, // h
+            {name: '100%', value: '2h'}, // h
         ],
         storage: 16,
         cpu: {
@@ -714,7 +714,7 @@ const appleWatches = [
         },
         sizeSmall: {
             name: '38/40/41',
-            screenSize: 38, // mm
+            screenSize: 40, // mm
             pixelWidth: 324,
             pixelHeight: 394,
             battery: 245, // mah
@@ -745,7 +745,7 @@ const appleWatches = [
         },
         sizeLarge: {
             name: '42/44/45',
-            screenSize: 42, // mm
+            screenSize: 44, // mm
             pixelWidth: 368,
             pixelHeight: 448,
             battery: 296, // mah
@@ -775,8 +775,8 @@ const appleWatches = [
             ],
         },
         batteryChargeTime: [ // 充电时长
-            {name: '80%', value: '1.5'}, // h
-            {name: '100%', value: '2.5'}, // h
+            {name: '80%', value: '1.5h'}, // h
+            {name: '100%', value: '2.5h'}, // h
         ],
         storage: 32,
         cpu: {
@@ -863,7 +863,7 @@ const appleWatches = [
         },
         sizeSmall: {
             name: '38/40/41',
-            screenSize: 38, // mm
+            screenSize: 40, // mm
             pixelWidth: 324,
             pixelHeight: 394,
             battery: 245, // mah
@@ -880,7 +880,7 @@ const appleWatches = [
         },
         sizeLarge: {
             name: '42/44/45',
-            screenSize: 42, // mm
+            screenSize: 44, // mm
             pixelWidth: 368,
             pixelHeight: 448,
             battery: 296, // mah
@@ -896,8 +896,8 @@ const appleWatches = [
             ],
         },
         batteryChargeTime: [ // 充电时长
-            {name: '80%', value: '1.5'}, // h
-            {name: '100%', value: '2.5'}, // h
+            {name: '80%', value: '1.5h'}, // h
+            {name: '100%', value: '2.5h'}, // h
         ],
         storage: 32,
         cpu: {
@@ -952,7 +952,7 @@ const appleWatches = [
         pic: "S6",
         isNew: false,
         active: false,
-        dateRelease: "2020-09-15",
+        dateRelease: "2021-10-08",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
         waterResistanceDepth: '50', // m
@@ -984,7 +984,7 @@ const appleWatches = [
         },
         sizeSmall: {
             name: '38/40/41',
-            screenSize: 38, // mm
+            screenSize: 40, // mm
             pixelWidth: 324,
             pixelHeight: 394,
             battery: 265.9, // mah
@@ -1015,7 +1015,7 @@ const appleWatches = [
         },
         sizeLarge: {
             name: '42/44/45',
-            screenSize: 42, // mm
+            screenSize: 44, // mm
             pixelWidth: 368,
             pixelHeight: 448,
             battery: 303.8, // mah
@@ -1045,8 +1045,8 @@ const appleWatches = [
             ],
         },
         batteryChargeTime: [ // 充电时长
-            {name: '80%', value: '1'}, // h
-            {name: '100%', value: '1.5'}, // h
+            {name: '80%', value: '1h'}, // h
+            {name: '100%', value: '1.5h'}, // h
         ],
         storage: 32,
         cpu: {
@@ -1089,6 +1089,155 @@ const appleWatches = [
                         value: [
                             {name: '40', value: 'A2375'},
                             {name: '44', value: 'A2376'},
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        name: "Apple Watch S7",
+        name_short: "S7",
+        pic: "S7",
+        isNew: false,
+        active: false,
+        dateRelease: "2022-09-07",
+        dateUnsupported: "",
+        waterResistance: 'ISO 22810:2010',
+        waterResistanceDepth: '50', // m
+        dustResistance: 'IP6X',
+
+        cellular: 'eSIM(可选)', // 蜂窝网络
+        wifi: '802.11 b/g/n 2.4 & 5GHz',
+        bluetooth: '5',
+        ultraWideBand: 'U1芯片',
+        sensorHeart: '3', // 心率检测版本
+        sensorECG: true,
+        sensorBloodOxygen: true, // 血氧检测
+        sensorTemperature: false, // 温度检测器
+        sensorGPS: [ // 卫星导航系统
+            'GPS', 'GLONASS', 'Galileo', 'QZSS', 'BeiDou'
+        ],
+        sensorAccelerometer: 32, // 加速度 g
+        sensorGyroscope: '增强版本', // 陀螺仪
+        sensorAmbient: true, // 光线传感器
+        sensorAltimeter: '常开', // 海拔传感器
+        sensorCompass: true, // 指南针
+        heySiri: true, // 是否支持 siri
+        display: {
+            screenType: SCREEN_TYPE.rounded, // 屏幕样式
+            type: 'LTPO OLED Retina 常亮', // 屏幕类型
+            touch3D: true, // 3d touch
+            brightness: 1000, // nit
+            pixelDensity: 326, // ppi 像素密度
+        },
+        sizeSmall: {
+            name: '38/40/41',
+            screenSize: 41, // mm
+            pixelWidth: 352,
+            pixelHeight: 430,
+            battery: 284.2, // mah
+            batteryVoltage: 3.85, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 32.0, // g
+                    height: 41, // mm
+                    width: 35, // mm
+                    depth: 10.74, // mm
+                },
+                {
+                    type: '钢',
+                    weight: 42.3, // g
+                    height: 41, // mm
+                    width: 35, // mm
+                    depth: 10.74, // mm
+                },
+                {
+                    type: 'ED',
+                    weight: 37, // g
+                    height: 41, // mm
+                    width: 35, // mm
+                    depth: 10.74, // mm
+                },
+            ],
+        },
+        sizeLarge: {
+            name: '42/44/45',
+            screenSize: 45, // mm
+            pixelWidth: 396,
+            pixelHeight: 484,
+            battery: 308.8, // mah
+            batteryVoltage: 3.85, // v
+            type: [
+                {
+                    type: '铝',
+                    weight: 38.8, // g
+                    height: 45, // mm
+                    width: 38, // mm
+                    depth: 10.74, // mm
+                },
+                {
+                    type: '钢',
+                    weight: 51.5, // g
+                    height: 45, // mm
+                    width: 38, // mm
+                    depth: 10.74, // mm
+                },
+                {
+                    type: 'ED',
+                    weight: 45.1, // g
+                    height: 45, // mm
+                    width: 38, // mm
+                    depth: 10.74, // mm
+                },
+            ],
+        },
+        batteryChargeTime: [ // 充电时长
+            {name: '80%', value: '45min'}, // h
+            {name: '100%', value: '75min'}, // h
+        ],
+        storage: 32,
+        cpu: {
+            name: 'Apple S7',
+            speed: '',
+            bit: 64,
+            coreCount: 2
+        },
+        memory: {
+            type: 'DRAM',
+            size: '1.5GB',
+        },
+        OS: {
+            from: 'watchOS 8.0',
+            to: 'watchOS 9.3.1'
+        },
+        appleWatchRequire: [
+            {name: '', value: '>iPhone6s >iOS15'},
+        ],
+        model: [
+            {
+                name: "GPS",
+                value: [
+                    {name: '41', value: 'A2473'},
+                    {name: '45', value: 'A2474'},
+                ],
+            },
+            {
+                name: "GPS+Cellular",
+                value: [
+                    {
+                        name: '北美',
+                        value: [
+                            {name: '41', value: 'A2475'},
+                            {name: '45', value: 'A2477'},
+                        ]
+                    },
+                    {
+                        name: '欧亚太中',
+                        value: [
+                            {name: '41', value: 'A2476'},
+                            {name: '45', value: 'A2478'},
                         ]
                     }
                 ]
