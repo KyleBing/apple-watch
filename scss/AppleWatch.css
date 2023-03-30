@@ -398,7 +398,7 @@ tt {
 }
 
 .about {
-  font-family: "Galvji";
+  font-family: "Galvji", sans-serif;
   color: white;
   display: flex;
   align-items: center;
