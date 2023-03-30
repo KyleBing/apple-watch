@@ -1,4 +1,5 @@
 
+
 .section-header{
   padding: 5px 10px;
   display: flex;
@@ -34,11 +35,50 @@
 
 .value-item-second{
   display: flex;
-  font-size: $fz-sm;
+  font-size: $fz-main;
   .label-second{
+    font-weight: bold;
 
   }
   .value-second{
 
+  }
+}
+
+
+// 充电 item
+$height-charging-bar: 24px;
+.charging-item {
+  font-size: $fz-sm;
+  margin-bottom: 5px;
+  width: 200px;
+  height: $height-charging-bar;
+  color: white;
+  font-family: Galvji;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  .bar{
+    position: relative;
+    height: $height-charging-bar;
+    .time{
+      line-height: $height-charging-bar;
+      right: 10px;
+      position: absolute;
+    }
+    .percentage{
+      left: 10px;
+      line-height: $height-charging-bar;
+      position: absolute;
+    }
+  }
+  &.orange{
+    .bar{
+      border-color: $orange;
+      background-color: transparentize($orange, 0.1);
+    }
+  }
+  &.green{
+    background-color: transparentize($green, 0.1);
   }
 }

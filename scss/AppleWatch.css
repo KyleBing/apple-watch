@@ -934,31 +934,49 @@ footer a:hover {
   flex-grow: 1;
 }
 
-.main-info {
+section.main-info {
+  flex-shrink: 0;
+  width: 400px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-.main-info .main-pic img {
+section.main-info .main-pic img {
   width: 300px;
   display: block;
 }
-.main-info .title {
+section.main-info .title {
+  margin-top: 20px;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
 }
-.main-info .title.is-new {
+section.main-info .title.is-new {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(90deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
 }
-.main-info .date {
+section.main-info .date {
   color: #666;
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
   font-size: 14px;
+}
+
+section.sensor-info {
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+section.size-small {
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+section.size-large {
+  flex-shrink: 0;
+  flex-grow: 1;
 }
 
 .section-header {
@@ -995,21 +1013,54 @@ footer a:hover {
 
 .value-item-second {
   display: flex;
-  font-size: 12px;
+  font-size: 14px;
 }
+.value-item-second .label-second {
+  font-weight: bold;
+}
+.charging-item {
+  font-size: 12px;
+  margin-bottom: 5px;
+  width: 200px;
+  height: 24px;
+  color: white;
+  font-family: Galvji;
+}
+.charging-item:last-child {
+  margin-bottom: 0;
+}
+.charging-item .bar {
+  position: relative;
+  height: 24px;
+}
+.charging-item .bar .time {
+  line-height: 24px;
+  right: 10px;
+  position: absolute;
+}
+.charging-item .bar .percentage {
+  left: 10px;
+  line-height: 24px;
+  position: absolute;
+}
+.charging-item.orange .bar {
+  border-color: #FF9500;
+  background-color: rgba(255, 149, 0, 0.9);
+}
+.charging-item.green {
+  background-color: rgba(0, 181, 107, 0.9);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #262626;
   }
-
   .container {
     background-color: #262626;
   }
-
   .rate {
     background-color: transparent !important;
   }
-
   .iphone .title-content {
     border-bottom-color: #4d4d4d;
   }
@@ -1043,17 +1094,14 @@ footer a:hover {
   .iphone .detail-item-content .tip .sup {
     background-color: #262626;
   }
-
   .gradient-blue {
     color: #d9d9d9 !important;
     background-image: linear-gradient(to bottom right, #073fd5, #05638e);
   }
-
   .gradient-purple {
     color: #d9d9d9 !important;
     background-image: linear-gradient(to bottom right, #7700a1, #bc0179);
   }
-
   rect {
     fill: transparent;
   }
@@ -1072,11 +1120,9 @@ footer a:hover {
   rect#apple-watch-line {
     fill: #FF9500;
   }
-
   text, tspan {
     fill: #bfbfbf;
   }
-
   .filter-list .apple-watch-tag-list .apple-watch-tag {
     border-color: #4d4d4d;
     color: #a6a6a6;
@@ -1090,21 +1136,17 @@ footer a:hover {
     width: 8px;
     height: 10px;
   }
-
   ::-webkit-scrollbar-track {
     border: none;
     background-color: rgba(0, 0, 0, 0);
   }
-
   ::-webkit-scrollbar-thumb {
     border-color: transparent;
     background-color: transparent;
   }
-
   :hover::-webkit-scrollbar-thumb {
     background-color: #474747;
   }
-
   .gradient {
     background-image: linear-gradient(to bottom right, #333333, #404040);
   }
@@ -1113,7 +1155,6 @@ footer a:hover {
   body {
     background-color: #262626 !important;
   }
-
   .iphone {
     overflow: hidden;
     -webkit-border-radius: 15px;
@@ -1124,12 +1165,10 @@ footer a:hover {
     padding: 0;
     border: 1px solid #4d4d4d !important;
   }
-
   .title-content {
     border-bottom: 1px solid #dadada;
     background-color: #474747 !important;
   }
-
   .ref-content > * {
     border-bottom: 1px solid #4d4d4d !important;
   }
@@ -1147,5 +1186,3 @@ footer a:hover {
     color: #737373;
   }
 }
-
-/*# sourceMappingURL=AppleWatch.css.map */

@@ -38,7 +38,8 @@ footer{
     padding: 20px 10px;
   }
 }
-// LEVEL 1
+
+
 .apple-watch{
   padding: 30px 0;
   display: flex;
@@ -50,8 +51,10 @@ footer{
   }
 }
 
-
-.main-info{
+// 主要信息
+section.main-info{
+  flex-shrink: 0;
+  width: 400px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -63,8 +66,9 @@ footer{
   }
 
   .title{
+    margin-top: 20px;
     font-weight: bold;
-    font-size: $fz-title + 5;
+    font-size: $fz-title;
     &.is-new{
       -webkit-background-clip: text;
       background-clip: text;
@@ -80,6 +84,25 @@ footer{
     flex-flow: row nowrap;
     font-size: $fz-main;
   }
+}
+
+// 传感器
+section.sensor-info{
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+// 小尺寸
+section.size-small{
+  flex-shrink: 0;
+  flex-grow: 1;
+
+}
+// 大尺寸
+section.size-large{
+  flex-shrink: 0;
+  flex-grow: 1;
+
 }
 
 
