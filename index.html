@@ -151,7 +151,7 @@
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">卫星导航</div>
-                    <div v-if="typeof appleWatch.sensorGPS.length > 0" class="value">{{appleWatch.sensorGPS.join('、')}}</div>
+                    <div v-if="appleWatch.sensorGPS.length > 0" class="value">{{appleWatch.sensorGPS.join('、')}}</div>
                     <div v-else class="value">-</div>
                 </div>
                 <div class="sensor-info-item">
