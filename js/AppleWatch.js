@@ -1,10 +1,10 @@
 /*****************************
  Create Date: 20230310155016
- Update Date: 20230310155019
+ Update Date: 20230330161002
  *****************************/
 
 const latestOS = "最新"
-const lastUpdateDate = '2022.12.27'
+const lastUpdateDate = '2023-03-30'
 
 const SCREEN_TYPE = {
     square: '',
@@ -1631,9 +1631,6 @@ let app = new Vue({
         thumbsUpKey: 'apple-watch',
         heartActive: false,
         thumbsUpCount: 0,
-        // full screen 相关
-        showFullScreenBtn: false,
-        didEnteredFullScreen: false,
         // 浏览器参数
         portraitMode: false,
         mobileMode: false,
@@ -1658,7 +1655,7 @@ let app = new Vue({
         },
         shareQrCode: null,
         shareQrCodeQQ: null,
-        linkAddress: 'http://kylebing.cn/tools/iphone/',
+        linkAddress: 'https://kylebing.cn/tools/apple-watch/',
         linkQQ: 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA'
     },
     mounted() {
@@ -1667,7 +1664,6 @@ let app = new Vue({
         let mobileMode = /Mobile/i.test(navigator.userAgent)
         this.portraitMode = window.innerWidth > window.innerHeight
         this.mobileMode = mobileMode
-        this.showFullScreenBtn = chromeCore && !mobileMode
         this.getInitThumbsUpCount()
         this.websocketInit()
 
@@ -1717,14 +1713,6 @@ let app = new Vue({
             }
             this.appleWatches.push(this.appleWatchesOrigin[0])
             this.appleWatches.pop()
-        },
-
-        // 全屏显示
-        enterFullScreen: function () {
-            document.documentElement.requestFullscreen()
-        },
-        filterIphone() {
-
         },
 
         // 点赞功能
@@ -1798,15 +1786,7 @@ let app = new Vue({
         },
     },
     computed: {
-        maxScore(){
-            let max = 0
-            appleWatches.forEach(item => {
-                if (max < item.geekbenchScore.multi) {
-                    max = item.geekbenchScore.multi
-                }
-            })
-            return max
-        }
+
     }
 })
 

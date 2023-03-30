@@ -930,7 +930,7 @@ footer a:hover {
 }
 
 .apple-watch {
-  padding: 60px 0;
+  padding: 80px 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -940,7 +940,7 @@ footer a:hover {
 section.main-info {
   background-color: white;
   flex-shrink: 0;
-  width: 400px;
+  width: 500px;
   display: flex;
   height: 100%;
   flex-flow: column nowrap;
