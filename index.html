@@ -48,10 +48,10 @@
     <div class="apple-watch-list">
 
         <div class="apple-watch" v-for="(appleWatch, index) in appleWatches" :key="index">
-            
+
             <section class="main-info">
                 <div class="main-pic">
-                    <img src="./img/apple-watch/aw-8.jpg" alt="apple watch image">
+                    <img :src="`./img/apple-watch/aw-${appleWatch.name_short}.jpg`" alt="apple watch image">
                 </div>
                 <div :class="['title', {'is-new': appleWatch.isNew}]">{{appleWatch.name}}</div>
                 <div class="date">
@@ -347,7 +347,6 @@
                         </g>
                     </svg>
                 </div>
-
             </section>
 
             <!-- 大尺寸  -->
