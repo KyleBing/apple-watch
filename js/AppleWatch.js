@@ -123,7 +123,7 @@ const appleWatches = [
         },
         OS: {
             from: 'watchOS 1.0',
-            to: 'watchOS 4.32'
+            to: '4.32'
         },
         appleWatchRequire: [
             {name: '',value: '>iPhone5 >iOS8.2'}
@@ -221,7 +221,7 @@ const appleWatches = [
         },
         OS: {
             from: 'watchOS 3.0',
-            to: 'watchOS 6.3'
+            to: '6.3'
         },
         appleWatchRequire: [
             {name: '', value: '>iPhone5 >iOS10'}
@@ -349,7 +349,7 @@ const appleWatches = [
         },
         OS: {
             from: 'watchOS 3.0',
-            to: 'watchOS 6.3'
+            to: '6.3'
         },
         appleWatchRequire: [
             {name: '', value: '>iPhone5 >iOS10'}
@@ -413,12 +413,12 @@ const appleWatches = [
             pixelWidth: 272,
             pixelHeight: 340,
             battery: [ // mah
-                {name: 'no-LTE', value: 262},
-                {name: 'LTE', value: 279},
+                {name: 'GPS', value: 262},
+                {name: '蜂窝', value: 279},
             ],
             batteryVoltage: [  // v
-                {name: 'no-LTE', value: 3.81},
-                {name: 'LTE', value: 3.82},
+                {name: 'GPS', value: 3.81},
+                {name: '蜂窝', value: 3.82},
             ],
             type: [
                 {
@@ -450,12 +450,12 @@ const appleWatches = [
             pixelWidth: 312,
             pixelHeight: 390,
             battery: [ // mah
-                {name: 'no-LTE', value: 342},
-                {name: 'LTE', value: 352},
+                {name: 'GPS', value: 342},
+                {name: '蜂窝', value: 352},
             ],
             batteryVoltage: [  // v
-                {name: 'no-LTE', value: 3.82},
-                {name: 'LTE', value: 3.82},
+                {name: 'GPS', value: 3.82},
+                {name: '蜂窝', value: 3.82},
             ],
             type: [
                 {
@@ -486,8 +486,8 @@ const appleWatches = [
             {name: '100%', value: '2h'}, // h
         ],
         storage: [ // GB
-            {name: 'no-LTE', size: 8},
-            {name: 'LTE', size: 16},
+            {name: 'GPS', value: 8},
+            {name: '蜂窝', value: 16},
         ],
         cpu: {
             name: 'Apple S3',
@@ -501,11 +501,11 @@ const appleWatches = [
         },
         OS: {
             from: 'watchOS 4.0',
-            to: 'watchOS 8.7.1'
+            to: '8.7.1'
         },
         appleWatchRequire: [
-            {name: 'no-LTE', value: '>iPhone5s >iOS11'},
-            {name: 'LTE', value: '>iPhone6 >iOS11'},
+            {name: 'GPS', value: '>iPhone5s >iOS11'},
+            {name: '蜂窝', value: '>iPhone6 >iOS11'},
         ],
         model: [
             {
@@ -644,11 +644,11 @@ const appleWatches = [
         },
         OS: {
             from: 'watchOS 5.0',
-            to: 'watchOS 9.3.1'
+            to: '9.3.1'
         },
         appleWatchRequire: [
-            {name: 'no-LTE', value: '>iPhone5s >iOS12'},
-            {name: 'LTE', value: '>iPhone6 >iOS12'},
+            {name: 'GPS', value: '>iPhone5s >iOS12'},
+            {name: '蜂窝', value: '>iPhone6 >iOS12'},
         ],
         model: [
             {
@@ -794,7 +794,7 @@ const appleWatches = [
         },
         OS: {
             from: 'watchOS 6.0',
-            to: 'watchOS 9.3.1'
+            to: '9.3.1'
         },
         appleWatchRequire: [
             {name: '', value: '>iPhone6s >iOS13'},
@@ -915,7 +915,7 @@ const appleWatches = [
         },
         OS: {
             from: 'watchOS 7.0',
-            to: 'watchOS 9.3.1'
+            to: '9.3.1'
         },
         appleWatchRequire: [
             {name: '', value: '>iPhone6s >iOS14'},
@@ -1064,7 +1064,7 @@ const appleWatches = [
         },
         OS: {
             from: 'watchOS 7.0',
-            to: 'watchOS 9.3.1'
+            to: '9.3.1'
         },
         appleWatchRequire: [
             {name: '', value: '>iPhone6s >iOS14'},
@@ -1213,7 +1213,7 @@ const appleWatches = [
         },
         OS: {
             from: 'watchOS 8.0',
-            to: 'watchOS 9.3.1'
+            to: '9.3.1'
         },
         appleWatchRequire: [
             {name: '', value: '>iPhone6s >iOS15'},
@@ -1251,7 +1251,7 @@ const appleWatches = [
         name: "Apple Watch SE2",
         name_short: "SE2",
         pic: "SE2",
-        isNew: false,
+        isNew: true,
         active: false,
         dateRelease: "2022-09-16",
         dateUnsupported: "",
@@ -1335,7 +1335,7 @@ const appleWatches = [
         },
         OS: {
             from: 'watchOS 8.0',
-            to: 'watchOS 9.3.1'
+            to: '9.3.1'
         },
         appleWatchRequire: [
             {name: '', value: '>iPhone8 >iOS16'},
@@ -1380,7 +1380,7 @@ const appleWatches = [
         name: "Apple Watch S8",
         name_short: "S8",
         pic: "S8",
-        isNew: false,
+        isNew: true,
         active: false,
         dateRelease: "2022-09-16",
         dateUnsupported: "",
@@ -1477,7 +1477,7 @@ const appleWatches = [
         },
         OS: {
             from: 'watchOS 9.0',
-            to: 'watchOS 9.3.1'
+            to: '9.3.1'
         },
         appleWatchRequire: [
             {name: '', value: '>iPhone8 >iOS16'},
@@ -1522,7 +1522,7 @@ const appleWatches = [
         name: "Apple Watch Ultra",
         name_short: "Ultra",
         pic: "Ultra",
-        isNew: false,
+        isNew: true,
         active: false,
         dateRelease: "2022-09-23",
         dateUnsupported: "",
@@ -1588,7 +1588,7 @@ const appleWatches = [
         },
         OS: {
             from: 'watchOS 9.0',
-            to: 'watchOS 9.3.1'
+            to: '9.3.1'
         },
         appleWatchRequire: [
             {name: '', value: '>iPhone8 >iOS16'},

@@ -2,15 +2,27 @@ $color-stroke: #333;
 
 .svg-screen {
   display: flex;
-  justify-content: flex-end;
   width: 100%;
+  justify-content: center;
   margin-bottom: 20px;
-
   svg {
     margin-right: 45px;
     width: 115px;
   }
+}
 
+.svg-size {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 10px;
+  svg {
+    width: 220px;
+  }
+}
+
+
+.svg-screen {
   .cls-1 {
     fill: #fff;
   }
@@ -73,9 +85,9 @@ $color-stroke: #333;
   }
 }
 
+// =========================================
 .svg-size {
   display: flex;
-  justify-content: flex-end;
   width: 100%;
   margin-bottom: 10px;
 
@@ -83,16 +95,14 @@ $color-stroke: #333;
     margin-bottom: 0;
   }
 
-  svg {
-    width: 220px;
-  }
+
 
   .cls-1 {
     fill: #e6e6e6;
   }
 
   .cls-2 {
-    fill: #f2f2f2;
+    fill: #fff;
   }
 
   .cls-3 {

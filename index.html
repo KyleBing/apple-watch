@@ -79,7 +79,9 @@
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">卫星导航</div>
-                    <div class="value">{{appleWatch.sensorGPS.join(',')}}</div>
+                    <div class="value value-inline">
+                        <div class="tag" v-for="item in appleWatch.sensorGPS">{{item}}</div>
+                    </div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">加速度</div>
@@ -95,8 +97,16 @@
                     <div class="value">{{appleWatch.sensorGyroscope?'✓':'-'}}</div>
                 </div>
                 <div class="sensor-info-item">
-                    <div class="label">光线感应器</div>
+                    <div class="label">光线感应</div>
                     <div class="value">{{appleWatch.sensorAmbient?'✓':'-'}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">Siri</div>
+                    <div class="value">{{appleWatch.heySiri?'✓':'-'}}</div>
+                </div>
+                <div class="sensor-info-item">
+                    <div class="label">指南针</div>
+                    <div class="value">{{appleWatch.sensorCompass?'✓':'-'}}</div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">ECG支持</div>
@@ -110,33 +120,36 @@
                     <div class="label">温度检测</div>
                     <div class="value">{{appleWatch.sensorTemperature?'✓':'-'}}</div>
                 </div>
-                <div class="sensor-info-item">
-                    <div class="label">指南针</div>
-                    <div class="value">{{appleWatch.sensorCompass?'✓':'-'}}</div>
-                </div>
-                <div class="sensor-info-item">
-                    <div class="label">Siri</div>
-                    <div class="value">{{appleWatch.heySiri?'✓':'-'}}</div>
-                </div>
                 <div class="sensor-info-item" v-if="appleWatch.batteryChargeTime">
                     <div class="label">充电时长</div>
                     <div class="value">
-                        <div :class="['charging-item', {orange: item.name === '80%'}, {green: item.name === '100%'},] "
-                             v-for="item in appleWatch.batteryChargeTime" :key="item.name">
-                            <div class="bar" :style="`width: ${item.name}`">
-                                <div class="percentage">{{item.name}}</div>
-                                <div class="time">{{item.value}}</div>
+                        <div class="charging-container">
+                            <div :class="['charging-item', {orange: item.name === '80%'}, {green: item.name === '100%'},] "
+                                 v-for="item in appleWatch.batteryChargeTime" :key="item.name">
+                                <div class="bar" :style="`width: ${item.name}`">
+                                    <div class="percentage">{{item.name}}</div>
+                                    <div class="time">{{item.value}}</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">存储空间</div>
-                    <div class="value">{{appleWatch.storage}}GB</div>
+                    <div class="value" v-if="appleWatch.storage.length > 0">
+                        <div class="value-item-second"
+                             v-for="item in appleWatch.storage" :key="item.name">
+                            <div v-if="item.name" class="label-second">{{item.name}} ： </div>
+                            <div class="value-second">{{item.value}}GB</div>
+                        </div>
+                    </div>
+                    <div class="value" v-else>
+                        {{appleWatch.storage}}GB
+                    </div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">内存</div>
-                    <div class="value">{{appleWatch.memory.type}}-{{appleWatch.memory.size}}</div>
+                    <div class="value value-inline">{{appleWatch.memory.size}} <div class="tag ml-1">{{appleWatch.memory.type}}</div></div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">系统</div>
@@ -163,11 +176,29 @@
                 </div>
                 <div v-if="appleWatch.sizeSmall.battery" class="sensor-info-item">
                     <div class="label">电池容量</div>
-                    <div class="value">{{appleWatch.sizeSmall.battery}} <span class="unit">mah</span></div>
+                    <div class="value" v-if="isNaN(appleWatch.sizeSmall.battery)">
+                        <div class="value-item-second"
+                             v-for="item in appleWatch.sizeSmall.battery" :key="item.name">
+                            <div v-if="item.name" class="label-second">{{item.name}} ： </div>
+                            <div class="value-second">{{item.value}} <span class="unit">mah</span></div>
+                        </div>
+                    </div>
+                    <div class="value" v-else>
+                        {{appleWatch.sizeSmall.battery}} <span class="unit">mah</span>
+                    </div>
                 </div>
                 <div v-if="appleWatch.sizeSmall.batteryVoltage" class="sensor-info-item">
                     <div class="label">电池电压</div>
-                    <div class="value">{{appleWatch.sizeSmall.batteryVoltage}} <span class="unit">v</span></div>
+                    <div class="value" v-if="isNaN(appleWatch.sizeSmall.batteryVoltage)">
+                        <div class="value-item-second"
+                             v-for="item in appleWatch.sizeSmall.batteryVoltage" :key="item.name">
+                            <div v-if="item.name" class="label-second">{{item.name}} ： </div>
+                            <div class="value-second">{{item.value}} <span class="unit">v</span></div>
+                        </div>
+                    </div>
+                    <div class="value" v-else>
+                        {{appleWatch.sizeSmall.batteryVoltage}} <span class="unit">v</span>
+                    </div>
                 </div>
 
                 <div class="svg-screen">
@@ -242,10 +273,10 @@
                                     <rect class="cls-5" x="217.08" y="104.05" width="0.5" height="3.25"
                                           transform="translate(-11.07 184.63) rotate(-45)"/>
                                     <rect class="cls-6" x="76" y="55" width="30" height="19"/>
-                                    <rect class="cls-6" x="137" y="120" width="30" height="19"/>
+                                    <rect class="cls-6" x="137" y="120" width="34" height="19"/>
                                     <rect class="cls-6" x="215" y="111" width="30" height="19"/>
-                                    <text id="height" class="cls-7" transform="translate(75.71 68.51)">{{item.height.toFixed(1)}}</text>
-                                    <text id="width" class="cls-7" transform="translate(143.86 133.96)">{{item.width.toFixed(1)}}</text>
+                                    <text id="height" class="cls-7" transform="translate(75.71 68.51)">{{item.height}}</text>
+                                    <text id="width" class="cls-7" transform="translate(143.86 133.96)">{{item.width}}</text>
                                     <text id="thickness" class="cls-7" transform="translate(215.49 122.96)">{{item.thickness.toFixed(1)}}</text>
                                     <text class="cls-8" transform="matrix(1, -0.01, 0.01, 1, 5.96, 71.24)">{{item.type}}</text>
                                     <text class="cls-7" transform="translate(0 91.42)">{{item.weight.toFixed(1)}}</text>
@@ -267,11 +298,29 @@
 
                 <div v-if="appleWatch.sizeLarge.battery" class="sensor-info-item">
                     <div class="label">电池容量</div>
-                    <div class="value">{{appleWatch.sizeLarge.battery}} <span class="unit">mah</span></div>
+                    <div class="value" v-if="appleWatch.sizeLarge.battery.length > 0">
+                        <div class="value-item-second"
+                             v-for="item in appleWatch.sizeLarge.battery" :key="item.name">
+                            <div v-if="item.name" class="label-second">{{item.name}} ： </div>
+                            <div class="value-second">{{item.value}} <span class="unit">mah</span></div>
+                        </div>
+                    </div>
+                    <div class="value" v-else>
+                        {{appleWatch.sizeLarge.battery}} <span class="unit">mah</span>
+                    </div>
                 </div>
                 <div v-if="appleWatch.sizeLarge.batteryVoltage" class="sensor-info-item">
                     <div class="label">电池电压</div>
-                    <div class="value">{{appleWatch.sizeLarge.batteryVoltage}} <span class="unit">v</span></div>
+                    <div class="value" v-if="appleWatch.sizeLarge.batteryVoltage.length > 0">
+                        <div class="value-item-second"
+                             v-for="item in appleWatch.sizeLarge.batteryVoltage" :key="item.name">
+                            <div v-if="item.name" class="label-second">{{item.name}} ： </div>
+                            <div class="value-second">{{item.value}} <span class="unit">v</span></div>
+                        </div>
+                    </div>
+                    <div class="value" v-else>
+                        {{appleWatch.sizeLarge.batteryVoltage}} <span class="unit">v</span>
+                    </div>
                 </div>
 
                 <div class="svg-screen">
@@ -347,10 +396,10 @@
                                     <rect class="cls-5" x="217.08" y="104.05" width="0.5" height="3.25"
                                           transform="translate(-11.07 184.63) rotate(-45)"/>
                                     <rect class="cls-6" x="76" y="55" width="30" height="19"/>
-                                    <rect class="cls-6" x="137" y="120" width="30" height="19"/>
+                                    <rect class="cls-6" x="137" y="120" width="34" height="19"/>
                                     <rect class="cls-6" x="215" y="111" width="30" height="19"/>
-                                    <text id="height" class="cls-7" transform="translate(75.71 68.51)">{{item.height.toFixed(1)}}</text>
-                                    <text id="width" class="cls-7" transform="translate(143.86 133.96)">{{item.width.toFixed(1)}}</text>
+                                    <text id="height" class="cls-7" transform="translate(75.71 68.51)">{{item.height}}</text>
+                                    <text id="width" class="cls-7" transform="translate(143.86 133.96)">{{item.width}}</text>
                                     <text id="thickness" class="cls-7" transform="translate(215.49 122.96)">{{item.thickness.toFixed(1)}}</text>
                                     <text class="cls-8" transform="matrix(1, -0.01, 0.01, 1, 5.96, 71.24)">{{item.type}}</text>
                                     <text class="cls-7" transform="translate(0 91.42)">{{item.weight.toFixed(1)}}</text>

@@ -794,14 +794,25 @@ tt {
 }
 .svg-screen {
   display: flex;
-  justify-content: flex-end;
   width: 100%;
+  justify-content: center;
   margin-bottom: 20px;
 }
 .svg-screen svg {
   margin-right: 45px;
   width: 115px;
 }
+
+.svg-size {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.svg-size svg {
+  width: 220px;
+}
+
 .svg-screen .cls-1 {
   fill: #fff;
 }
@@ -851,21 +862,17 @@ tt {
 
 .svg-size {
   display: flex;
-  justify-content: flex-end;
   width: 100%;
   margin-bottom: 10px;
 }
 .svg-size:last-child {
   margin-bottom: 0;
 }
-.svg-size svg {
-  width: 220px;
-}
 .svg-size .cls-1 {
   fill: #e6e6e6;
 }
 .svg-size .cls-2 {
-  fill: #f2f2f2;
+  fill: #fff;
 }
 .svg-size .cls-3 {
   fill: #666;
@@ -982,7 +989,8 @@ section.size-large {
 .section-header {
   padding: 5px 10px;
   display: flex;
-  justify-content: flex-start;
+  margin-bottom: 10px;
+  justify-content: center;
   align-items: flex-end;
   border-bottom: 1px solid #dadada;
   font-size: 19px;
@@ -996,7 +1004,10 @@ section.size-large {
 }
 
 .sensor-info-item {
-  margin-bottom: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 3px 5px;
   display: flex;
   font-size: 14px;
   color: #333;
@@ -1005,26 +1016,40 @@ section.size-large {
   width: 100px;
 }
 .sensor-info-item .value {
-  font-family: Galvji;
+  font-family: Galvji, sans-serif;
+}
+.sensor-info-item .value.value-inline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .sensor-info-item .value .unit {
   color: #00b56b;
 }
-
+.sensor-info-item:hover {
+  background-color: #eeeeee;
+}
 .value-item-second {
   display: flex;
   font-size: 14px;
+  align-items: center;
+  line-height: 20px;
 }
 .value-item-second .label-second {
   font-weight: bold;
 }
+.charging-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 .charging-item {
   font-size: 12px;
   margin-bottom: 5px;
   width: 200px;
   height: 24px;
   color: white;
-  font-family: Galvji;
+  font-family: Galvji, sans-serif;
 }
 .charging-item:last-child {
   margin-bottom: 0;
@@ -1049,6 +1074,18 @@ section.size-large {
 }
 .charging-item.green {
   background-color: rgba(0, 181, 107, 0.9);
+}
+
+.tag {
+  font-size: 12px;
+  margin-right: 5px;
+  line-height: 1;
+  background-color: white;
+  border: 1px solid #dadada;
+  padding: 2px 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 @media (prefers-color-scheme: dark) {

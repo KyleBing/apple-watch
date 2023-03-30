@@ -1,9 +1,9 @@
-
-
+// HEADER
 .section-header{
   padding: 5px 10px;
   display: flex;
-  justify-content: flex-start;
+  margin-bottom: 10px;
+  justify-content: center;
   align-items: flex-end;
   border-bottom: 1px solid $color-border;
   font-size: $fz-main + 5;
@@ -16,8 +16,10 @@
   }
 }
 
+// ITEM
 .sensor-info-item{
-  margin-bottom: 3px;
+  @include border-radius(3px);
+  padding: 3px 5px;
   display: flex;
   font-size: $fz-main;
   color: $text-main;
@@ -25,20 +27,31 @@
     width: 100px;
   }
   .value{
-    font-family: Galvji;
+    &.value-inline{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    font-family: Galvji, sans-serif;
     .unit{
       color: $green;
     }
   }
-}
+  &:hover{
+    background-color: $bg-highlight;
+    .label{
 
+    }
+  }
+}
 
 .value-item-second{
   display: flex;
   font-size: $fz-main;
+  align-items: center;
+  line-height: 20px;
   .label-second{
     font-weight: bold;
-
   }
   .value-second{
 
@@ -46,15 +59,19 @@
 }
 
 
-// 充电 item
+// 充电 ITEM
 $height-charging-bar: 24px;
+.charging-container{
+  display: flex;
+  flex-flow: column nowrap;
+}
 .charging-item {
   font-size: $fz-sm;
   margin-bottom: 5px;
   width: 200px;
   height: $height-charging-bar;
   color: white;
-  font-family: Galvji;
+  font-family: Galvji, sans-serif;
   &:last-child{
     margin-bottom: 0;
   }
@@ -81,4 +98,14 @@ $height-charging-bar: 24px;
   &.green{
     background-color: transparentize($green, 0.1);
   }
+}
+
+.tag{
+  font-size: $fz-sm;
+  margin-right: 5px;
+  line-height: 1;
+  background-color: white;
+  border: 1px solid $color-border;
+  padding: 2px 5px;
+  @include border-radius(3px);
 }

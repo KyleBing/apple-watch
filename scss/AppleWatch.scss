@@ -29,7 +29,6 @@ footer{
   }
 }
 
-
 .apple-watch-list{
   margin: 0 auto;
   max-width: 1440px;
@@ -38,7 +37,6 @@ footer{
     padding: 20px 10px;
   }
 }
-
 
 .apple-watch{
   padding: 30px 0;
@@ -96,13 +94,12 @@ section.sensor-info{
 section.size-small{
   flex-shrink: 0;
   flex-grow: 1;
-
 }
+
 // 大尺寸
 section.size-large{
   flex-shrink: 0;
   flex-grow: 1;
-
 }
 
 
