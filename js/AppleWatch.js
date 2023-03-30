@@ -21,7 +21,7 @@ const appleWatches = [
         dateRelease: "2015-04-24",
         dateUnsupported: "2018-09-17",
         waterResistance: 'IPX7',
-        waterResistancethickness: '1', // m
+        waterResistanceThickness: '1', // m
         dustResistance: '',
 
         cellular: '', // 蜂窝网络
@@ -147,7 +147,7 @@ const appleWatches = [
         dateRelease: "2016-09-07",
         dateUnsupported: "2020-12-14",
         waterResistance: 'IPX7',
-        waterResistancethickness: '1', // m
+        waterResistanceThickness: '1', // m
         dustResistance: '',
 
         cellular: '', // 蜂窝网络
@@ -245,7 +245,7 @@ const appleWatches = [
         dateRelease: "2016-09-07",
         dateUnsupported: "2020-12-14",
         waterResistance: 'ISO 22810:2010',
-        waterResistancethickness: '50', // m
+        waterResistanceThickness: '50', // m
         dustResistance: '',
 
 
@@ -380,7 +380,7 @@ const appleWatches = [
         dateRelease: "2017-09-22",
         dateUnsupported: "2022-09-12",
         waterResistance: 'ISO 22810:2010',
-        waterResistancethickness: '50', // m
+        waterResistanceThickness: '50', // m
         dustResistance: '',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -516,7 +516,7 @@ const appleWatches = [
                 ]
             },
             {
-                name: 'GPS+Cellular',
+                name: '蜂窝',
                 value: [
                     {
                         name: '北美',
@@ -552,7 +552,7 @@ const appleWatches = [
         dateRelease: "2018-09-12",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistancethickness: '50', // m
+        waterResistanceThickness: '50', // m
         dustResistance: '',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -659,7 +659,7 @@ const appleWatches = [
                 ],
             },
             {
-                name: "GPS+Cellular",
+                name: "蜂窝",
                 value: [
                     {
                         name: '北美',
@@ -688,7 +688,7 @@ const appleWatches = [
         dateRelease: "2019-09-25",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistancethickness: '50', // m
+        waterResistanceThickness: '50', // m
         dustResistance: '',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -808,7 +808,7 @@ const appleWatches = [
                 ],
             },
             {
-                name: "GPS+Cellular",
+                name: "蜂窝",
                 value: [
                     {
                         name: '北美',
@@ -837,7 +837,7 @@ const appleWatches = [
         dateRelease: "2020-09-15",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistancethickness: '50', // m
+        waterResistanceThickness: '50', // m
         dustResistance: '',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -929,7 +929,7 @@ const appleWatches = [
                 ],
             },
             {
-                name: "GPS+Cellular",
+                name: "蜂窝",
                 value: [
                     {
                         name: '北美',
@@ -958,7 +958,7 @@ const appleWatches = [
         dateRelease: "2021-10-08",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistancethickness: '50', // m
+        waterResistanceThickness: '50', // m
         dustResistance: '',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -1078,7 +1078,7 @@ const appleWatches = [
                 ],
             },
             {
-                name: "GPS+Cellular",
+                name: "蜂窝",
                 value: [
                     {
                         name: '北美',
@@ -1107,7 +1107,7 @@ const appleWatches = [
         dateRelease: "2022-09-07",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistancethickness: '50', // m
+        waterResistanceThickness: '50', // m
         dustResistance: 'IP6X',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -1119,7 +1119,7 @@ const appleWatches = [
         sensorBloodOxygen: true, // 血氧检测
         sensorTemperature: false, // 温度检测器
         sensorGPS: [ // 卫星导航系统
-            'GPS', 'GLONASS', 'Galileo', 'QZSS', 'BeiDou'
+            'GPS', 'GLONASS', 'Galileo', 'QZSS', '北斗'
         ],
         sensorAccelerometer: 32, // 加速度 g
         sensorGyroscope: '增强版本', // 陀螺仪
@@ -1227,7 +1227,7 @@ const appleWatches = [
                 ],
             },
             {
-                name: "GPS+Cellular",
+                name: "蜂窝",
                 value: [
                     {
                         name: '北美',
@@ -1256,7 +1256,7 @@ const appleWatches = [
         dateRelease: "2022-09-16",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistancethickness: '50', // m
+        waterResistanceThickness: '50', // m
         dustResistance: '',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -1349,7 +1349,7 @@ const appleWatches = [
                 ],
             },
             {
-                name: "GPS+Cellular",
+                name: "蜂窝",
                 value: [
                     {
                         name: '北美',
@@ -1385,7 +1385,7 @@ const appleWatches = [
         dateRelease: "2022-09-16",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
-        waterResistancethickness: '50', // m
+        waterResistanceThickness: '50', // m
         dustResistance: 'IP6X',
 
         cellular: 'eSIM(可选)', // 蜂窝网络
@@ -1397,7 +1397,7 @@ const appleWatches = [
         sensorBloodOxygen: true, // 血氧检测
         sensorTemperature: true, // 温度检测器
         sensorGPS: [ // 卫星导航系统
-            'GPS', 'GLONASS', 'Galileo', 'QZSS', 'BeiDou'
+            'GPS', 'GLONASS', 'Galileo', 'QZSS', '北斗'
         ],
         sensorAccelerometer: 'High-g', // 加速度 g
         sensorGyroscope: '高灵敏度', // 陀螺仪
@@ -1491,7 +1491,7 @@ const appleWatches = [
                 ],
             },
             {
-                name: "GPS+Cellular",
+                name: "蜂窝",
                 value: [
                     {
                         name: '北美',
@@ -1527,7 +1527,7 @@ const appleWatches = [
         dateRelease: "2022-09-23",
         dateUnsupported: "",
         waterResistance: 'ISO 22810',
-        waterResistancethickness: '100', // m
+        waterResistanceThickness: '100', // m
         dustResistance: 'IP6X',
 
         cellular: 'eSIM', // 蜂窝网络
@@ -1539,7 +1539,7 @@ const appleWatches = [
         sensorBloodOxygen: true, // 血氧检测
         sensorTemperature: true, // 温度检测器
         sensorGPS: [ // 卫星导航系统
-            'GPS', 'GLONASS', 'Galileo', 'QZSS', 'BeiDou'
+            'GPS', 'GLONASS', 'Galileo', 'QZSS', '北斗'
         ],
         sensorAccelerometer: 'High-g', // 加速度 g
         sensorGyroscope: '高灵敏度', // 陀螺仪
@@ -1595,7 +1595,7 @@ const appleWatches = [
         ],
         model: [
             {
-                name: "GPS+Cellular",
+                name: "蜂窝",
                 value: [
                     {
                         name: '北美',

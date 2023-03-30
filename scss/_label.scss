@@ -1,16 +1,15 @@
 // HEADER
 .section-header{
-  padding: 5px 10px;
+  padding: 5px 3px;
   display: flex;
   margin-bottom: 10px;
-  justify-content: center;
   align-items: flex-end;
-  border-bottom: 1px solid $color-border;
-  font-size: $fz-main + 5;
+  font-size: $fz-main + 2;
   .section-title{
     font-weight: bold;
   }
   .section-subtitle{
+    font-family: 'Galvji', sans-serif;
     margin-left: 10px;
     color: $text-subtitle;
   }
@@ -24,9 +23,11 @@
   font-size: $fz-main;
   color: $text-main;
   .label{
+    color: $text-subtitle;
     width: 100px;
   }
   .value{
+    flex-grow: 1;
     &.value-inline{
       display: flex;
       justify-content: flex-start;
@@ -46,14 +47,18 @@
 }
 
 .value-item-second{
+  width: 100%;
   display: flex;
   font-size: $fz-main;
-  align-items: center;
+  align-items: flex-start;
   line-height: 20px;
+  background-color: transparentize(black, 0.95);
   .label-second{
+    width: 60px;
     font-weight: bold;
   }
   .value-second{
+    flex-grow: 1;
 
   }
 }

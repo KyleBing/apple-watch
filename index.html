@@ -48,7 +48,7 @@
     <div class="apple-watch-list">
 
         <div class="apple-watch" v-for="(appleWatch, index) in appleWatches" :key="index">
-
+            
             <section class="main-info">
                 <div class="main-pic">
                     <img src="./img/apple-watch/aw-8.jpg" alt="apple watch image">
@@ -62,7 +62,7 @@
             </section>
 
             <!--  主要参数-->
-            <section class="sensor-info">
+            <section class="reference-info">
                 <div class="section-header">
                     <div class="section-title">主要参数</div>
                     <div class="section-subtitle"></div>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">eSIM</div>
-                    <div class="value">{{appleWatch.cellular}}</div>
+                    <div class="value">{{appleWatch.cellular || '-'}}</div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">蓝牙</div>
@@ -114,13 +114,12 @@
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">卫星导航</div>
-                    <div class="value value-inline">
-                        <div class="tag" v-for="item in appleWatch.sensorGPS">{{item}}</div>
-                    </div>
+                    <div v-if="typeof appleWatch.sensorGPS.length > 0" class="value">{{appleWatch.sensorGPS.join('、')}}</div>
+                    <div v-else class="value">-</div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">防水</div>
-                    <div class="value">{{appleWatch.waterResistance}}（水下{{appleWatch.waterResistancethickness}}m）</div>
+                    <div class="value value-inline">{{appleWatch.waterResistance}} <div class="tag ml-1">水下{{appleWatch.waterResistanceThickness}}m</div></div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">防尘</div>
@@ -157,25 +156,28 @@
                         <div class="value-item-second"
                              v-for="item in appleWatch.model" :key="item.name">
                             <div v-if="item.name" class="label-second">{{item.name}} ： </div>
-                            <div class="value-second">
+                            <div class="value-second" v-if="typeof item.value === 'object'">
                                 <div class="value-item-second"
                                      v-for="model in item.value" :key="model.name">
                                     <div v-if="model.name" class="label-second">{{model.name}} ： </div>
-                                    <div class="value-second">
+                                    <div class="value-second" v-if="typeof model.value === 'object'">
                                         <div class="value-item-second"
                                              v-for="size in model.value" :key="size.name">
                                             <div v-if="size.name" class="label-second">{{size.name}} ： </div>
                                             <div class="value-second">{{size.value}}</div>
                                         </div>
                                     </div>
+                                    <div v-else class="value-second">{{model.value}}</div>
+
                                 </div>
                             </div>
+                            <div v-else class="value-second">{{item.value}}</div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!--  主要参数-->
+            <!--  传感器参数-->
             <section class="sensor-info">
                 <div class="section-header">
                     <div class="section-title">传感器参数</div>
@@ -189,7 +191,7 @@
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">宽频芯片</div>
-                    <div class="value">{{appleWatch.ultraWideBand}}</div>
+                    <div class="value">{{appleWatch.ultraWideBand || '-'}}</div>
                 </div>
                 <div class="sensor-info-item">
                     <div class="label">心率检测</div>
@@ -260,7 +262,7 @@
                     </div>
                 </div>
 
-                <div class="svg-screen">
+                <div class="svg-screen mt-4">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.93 129">
                         <title>screen-info</title>
                         <g id="图层_2" data-name="图层 2">
@@ -382,7 +384,7 @@
                     </div>
                 </div>
 
-                <div class="svg-screen">
+                <div class="svg-screen mt-4">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.93 129">
                         <title>screen-info</title>
                         <g id="图层_2" data-name="图层 2">

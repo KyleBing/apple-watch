@@ -795,22 +795,22 @@ tt {
 .svg-screen {
   display: flex;
   width: 100%;
-  justify-content: center;
-  margin-bottom: 20px;
+  justify-content: flex-start;
+  margin-left: 60px;
 }
 .svg-screen svg {
   margin-right: 45px;
-  width: 115px;
+  width: 106px;
 }
 
 .svg-size {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 .svg-size svg {
-  width: 220px;
+  width: 200px;
 }
 
 .svg-screen .cls-1 {
@@ -891,11 +891,10 @@ tt {
 }
 .svg-size .cls-7, .svg-size .cls-9 {
   font-size: 12px;
-  font-family: Galvji;
+  font-family: "Galvji", sans-serif;
 }
 .svg-size .cls-8 {
   font-size: 20px;
-  font-family: MicrosoftYaHeiUI, Microsoft YaHei UI;
 }
 .svg-size .cls-9 {
   fill: #39b54a;
@@ -921,7 +920,7 @@ footer a:hover {
 
 .apple-watch-list {
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1800px;
   padding: 30px 30px 50px 30px;
 }
 @media (max-width: 768px) {
@@ -931,17 +930,15 @@ footer a:hover {
 }
 
 .apple-watch {
-  padding: 30px 0;
+  padding: 60px 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   border-bottom: 1px solid #dadada;
 }
-.apple-watch .content-frame {
-  flex-grow: 1;
-}
 
 section.main-info {
+  background-color: white;
   flex-shrink: 0;
   width: 400px;
   display: flex;
@@ -954,6 +951,7 @@ section.main-info .main-pic img {
   display: block;
 }
 section.main-info .title {
+  font-family: "Galvji", sans-serif;
   margin-top: 20px;
   font-weight: bold;
   font-size: 25px;
@@ -965,11 +963,21 @@ section.main-info .title.is-new {
   background-image: linear-gradient(90deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
 }
 section.main-info .date {
+  margin-top: 5px;
+  font-family: "Galvji";
   color: #666;
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
-  font-size: 14px;
+  font-size: 17px;
+}
+
+section.reference-info {
+  flex-shrink: 0;
+  flex-grow: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
 }
 
 section.sensor-info {
@@ -987,19 +995,49 @@ section.size-large {
   flex-grow: 1;
 }
 
+@media (max-width: 768px) {
+  .apple-watch-list {
+    padding: 0;
+  }
+  .apple-watch {
+    padding: 0;
+    flex-flow: column nowrap;
+  }
+  section {
+    padding: 20px;
+    width: 100%;
+  }
+  section.main-info {
+    width: 100%;
+  }
+  section.main-info .main-pic img {
+    width: 250px;
+  }
+  section.main-info .title {
+    font-size: 22px;
+  }
+  section.main-info .date {
+    font-size: 14px;
+  }
+  section.size-small {
+    background-color: white;
+  }
+  section.size-large {
+    background-color: white;
+  }
+}
 .section-header {
-  padding: 5px 10px;
+  padding: 5px 3px;
   display: flex;
   margin-bottom: 10px;
-  justify-content: center;
   align-items: flex-end;
-  border-bottom: 1px solid #dadada;
-  font-size: 19px;
+  font-size: 16px;
 }
 .section-header .section-title {
   font-weight: bold;
 }
 .section-header .section-subtitle {
+  font-family: "Galvji", sans-serif;
   margin-left: 10px;
   color: #666;
 }
@@ -1014,9 +1052,11 @@ section.size-large {
   color: #333;
 }
 .sensor-info-item .label {
+  color: #666;
   width: 100px;
 }
 .sensor-info-item .value {
+  flex-grow: 1;
   font-family: Galvji, sans-serif;
 }
 .sensor-info-item .value.value-inline {
@@ -1031,14 +1071,21 @@ section.size-large {
   background-color: #eeeeee;
 }
 .value-item-second {
+  width: 100%;
   display: flex;
   font-size: 14px;
-  align-items: center;
+  align-items: flex-start;
   line-height: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .value-item-second .label-second {
+  width: 60px;
   font-weight: bold;
 }
+.value-item-second .value-second {
+  flex-grow: 1;
+}
+
 .charging-container {
   display: flex;
   flex-flow: column nowrap;

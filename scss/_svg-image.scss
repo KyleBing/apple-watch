@@ -3,11 +3,11 @@ $color-stroke: #333;
 .svg-screen {
   display: flex;
   width: 100%;
-  justify-content: center;
-  margin-bottom: 20px;
+  justify-content: flex-start;
+  margin-left: 60px;
   svg {
     margin-right: 45px;
-    width: 115px;
+    width: 106px;
   }
 }
 
@@ -15,9 +15,9 @@ $color-stroke: #333;
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin-bottom: 10px;
+  margin-top: 20px;
   svg {
-    width: 220px;
+    width: 200px;
   }
 }
 
@@ -126,13 +126,11 @@ $color-stroke: #333;
 
   .cls-7, .cls-9 {
     font-size: 12px;
-    font-family: Galvji;
+    font-family: 'Galvji', sans-serif;
   }
 
   .cls-8 {
     font-size: 20px;
-    font-family: MicrosoftYaHeiUI,
-    Microsoft YaHei UI;
   }
 
   .cls-9 {

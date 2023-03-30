@@ -31,7 +31,7 @@ footer{
 
 .apple-watch-list{
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1800px;
   padding: 30px 30px 50px 30px;
   @media (max-width: 768px){
     padding: 20px 10px;
@@ -39,18 +39,16 @@ footer{
 }
 
 .apple-watch{
-  padding: 30px 0;
+  padding: 60px 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   border-bottom: 1px solid $color-border;
-  .content-frame{
-    flex-grow: 1;
-  }
 }
 
 // 主要信息
 section.main-info{
+  background-color: white;
   flex-shrink: 0;
   width: 400px;
   display: flex;
@@ -65,6 +63,7 @@ section.main-info{
   }
 
   .title{
+    font-family: 'Galvji', sans-serif;
     margin-top: 20px;
     font-weight: bold;
     font-size: $fz-title;
@@ -77,12 +76,23 @@ section.main-info{
     }
   }
   .date{
+    margin-top: 5px;
+    font-family: "Galvji";
     color: $text-subtitle;
     display: flex;
     justify-content: center;
     flex-flow: row nowrap;
-    font-size: $fz-main;
+    font-size: $fz-main + 3;
   }
+}
+
+// 主信息
+section.reference-info{
+  flex-shrink: 0;
+  flex-grow: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
 }
 
 // 传感器
@@ -101,6 +111,42 @@ section.size-small{
 section.size-large{
   flex-shrink: 0;
   flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .apple-watch-list{
+    padding: 0;
+  }
+  .apple-watch{
+    padding: 0;
+    flex-flow: column nowrap;
+  }
+  section{
+    padding: 20px;
+    width: 100%;
+    &.main-info{
+      width: 100%;
+      .main-pic{
+        img{
+          width: 250px;
+        }
+      }
+      .title {
+        font-size: $fz-title - 3;
+        &.is-new {
+        }
+      }
+      .date{
+        font-size: $fz-main;
+      }
+    }
+    &.size-small{
+      background-color: white;
+    }
+    &.size-large{
+      background-color: white;
+    }
+  }
 }
 
 
