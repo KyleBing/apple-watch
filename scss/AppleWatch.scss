@@ -31,7 +31,7 @@ footer{
 
 .apple-watch-list{
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1920px;
   padding: 30px 30px 50px 30px;
   @media (max-width: 768px){
     padding: 20px 10px;
@@ -54,6 +54,7 @@ section.main-info{
   flex-shrink: 0;
   width: 400px;
   display: flex;
+  height: 100%;
   flex-flow: column nowrap;
   align-items: center;
   .main-pic{

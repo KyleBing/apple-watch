@@ -894,7 +894,7 @@ tt {
   font-family: Galvji;
 }
 .svg-size .cls-8 {
-  font-size: 24px;
+  font-size: 20px;
   font-family: MicrosoftYaHeiUI, Microsoft YaHei UI;
 }
 .svg-size .cls-9 {
@@ -921,7 +921,7 @@ footer a:hover {
 
 .apple-watch-list {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1920px;
   padding: 30px 30px 50px 30px;
 }
 @media (max-width: 768px) {
@@ -945,6 +945,7 @@ section.main-info {
   flex-shrink: 0;
   width: 400px;
   display: flex;
+  height: 100%;
   flex-flow: column nowrap;
   align-items: center;
 }
