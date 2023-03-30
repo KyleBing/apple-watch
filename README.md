@@ -22,7 +22,7 @@
 
 ## 预览
 
-![2023-03-30 17 00 00](https://user-images.githubusercontent.com/12215982/228785590-7911a36b-8583-444d-b95b-42456bde1c2c.png)
+<img width="1920" alt="Screenshot 2023-03-30 at 20 08 50" src="https://user-images.githubusercontent.com/12215982/228831330-883a0d71-44d6-4254-8b20-45ef3337774d.png">
 
 
 
