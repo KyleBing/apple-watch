@@ -15,59 +15,19 @@ $dark-border-light: lighten(black, 60%);
   body{
     background-color: $dark-bg;
   }
-
   .container{
     background-color: $dark-bg;
   }
-
-
 
   // LABEL
   .rate{
     background-color: transparent !important;
   }
 
-  .iphone{
-    .title-content{
-      border-bottom-color: $dark-border;
-      .title{
-        color: $dark-text-title;
-      }
-      .slogan{
-        color: $dark-text-subtitle;
-      }
-    }
-
-    .main-ref{
-      .label{
-        color: $dark-text;
-      }
-      .value{
-        color: $dark-text;
-        &.cyan{
-          color: desaturate(darken($cyan, 10%), 5%);
-        }
-        &.magenta{
-          color: desaturate(darken($magenta, 15%), 10%);
-        }
-      }
-    }
-
-    .detail-item{
-      &-label{
-        color: $dark-text-subtitle;
-      }
-      &-content{
-        color: $dark-text;
-        .tip{
-          color: $dark-text;
-          .sup{
-            background-color: $dark-bg;
-          }
-        }
-      }
-    }
+  .apple-watch{
+    border-bottom-color: $dark-border;
   }
+
 
   .gradient-blue{
     color: darken(white, 15%) !important;
@@ -141,47 +101,83 @@ $dark-border-light: lighten(black, 60%);
   }
 
 
-
-  // ABOUT
-  .gradient{
-    background-image: linear-gradient(to bottom right, lighten(black, 20%), lighten(black, 25%));
+  // Labels
+  // HEADER
+  .section-header{
+    .section-title{
+      color: $dark-text-title;
+    }
+    .section-subtitle{
+      color: $dark-text-subtitle;
+    }
   }
 
-  @media (max-width: 450px) {
-    body {
-      background-color: $dark-bg !important;
+  // ITEM
+  .sensor-info-item{
+    color: $dark-text-title;
+    .label{
+      color: $dark-text-subtitle;
     }
-    .iphone {
-      overflow: hidden;
-      @include border-radius(15px);
-      background-color: $dark-bg-light !important;
-      margin-bottom: 20px;
-      padding: 0;
-      border: 1px solid $dark-border !important;
+    .value{
+      &.value-inline{
+      }
+      .unit{
+        color: $green;
+      }
     }
-    .title-content{
-      border-bottom: 1px solid $color-border;
-      background-color: $dark-bg-highlight !important;
-    }
-    .ref-content{
-      > *{
-        border-bottom: 1px solid $dark-border !important;
+    &:hover{
+      background-color: $dark-bg-highlight;
+      .label{
+
       }
     }
   }
 
-  .score-bar {
-    .score {
-      color: $dark-text-subtitle;
+  .value-item-second{
+    font-size: $fz-main;
+    background-color: transparentize(white, 0.95);
+    .label-second{
+    }
+    .value-second{
     }
   }
 
-  .sim-item{
-    .name{
-      color: $dark-text;
+
+  // 充电 ITEM
+  $height-charging-bar: 24px;
+  .charging-container{
+  }
+  .charging-item {
+    color: white;
+    &:last-child{
     }
-    .type{
-      color: $dark-text-subtitle;
+    .bar{
+      .time{
+      }
+      .percentage{
+      }
+    }
+    &.orange{
+      .bar{
+        border-color: $orange;
+        background-color: transparentize($orange, 0.1);
+      }
+    }
+    &.green{
+      background-color: transparentize($green, 0.1);
     }
   }
+
+  .tag{
+    background-color: $dark-bg;
+    border: 1px solid $dark-border;
+  }
+
+
+  .svg-size{
+    .cls-6 {
+      fill: transparent;
+    }
+  }
+
 }

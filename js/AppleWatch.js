@@ -4,7 +4,7 @@
  *****************************/
 
 const latestOS = "最新"
-const lastUpdateDate = '2023-03-30'
+const lastUpdateDate = '2023-03-31'
 
 const SCREEN_TYPE = {
     square: '',

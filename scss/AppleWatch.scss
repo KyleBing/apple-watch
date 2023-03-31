@@ -48,9 +48,12 @@ footer{
 
 // 主要信息
 section.main-info{
+  margin-right: 30px;
+  @include border-radius(20px);
+  padding: 10px;
   background-color: white;
   flex-shrink: 0;
-  width: 500px;
+  width: 400px;
   display: flex;
   height: 100%;
   flex-flow: column nowrap;

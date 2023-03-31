@@ -938,9 +938,14 @@ footer a:hover {
 }
 
 section.main-info {
+  margin-right: 30px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 10px;
   background-color: white;
   flex-shrink: 0;
-  width: 500px;
+  width: 400px;
   display: flex;
   height: 100%;
   flex-flow: column nowrap;
@@ -999,12 +1004,10 @@ section.size-large {
   .apple-watch-list {
     padding: 0;
   }
-
   .apple-watch {
     padding: 0;
     flex-flow: column nowrap;
   }
-
   section {
     padding: 20px;
     width: 100%;
@@ -1142,59 +1145,23 @@ section.size-large {
   body {
     background-color: #262626;
   }
-
   .container {
     background-color: #262626;
   }
-
   .rate {
     background-color: transparent !important;
   }
-
-  .iphone .title-content {
+  .apple-watch {
     border-bottom-color: #4d4d4d;
   }
-  .iphone .title-content .title {
-    color: #bfbfbf;
-  }
-  .iphone .title-content .slogan {
-    color: #737373;
-  }
-  .iphone .main-ref .label {
-    color: #a6a6a6;
-  }
-  .iphone .main-ref .value {
-    color: #a6a6a6;
-  }
-  .iphone .main-ref .value.cyan {
-    color: #078da6;
-  }
-  .iphone .main-ref .value.magenta {
-    color: #d40b4b;
-  }
-  .iphone .detail-item-label {
-    color: #737373;
-  }
-  .iphone .detail-item-content {
-    color: #a6a6a6;
-  }
-  .iphone .detail-item-content .tip {
-    color: #a6a6a6;
-  }
-  .iphone .detail-item-content .tip .sup {
-    background-color: #262626;
-  }
-
   .gradient-blue {
     color: #d9d9d9 !important;
     background-image: linear-gradient(to bottom right, #073fd5, #05638e);
   }
-
   .gradient-purple {
     color: #d9d9d9 !important;
     background-image: linear-gradient(to bottom right, #7700a1, #bc0179);
   }
-
   rect {
     fill: transparent;
   }
@@ -1213,11 +1180,9 @@ section.size-large {
   rect#apple-watch-line {
     fill: #FF9500;
   }
-
   text, tspan {
     fill: #bfbfbf;
   }
-
   .filter-list .apple-watch-tag-list .apple-watch-tag {
     border-color: #4d4d4d;
     color: #a6a6a6;
@@ -1231,62 +1196,54 @@ section.size-large {
     width: 8px;
     height: 10px;
   }
-
   ::-webkit-scrollbar-track {
     border: none;
     background-color: rgba(0, 0, 0, 0);
   }
-
   ::-webkit-scrollbar-thumb {
     border-color: transparent;
     background-color: transparent;
   }
-
   :hover::-webkit-scrollbar-thumb {
     background-color: #474747;
   }
-
-  .gradient {
-    background-image: linear-gradient(to bottom right, #333333, #404040);
+  .section-header .section-title {
+    color: #bfbfbf;
   }
-}
-@media (prefers-color-scheme: dark) and (max-width: 450px) {
-  body {
-    background-color: #262626 !important;
-  }
-
-  .iphone {
-    overflow: hidden;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    background-color: #3d3d3d !important;
-    margin-bottom: 20px;
-    padding: 0;
-    border: 1px solid #4d4d4d !important;
-  }
-
-  .title-content {
-    border-bottom: 1px solid #dadada;
-    background-color: #474747 !important;
-  }
-
-  .ref-content > * {
-    border-bottom: 1px solid #4d4d4d !important;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .score-bar .score {
+  .section-header .section-subtitle {
     color: #737373;
   }
-}
-@media (prefers-color-scheme: dark) {
-  .sim-item .name {
-    color: #a6a6a6;
+  .sensor-info-item {
+    color: #bfbfbf;
   }
-  .sim-item .type {
+  .sensor-info-item .label {
     color: #737373;
   }
+  .sensor-info-item .value .unit {
+    color: #00b56b;
+  }
+  .sensor-info-item:hover {
+    background-color: #474747;
+  }
+  .value-item-second {
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .charging-item {
+    color: white;
+  }
+  .charging-item.orange .bar {
+    border-color: #FF9500;
+    background-color: rgba(255, 149, 0, 0.9);
+  }
+  .charging-item.green {
+    background-color: rgba(0, 181, 107, 0.9);
+  }
+  .tag {
+    background-color: #262626;
+    border: 1px solid #4d4d4d;
+  }
+  .svg-size .cls-6 {
+    fill: transparent;
+  }
 }
-
-/*# sourceMappingURL=AppleWatch.css.map */
