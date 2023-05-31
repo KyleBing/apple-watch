@@ -4,7 +4,7 @@
  *****************************/
 
 const latestOS = "最新"
-const lastUpdateDate = '2023-03-31'
+const lastUpdateDate = '2023-05-31' // 2023-05-31
 
 const SCREEN_TYPE = {
     square: '',
@@ -15,7 +15,7 @@ const appleWatches = [
     {
         name: "Apple Watch 1",
         name_short: "1",
-        pic: "1",
+        pic: "https://diary-container.kylebing.cn/FnR81H3xpTUgQNudimXZC2n8XDHy",
         isNew: false,
         active: false,
         dateRelease: "2015-04-24",
@@ -141,7 +141,7 @@ const appleWatches = [
     {
         name: "Apple Watch S1",
         name_short: "S1",
-        pic: "S1",
+        pic: "https://diary-container.kylebing.cn/FigPZM8YQ5jQmOgxWDp2Wo0_CPfI",
         isNew: false,
         active: false,
         dateRelease: "2016-09-07",
@@ -239,7 +239,7 @@ const appleWatches = [
     {
         name: "Apple Watch S2",
         name_short: "S2",
-        pic: "S2",
+        pic: "https://diary-container.kylebing.cn/FlsGixwR7-pVhoobr2oPQh2Eznj-",
         isNew: false,
         active: false,
         dateRelease: "2016-09-07",
@@ -374,7 +374,7 @@ const appleWatches = [
     {
         name: "Apple Watch S3",
         name_short: "S3",
-        pic: "S3",
+        pic: "https://diary-container.kylebing.cn/Fhuz4JnjlsN06lFaQYoau3B4wUXc",
         isNew: false,
         active: false,
         dateRelease: "2017-09-22",
@@ -546,7 +546,7 @@ const appleWatches = [
     {
         name: "Apple Watch S4",
         name_short: "S4",
-        pic: "S4",
+        pic: "https://diary-container.kylebing.cn/Fjyc_fOz30x8JJLM47xjZKTaTcmj",
         isNew: false,
         active: false,
         dateRelease: "2018-09-12",
@@ -682,7 +682,7 @@ const appleWatches = [
     {
         name: "Apple Watch S5",
         name_short: "S5",
-        pic: "S5",
+        pic: "https://diary-container.kylebing.cn/FofAJp5VtEPH3ANLTyAx2tFOEnHb",
         isNew: false,
         active: false,
         dateRelease: "2019-09-25",
@@ -831,7 +831,7 @@ const appleWatches = [
     {
         name: "Apple Watch SE1",
         name_short: "SE1",
-        pic: "SE1",
+        pic: "https://diary-container.kylebing.cn/Fp4n9tnTzWPLFK5auYjCTWvmqjZo",
         isNew: false,
         active: false,
         dateRelease: "2020-09-15",
@@ -952,7 +952,7 @@ const appleWatches = [
     {
         name: "Apple Watch S6",
         name_short: "S6",
-        pic: "S6",
+        pic: "https://diary-container.kylebing.cn/FkVbZkYbusmhXSbdAI9xxMheg2xz",
         isNew: false,
         active: false,
         dateRelease: "2021-10-08",
@@ -1101,7 +1101,7 @@ const appleWatches = [
     {
         name: "Apple Watch S7",
         name_short: "S7",
-        pic: "S7",
+        pic: "https://diary-container.kylebing.cn/FquSLnx8leLIr2RmSIlKqzGA88o7",
         isNew: false,
         active: false,
         dateRelease: "2022-09-07",
@@ -1250,7 +1250,7 @@ const appleWatches = [
     {
         name: "Apple Watch SE2",
         name_short: "SE2",
-        pic: "SE2",
+        pic: "https://diary-container.kylebing.cn/FqV0tZ6H6JbrI_7kmHJUr8_ruEQ_",
         isNew: true,
         active: false,
         dateRelease: "2022-09-16",
@@ -1379,7 +1379,7 @@ const appleWatches = [
     {
         name: "Apple Watch S8",
         name_short: "S8",
-        pic: "S8",
+        pic: "https://diary-container.kylebing.cn/Fsuj2_dZBCWjVfyVB4Y5tPFqMkdq",
         isNew: true,
         active: false,
         dateRelease: "2022-09-16",
@@ -1521,7 +1521,7 @@ const appleWatches = [
     {
         name: "Apple Watch Ultra",
         name_short: "Ultra",
-        pic: "Ultra",
+        pic: "https://diary-container.kylebing.cn/FjbZvcUX4mjxpaz_NTt1Sdy5HapX",
         isNew: true,
         active: false,
         dateRelease: "2022-09-23",
