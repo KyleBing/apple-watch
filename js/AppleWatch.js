@@ -1656,7 +1656,8 @@ let app = new Vue({
         shareQrCode: null,
         shareQrCodeQQ: null,
         linkAddress: 'https://kylebing.cn/tools/apple-watch/',
-        linkQQ: 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA'
+        linkQQ: 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA',
+        contributors: ['514093417(qq)']
     },
     mounted() {
         // 全屏相关
