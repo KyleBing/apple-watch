@@ -378,7 +378,7 @@ const appleWatches = [
         isNew: false,
         active: false,
         dateRelease: "2017-09-22",
-        dateUnsupported: "2017-09-22",
+        dateUnsupported: "2022-09-12",
         waterResistance: 'ISO 22810:2010',
         waterResistanceThickness: '50', // m
         dustResistance: '',
