@@ -144,7 +144,7 @@ const appleWatches = [
         pic: "https://diary-container.kylebing.cn/FigPZM8YQ5jQmOgxWDp2Wo0_CPfI",
         isNew: false,
         active: false,
-        dateRelease: "2016-09-07",
+        dateRelease: "2016-09-12",
         dateUnsupported: "2020-12-14",
         waterResistance: 'IPX7',
         waterResistanceThickness: '1', // m
@@ -242,7 +242,7 @@ const appleWatches = [
         pic: "https://diary-container.kylebing.cn/FlsGixwR7-pVhoobr2oPQh2Eznj-",
         isNew: false,
         active: false,
-        dateRelease: "2016-09-07",
+        dateRelease: "2016-09-16",
         dateUnsupported: "2020-12-14",
         waterResistance: 'ISO 22810:2010',
         waterResistanceThickness: '50', // m
@@ -378,7 +378,7 @@ const appleWatches = [
         isNew: false,
         active: false,
         dateRelease: "2017-09-22",
-        dateUnsupported: "2022-09-12",
+        dateUnsupported: "2017-09-22",
         waterResistance: 'ISO 22810:2010',
         waterResistanceThickness: '50', // m
         dustResistance: '',
@@ -549,7 +549,7 @@ const appleWatches = [
         pic: "https://diary-container.kylebing.cn/Fjyc_fOz30x8JJLM47xjZKTaTcmj",
         isNew: false,
         active: false,
-        dateRelease: "2018-09-12",
+        dateRelease: "2018-09-21",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
         waterResistanceThickness: '50', // m
@@ -834,7 +834,7 @@ const appleWatches = [
         pic: "https://diary-container.kylebing.cn/Fp4n9tnTzWPLFK5auYjCTWvmqjZo",
         isNew: false,
         active: false,
-        dateRelease: "2020-09-15",
+        dateRelease: "2020-09-18",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
         waterResistanceThickness: '50', // m
@@ -955,7 +955,7 @@ const appleWatches = [
         pic: "https://diary-container.kylebing.cn/FkVbZkYbusmhXSbdAI9xxMheg2xz",
         isNew: false,
         active: false,
-        dateRelease: "2021-10-08",
+        dateRelease: "2020-09-18",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
         waterResistanceThickness: '50', // m
@@ -1104,7 +1104,7 @@ const appleWatches = [
         pic: "https://diary-container.kylebing.cn/FquSLnx8leLIr2RmSIlKqzGA88o7",
         isNew: false,
         active: false,
-        dateRelease: "2022-09-07",
+        dateRelease: "2021-10-15",
         dateUnsupported: "",
         waterResistance: 'ISO 22810:2010',
         waterResistanceThickness: '50', // m
