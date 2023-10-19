@@ -905,17 +905,24 @@ body {
   font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
 }
 
+.announcement {
+  border-bottom: 1px solid #dadada;
+  padding: 40px;
+  width: 100%;
+  text-align: center;
+}
+.announcement a {
+  color: #8E8E93;
+}
+.announcement a:hover {
+  color: #FF2D70;
+}
+
 footer {
   padding: 10px 0 40px;
   font-size: 12px;
   text-align: center;
   color: #8E8E93;
-}
-footer a {
-  color: #8E8E93;
-}
-footer a:hover {
-  color: #FF2D70;
 }
 
 .apple-watch-list {
@@ -1148,6 +1155,16 @@ section.size-large {
   .container {
     background-color: #262626;
   }
+  .announcement {
+    color: #a6a6a6;
+    border-color: #4d4d4d;
+  }
+  .announcement a {
+    color: #8E8E93;
+  }
+  .announcement a:hover {
+    color: #FF2D70;
+  }
   .rate {
     background-color: transparent !important;
   }
@@ -1247,3 +1264,5 @@ section.size-large {
     fill: transparent;
   }
 }
+
+/*# sourceMappingURL=AppleWatch.css.map */

@@ -19,6 +19,17 @@ $dark-border-light: lighten(black, 60%);
     background-color: $dark-bg;
   }
 
+  .announcement{
+    color: $dark-text;
+    border-color: $dark-border;
+    a{
+      color: $gray;
+      &:hover{
+        color: $color-main;
+      }
+    }
+  }
+
   // LABEL
   .rate{
     background-color: transparent !important;

@@ -7,7 +7,7 @@
     <title>AppleWatch 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/apple-watch-black@2x.png" type="image/png">
-    <link rel="stylesheet" href="scss/AppleWatch.css?v=20230821134216">
+    <link rel="stylesheet" href="scss/AppleWatch.css?v=20231019134113">
     <link rel="apple-touch-icon" href="img/links/apple-watch@2x.png">
 
     <meta name="theme-color"
@@ -71,7 +71,6 @@
         </div>
     </div>
 
-
     <!-- FILTER LIST-->
     <div class="filter-list">
         <div class="apple-watch-tag-list">
@@ -80,6 +79,12 @@
                  @click="filterTagToggle(item.name)"
             >{{item.name_short}}</div>
         </div>
+    </div>
+
+    <div class="announcement">
+        <h3>AppleWatch 将不再更新，有需要的可以自行去 <a href="https://github.com/KyleBing/apple-watch">github</a> 更新，我不想花精力动它了。</h3>
+        <h3>之前用过一段时间它，后来就卖掉了，一天一充的不能称为手表。</h3>
+        <p class="my-word mt-2"><a href="https://zhuanlan.zhihu.com/p/650268422">《推荐一款运动手表：高驰 Apex2，和我的手表手环历程》</a></p>
     </div>
 
     <!--CONTENT-->
@@ -545,13 +550,12 @@
         <p>2023-03-29 ~ {{dateLastUpdate}}</p>
         <p><a class="link" target="_blank" href="https://github.com/KyleBing/apple-watch">https://github.com/KyleBing/apple-watch</a></p>
         <p><a class="link" target="_blank" href="https://en.wikipedia.org/wiki/Apple_Watch">https://en.wikipedia.org/wiki/Apple_Watch</a></p>
-        <p class="my-word mt-2">现在不喜欢 AppleWatch 了，这是为什么：<a href="https://zhuanlan.zhihu.com/p/650268422">《推荐一款运动手表：高驰 Apex2，和我的手表手环历程》</a></p>
 
     </footer>
 
 </div>
 
-<script src="js/AppleWatch.js?v=20230821134216"></script>
+<script src="js/AppleWatch.js?v=20231019134113"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {

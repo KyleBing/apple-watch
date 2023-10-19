@@ -16,17 +16,25 @@ body{
   font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
 }
 
-footer{
-  padding: 10px 0 40px;
-  font-size: 12px;
+.announcement{
+  border-bottom: 1px solid $color-border;
+  padding: 40px;
+  width: 100%;
   text-align: center;
-  color: $gray;
   a{
     color: $gray;
     &:hover{
       color: $color-main;
     }
   }
+}
+
+footer{
+  padding: 10px 0 40px;
+  font-size: 12px;
+  text-align: center;
+  color: $gray;
+
 }
 
 .apple-watch-list{
