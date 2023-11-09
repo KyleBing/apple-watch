@@ -1011,10 +1011,12 @@ section.size-large {
   .apple-watch-list {
     padding: 0;
   }
+
   .apple-watch {
     padding: 0;
     flex-flow: column nowrap;
   }
+
   section {
     padding: 20px;
     width: 100%;
@@ -1152,9 +1154,11 @@ section.size-large {
   body {
     background-color: #262626;
   }
+
   .container {
     background-color: #262626;
   }
+
   .announcement {
     color: #a6a6a6;
     border-color: #4d4d4d;
@@ -1165,20 +1169,25 @@ section.size-large {
   .announcement a:hover {
     color: #FF2D70;
   }
+
   .rate {
     background-color: transparent !important;
   }
+
   .apple-watch {
     border-bottom-color: #4d4d4d;
   }
+
   .gradient-blue {
     color: #d9d9d9 !important;
     background-image: linear-gradient(to bottom right, #073fd5, #05638e);
   }
+
   .gradient-purple {
     color: #d9d9d9 !important;
     background-image: linear-gradient(to bottom right, #7700a1, #bc0179);
   }
+
   rect {
     fill: transparent;
   }
@@ -1197,9 +1206,11 @@ section.size-large {
   rect#apple-watch-line {
     fill: #FF9500;
   }
+
   text, tspan {
     fill: #bfbfbf;
   }
+
   .filter-list .apple-watch-tag-list .apple-watch-tag {
     border-color: #4d4d4d;
     color: #a6a6a6;
@@ -1213,23 +1224,28 @@ section.size-large {
     width: 8px;
     height: 10px;
   }
+
   ::-webkit-scrollbar-track {
     border: none;
     background-color: rgba(0, 0, 0, 0);
   }
+
   ::-webkit-scrollbar-thumb {
     border-color: transparent;
     background-color: transparent;
   }
+
   :hover::-webkit-scrollbar-thumb {
     background-color: #474747;
   }
+
   .section-header .section-title {
     color: #bfbfbf;
   }
   .section-header .section-subtitle {
     color: #737373;
   }
+
   .sensor-info-item {
     color: #bfbfbf;
   }
@@ -1256,10 +1272,12 @@ section.size-large {
   .charging-item.green {
     background-color: rgba(0, 181, 107, 0.9);
   }
+
   .tag {
     background-color: #262626;
     border: 1px solid #4d4d4d;
   }
+
   .svg-size .cls-6 {
     fill: transparent;
   }
